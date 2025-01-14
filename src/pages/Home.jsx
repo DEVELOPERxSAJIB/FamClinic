@@ -22,7 +22,7 @@ const Home = () => {
               en wordt getraind om u de best mogelijke behandelingen te kunnen
               geven.
             </p>
-            <div className="button-area pt-16 flex flex-col md:flex-row gap-5 items-center md:items-start sm:items-start">
+            <div className="button-area pt-16 flex flex-col md:flex-row gap-5 items-center justify-center">
               <a
                 href="#"
                 style={{
@@ -55,11 +55,11 @@ const Home = () => {
           {/* Image Area */}
           <div
             style={{
-              height: "565px",
-              width: "662px",
+              height: "540px",
+              width: "650px",
               objectFit: "cover",
             }}
-            className="image-area flex-1 flex justify-end md:w-1/2 md:justify-start sm:justify-center"
+            className="image-area flex-1 flex justify-end md:w-1/2 md:justify-end sm:justify-center"
           >
             <img
               src={heroImage}
