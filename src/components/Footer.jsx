@@ -3,8 +3,9 @@ import footerLogo from "../assets/images/logo.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-white">
+    <footer className="">
       <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+        <hr className="my-6 border-[#F0DECA] sm:mx-auto lg:my-8" />
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0 flex flex-col gap-5">
             <a to={"/"} className="flex items-center">
