@@ -1,14 +1,58 @@
+import "./Home.scss";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
+
+import { Link } from "react-router-dom";
 import { FiArrowRight } from "react-icons/fi";
-import heroImage from "../../assets/images/hero-image-woman.png";
 import { MdArrowCircleDown } from "react-icons/md";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { BsArrowRight } from "react-icons/bs";
-import "./Home.scss";
-import { Link } from "react-router-dom";
+import { IoCheckmarkCircleOutline } from "react-icons/io5";
 
-import treatment1 from "../../assets/images/treatment-1.jpg";
-import treatment2 from "../../assets/images/treatment-2.jpg";
-import treatment3 from "../../assets/images/treatment-3.jpg";
+import heroImage from "../../assets/images/hero-image-woman.png";
+
+import treatment1 from "../../assets/images/treatment/treatment-1.jpg";
+import treatment2 from "../../assets/images/treatment/treatment-2.jpg";
+import treatment3 from "../../assets/images/treatment/treatment-3.jpg";
+
+import whyus from "../../assets/images/whyus.jpg";
+
+import affiliate1 from "../../assets/images/affiliate/affiliate-1.png";
+import affiliate2 from "../../assets/images/affiliate/affiliate-2.png";
+import affiliate3 from "../../assets/images/affiliate/affiliate-3.png";
+import affiliate4 from "../../assets/images/affiliate/affiliate-4.png";
+
+import notice1 from "../../assets/images/we-notice/notice-1.png";
+import notice2 from "../../assets/images/we-notice/notice-2.png";
+import notice3 from "../../assets/images/we-notice/notice-3.png";
+import notice4 from "../../assets/images/we-notice/notice-4.jpg";
+import notice5 from "../../assets/images/we-notice/notice-5.png";
+import notice6 from "../../assets/images/we-notice/notice-6.png";
+import notice7 from "../../assets/images/we-notice/notice-7.png";
+
+const weNoticeArray = [
+  {
+    image: notice1,
+  },
+  {
+    image: notice2,
+  },
+  {
+    image: notice3,
+  },
+  {
+    image: notice4,
+  },
+  {
+    image: notice5,
+  },
+  {
+    image: notice6,
+  },
+  {
+    image: notice7,
+  },
+];
 
 const Home = () => {
   return (
@@ -364,6 +408,226 @@ const Home = () => {
                     </div>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="why-us-wrapper py-12">
+          <div className="why-us flex items-center justify-between gap-5">
+            <div className="image-section flex-1">
+              <div
+                style={{
+                  height: "620px",
+                  maxWidth: "510px",
+                  objectFit: "cover",
+                }}
+                className="img-area"
+              >
+                <img
+                  style={{ borderRadius: "30px" }}
+                  className="w-full h-full object-cover"
+                  src={whyus}
+                  alt="why-us-image"
+                />
+              </div>
+            </div>
+
+            <div className="content-section flex-1 flex justify-end">
+              <div className="flex flex-col gap-5">
+                <div className="title">
+                  <span className="m-0 p-0 font-playfair text-[32px] font-medium">
+                    Waarom
+                  </span>{" "}
+                  <h2 className="-mt-3 text-[50px] font-medium font-playfair">
+                    Aphrodite Clinic?
+                  </h2>
+                </div>
+
+                <div className="desc">
+                  <p className="max-w-[600px] text-[16px] font-normal">
+                    Persoonlijke aandacht, realistische
+                    huidverbeteringsperspectieven, vakkundig uitgevoerde
+                    behandelingen van de beste kwaliteit, uitgevoerd door
+                    specialisten met hoogwaardige medische apparatuur… Dat - en
+                    nog veel meer - vinden wij belangrijk als u met uw
+                    behandelingsvraag bij ons komt. Zo bieden wij u de zorg die
+                    uw huid verdient. Het team van Aphrodite Clinic staat graag
+                    voor u klaar om uw huid met de grootst mogelijke zorg te
+                    behandelen.
+                  </p>
+                  <ul className="py-6">
+                    <li className="flex items-center gap-1 py-1">
+                      <IoCheckmarkCircleOutline size={25} />
+                      <span className="text-[16px] text-[#5f5041] font-semibold">
+                        Uw huid is onze zorg
+                      </span>
+                    </li>
+                    <li className="flex items-center gap-1 py-1">
+                      <IoCheckmarkCircleOutline size={25} />
+                      <span className="text-[16px] text-[#5f5041] font-semibold">
+                        Persoonlijke, gastvrije benadering
+                      </span>
+                    </li>
+                    <li className="flex items-center gap-1 py-1">
+                      <IoCheckmarkCircleOutline size={25} />
+                      <span className="text-[16px] text-[#5f5041] font-semibold">
+                        Resultaat vanaf de eerste behandeling.
+                      </span>
+                    </li>
+                    <li className="flex items-center gap-1 py-1">
+                      <IoCheckmarkCircleOutline size={25} />
+                      <span className="text-[16px] text-[#5f5041] font-semibold">
+                        Realistisch advies
+                      </span>
+                    </li>
+                    <li className="flex items-center gap-1 py-1">
+                      <IoCheckmarkCircleOutline size={25} />
+                      <span className="text-[16px] text-[#5f5041] font-semibold">
+                        Gediplomeerde, gespecialiseerde huidtherapeuten
+                      </span>
+                    </li>
+                    <li className="flex items-center gap-1 py-1">
+                      <IoCheckmarkCircleOutline size={25} />
+                      <span className="text-[16px] text-[#5f5041] font-semibold">
+                        Grote diversiteit aan hoogwaardige behandelingen
+                      </span>
+                    </li>
+                    <li className="flex items-center gap-1 py-1">
+                      <IoCheckmarkCircleOutline size={25} />
+                      <span className="text-[16px] text-[#5f5041] font-semibold">
+                        Vrijblijvende intake, inclusief behandelplan op maat
+                      </span>
+                    </li>
+                    <li className="flex items-center gap-1 py-1">
+                      <IoCheckmarkCircleOutline size={25} />
+                      <span className="text-[16px] text-[#5f5041] font-semibold">
+                        Gecontracteerde zorg via alle zorgverzekeraars
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div className="affiliate-partner mt-8 lg:col-span-2 md:mt-6">
+                  <div
+                    style={{
+                      borderTopRightRadius: "20px",
+                      borderTopLeftRadius: "20px",
+                      borderBottomRightRadius: "20px",
+                    }}
+                    className="bg-[#F0DECA] px-4 py-2 inline-block ml-12 relative z-10 xs:ml-5"
+                  >
+                    <h4 className="font-semibold text-[16px] xs:text-sm">
+                      Wij zijn aangesloten bij
+                    </h4>
+                  </div>
+                  <div className="bg-white px-12 pt-8 pb-2 inline-flex items-center shadow rounded-lg -mt-5 lg:w-full lg:justify-between xs:px-6 xs:pt-8 xs:pb-3 xxs:px-5">
+                    <a
+                      href="https://www.huidtherapie.nl/"
+                      target="_blank"
+                      className="mr-10 xs:mr-4 xxs:mr-3"
+                    >
+                      <picture>
+                        <source srcSet={affiliate1} media="(min-width: 0px)" />
+                        <img
+                          src={affiliate1}
+                          alt
+                          className="hover-gray nvh-logo"
+                        />
+                      </picture>
+                    </a>
+                    <a
+                      href="https://www.kwaliteitsregisterparamedici.nl/default.aspx"
+                      target="_blank"
+                      className="mr-10 xs:mr-4 xxs:mr-3"
+                    >
+                      <picture>
+                        <source srcSet={affiliate2} media="(min-width: 0px)" />
+                        <img
+                          src={affiliate2}
+                          alt
+                          className="hover-gray kp-logo-2"
+                        />
+                      </picture>
+                    </a>
+                    <a
+                      href="https://www.s-bb.nl/"
+                      target="_blank"
+                      className="mr-10 xs:mr-4 xxs:mr-3"
+                    >
+                      <picture>
+                        <source srcSet={affiliate3} media="(min-width: 0px)" />
+                        <img
+                          src={affiliate3}
+                          alt
+                          className="hover-gray bb-logo-3"
+                        />
+                      </picture>
+                    </a>
+                    <a
+                      href="https://www.veiligtatoeerenenpiercen.nl/vind-hier-je-studio"
+                      target="_blank"
+                    >
+                      <picture>
+                        <source srcSet={affiliate4} media="(min-width: 0px)" />
+                        <img
+                          src={affiliate4}
+                          alt
+                          className="hover-gray bb-logo-3"
+                        />
+                      </picture>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="we-notice-wrapper py-12">
+          <div className="we-notice">
+            <div className="grid grid-cols-3 gap-4">
+              <div className="col-span-1">
+                <div className="flex flex-col gap-10">
+                  <div className="title">
+                    <span className="m-0 p-0 font-playfair text-[32px] font-medium">
+                      Wij werken met deze
+                    </span>{" "}
+                    <h2 className="-mt-3 text-[50px] font-medium font-playfair">
+                      Merken{" "}
+                    </h2>
+                  </div>
+                </div>
+              </div>
+
+              <div className="col-span-2 flex flex-end">
+                <Swiper
+                  slidesPerView={3}
+                  spaceBetween={30}
+                  className="mySwiper"
+                  slidesPerGroup={1}
+                  modules={[Autoplay]}
+                  loop={true}
+                  autoplay={{ delay: 3000, disableOnInteraction: true }}
+                >
+                  {weNoticeArray.map((item) => (
+                    <>
+                      <SwiperSlide>
+                        <div
+                          style={{
+                            boxShadow:
+                              "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
+                          }}
+                          className="bg-white w-full h-[90%] rounded-lg cursor-pointer flex justify-center items-center"
+                        >
+                          <div className="img-area w-[80%] flex justify-center">
+                            <img src={item?.image} alt="" />
+                          </div>
+                        </div>
+                      </SwiperSlide>
+                    </>
+                  ))}
+                </Swiper>
               </div>
             </div>
           </div>

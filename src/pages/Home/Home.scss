@@ -173,3 +173,27 @@
   transform: scale(2.5);
   transition: all 0.5s ease-in-out 0.5s;
 }
+
+.affiliate-partner {
+  .nvh-logo {
+    opacity: 0.5;
+
+    &:hover {
+      opacity: 1;
+      transition: all 0.2s ease;
+      filter: none;
+    }
+  }
+
+  .hover-gray {
+    filter: gray;
+    filter: grayscale(1);
+    transition: all 0.2s ease;
+
+    &:hover {
+      filter: grayscale(0);
+      transition: all 0.2s ease;
+      filter: none;
+    }
+  }
+}
