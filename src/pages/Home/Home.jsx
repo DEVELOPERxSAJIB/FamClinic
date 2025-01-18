@@ -66,19 +66,20 @@ const Home = () => {
                 Welkom bij
               </p>
               <h2 className="font-playfair text-[64px] font-semibold mt-0">
-                Aphrodite Clinic
+                FamClinic
               </h2>
               <p className="max-w-[550px] font-normal text-[18px] mt-8">
-                Aphrodite Clinic verwelkomt u graag voor een breed palet aan
-                cosmetische en innovatieve huidverbeterende behandelingen in
-                haar paramedische kliniek in Nijmegen. Ons team van
-                gediplomeerde, specialistische huidtherapeuten volgt de nieuwste
-                ontwikkelingen en wordt getraind om u de best mogelijke
-                behandelingen te kunnen geven.
+                waar schoonheid, welzijn en zelfvertrouwen samenkomen. Vanaf het
+                moment dat je onze deuren binnenstapt, zul je de perfecte mix
+                van professionaliteit en warmte ervaren. Ons team is hier om je
+                natuurlijke schoonheid te verbeteren en je te helpen je op je
+                best te voelen. Of je nu op zoek bent naar een subtiele glow-up
+                of een volledige schoonheidsverandering, wij zijn er om het voor
+                je te realiseren
               </p>
               <div className="button-area pt-16 flex flex-col md:flex-row gap-5 items-center justify-center">
-                <a
-                  href="#"
+                <Link
+                  to="/about"
                   style={{
                     borderTopRightRadius: "25px",
                     borderBottomLeftRadius: "25px",
@@ -87,9 +88,9 @@ const Home = () => {
                   className="py-4 px-6 bg-[#F0DECA] text-[18px] font-semibold duration-300 ease-in-out translate-all hover:bg-[#F9EEDD] hover:transition-all hover:ease-out hover:duration-300"
                 >
                   Bekijk onze Behandelingen
-                </a>
-                <a
-                  href="#"
+                </Link>
+                <Link
+                  to="/about"
                   className="flex items-center gap-2 text-[18px] font-normal group"
                 >
                   Maak kennis met ons
@@ -102,7 +103,7 @@ const Home = () => {
                   >
                     <FiArrowRight />
                   </div>
-                </a>
+                </Link>
               </div>
             </div>
 
