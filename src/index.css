@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Trykker&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Trykker&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -7,6 +7,7 @@
   padding: 0;
   margin: 0;
   font-family: "Trykker", serif;
+  scroll-behavior: smooth;
 }
 
 p {
@@ -19,8 +20,8 @@ li {
 }
 
 body {
-  background-color: #FAF5EF;
-  color: #8D7B67;
+  background-color: #faf5ef;
+  color: #8d7b67;
 }
 
 .font-playfair {
@@ -28,22 +29,22 @@ body {
 }
 
 .main-menu {
-  --text-opacity : 1;
+  --text-opacity: 1;
   font-size: 16px;
   font-weight: 600;
   line-height: 24px;
   color: rgba(154, 165, 177, var(--text-opacity));
-  transition: all .3 ease-out;
-  transition-duration: .3s;
+  transition: all 0.3 ease-out;
+  transition-duration: 0.3s;
 }
 
 .main-menu:hover {
-  color: #8D7B67;
-  transition: all .3 ease-in;
-  transition-duration: .3s;
+  color: #8d7b67;
+  transition: all 0.3 ease-in;
+  transition-duration: 0.3s;
 }
 
 .active-menu .main-menu,
 .active-menu > .main-menu {
-  color: #8D7B67;
+  color: #8d7b67;
 }
