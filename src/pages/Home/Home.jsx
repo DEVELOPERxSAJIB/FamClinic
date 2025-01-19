@@ -58,10 +58,10 @@ const Home = () => {
   return (
     <>
       <div className="container mx-auto max-w-[1380px] px-4 sm:px-6 lg:px-10 z-0 relative md:px-10">
-        <div className="hero-wrapper py-12">
-          <div className="hero-section flex flex-col md:flex-row items-center">
-            {/* Content Area */}
-            <div className="content-area flex flex-col flex-1 md:w-1/2 mb-8 md:mb-0 md:items-start sm:items-start">
+        <div className="hero-wrapper pt-12">
+          <div className="hero-section grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 flex-col md:flex-row items-center">
+            
+            <div className="content-area flex flex-col mb-8 md:mb-0 md:items-start sm:items-start">
               <p className="font-playfair text-[40px] font-normal mb-0 pb-0">
                 Welkom bij
               </p>
@@ -107,41 +107,43 @@ const Home = () => {
               </div>
             </div>
 
-            {/* Image Area */}
-            <div
-              style={{
-                height: "540px",
-                width: "650px",
-                objectFit: "cover",
-              }}
-              className="image-area flex-1 flex justify-end md:w-1/2 md:justify-end sm:justify-center"
-            >
-              <img
-                src={heroImage}
-                alt="here-woman-image"
-                className="object-cover"
-              />
+            <div className="image-area flex justify-end md:justify-end sm:justify-center">
+              <div
+                className="image-area"
+                style={{
+                  height: "640px",
+                  width: "540px",
+                  objectFit: "cover",
+                }}
+              >
+                <img
+                  src={heroImage}
+                  alt="here-woman-image"
+                  className="object-contain lg:w-full md:w-full md:h-full sm:w-[75%]"
+                />
+              </div>
             </div>
+
           </div>
         </div>
 
-        <div className="treatment-wrapper py-12">
+        <div className="treatment-wrapper pt-6 md:pt-12">
           <div className="treatment-section">
-            <div className="title flex flex-col gap-5 items-center">
-              <h2 className="text-[50px] font-medium font-playfair">
+            <div className="title flex flex-col gap-5 items-center justify-center">
+              <h2 className="text-[50px] font-medium font-playfair text-center">
                 <span className="font-playfair text-[32px] font-medium">
                   Onze
                 </span>{" "}
                 Behandelingen
               </h2>
-              <p className="max-w-[690px] text-center text-[18px] font-normal">
+              <p className="md:max-w-[690px] text-center sm:text-[16px] md:text-[18px] font-normal">
                 Aphrodite staat bekend om haar hoge diversiteit aan kwalitatieve
                 behandelingen, specialistische vakkennis en hoogwaardige
                 producten en apparatuur.
               </p>
             </div>
-            <div className="all-treatments py-12">
-              <div className="cards-container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-12 gap-2">
+            <div className="all-treatments pt-12">
+              <div className="cards-container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-y-12 sm:gap-y-6 gap-10">
                 <div className="card">
                   <button className="mail">
                     <MdArrowCircleDown size={25} color="#8D7B67" />
@@ -414,7 +416,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="why-us-wrapper py-12">
+        {/* <div className="why-us-wrapper py-12">
           <div className="why-us flex items-center justify-between gap-5">
             <div className="image-section flex-1">
               <div
@@ -632,7 +634,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   );

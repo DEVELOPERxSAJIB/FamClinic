@@ -48,3 +48,7 @@ body {
 .active-menu > .main-menu {
   color: #8d7b67;
 }
+
+#hs-navbar-example {
+  transition: max-height 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
