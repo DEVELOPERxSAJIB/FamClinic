@@ -11,9 +11,9 @@ const Treatment = () => {
   return (
     <>
       <div className="contact-top mx-auto">
-        <section className="pb-8 lg:pb-32 bg-[url('https://pagedone.io/asset/uploads/1691055810.png')] bg-center bg-cover">
-          <div className="pb-56 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative text-center">
-            <h2 className="z-10 text-[#F0DECA] absolute inset-0 flex gap-3 items-center justify-center text-xl font-bold">
+        <section className="pb-8 lg:pb-32 bg-[url('https://img.freepik.com/premium-psd/beige-gradient-background-transitioning-from-light-dark-tones-isolated-transparent-png_846250-5827.jpg')] bg-center bg-cover">
+          <div className="pb-56 md:pb-56 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative text-center">
+            <h2 className="z-10 text-[#8d7b67] absolute inset-0 flex gap-3 items-center justify-center text-xl font-bold">
               <Link
                 to={"/"}
                 className="translate-all ease-in duration-300 hover:text-[#8D7B67] hover:duration-300 hover:ease-out"
@@ -25,14 +25,13 @@ const Treatment = () => {
           </div>
         </section>
 
-        <div className="-mt-48 relative flex flex-col items-center mx-auto lg:flex-row-reverse lg:max-w-5xl xl:max-w-6xl">
+        <div className="-mt-24 md:-mt-48 md:px-4 px-12 lg:px-10 relative flex flex-col items-center mx-auto lg:flex-row-reverse lg:max-w-5xl xl:max-w-6xl">
           <div
             style={{
-              width: "575px",
+              maxWidth: "575px",
               height: "575px",
               objectFit: "cover",
             }}
-            className="lg:w-1/2 lg:h-auto"
           >
             <img
               style={{
@@ -41,7 +40,7 @@ const Treatment = () => {
                 borderTopLeftRadius: "50px",
                 borderBottomLeftRadius: "10px",
               }}
-              className="h-full w-full object-cover"
+              className=" w-full md:w-full h-full object-cover"
               src={treatment1}
               alt="Winding mountain road"
             />
@@ -69,10 +68,8 @@ const Treatment = () => {
         </div>
       </div>
 
-
-      <div className="container mx-auto max-w-[1380px] px-4 sm:px-6 lg:px-10 z-0 relative md:px-10">
-
-        <div id="all-treatment" className="treatment-wrapper py-16">
+      <div className="pt-16 md:pt-24 container mx-auto max-w-[1380px]  px-4 sm:px-6 lg:px-10 z-0 relative md:px-10">
+        <div id="all-treatment" className="treatment-wrapper py-20">
           <div className="treatment-section">
             <div className="title flex items-end">
               <h2 className="text-[50px] font-medium font-playfair">
@@ -83,7 +80,7 @@ const Treatment = () => {
               </h2>
             </div>
             <div className="all-treatments py-12">
-              <div className="cards-container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-12 gap-2">
+              <div className="cards-container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-12 gap-10">
                 <div className="card">
                   <button className="mail">
                     <MdArrowCircleDown size={25} color="#8D7B67" />
@@ -355,7 +352,6 @@ const Treatment = () => {
             </div>
           </div>
         </div>
-
       </div>
     </>
   );

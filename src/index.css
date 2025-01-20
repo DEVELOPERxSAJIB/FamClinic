@@ -52,3 +52,17 @@ body {
 #hs-navbar-example {
   transition: max-height 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
+
+header {
+  transition: all 0.3s ease-in-out;
+}
+
+.sticky-animate {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.sticky-animate-reverse {
+  transform: translateY(0px);
+  opacity: 0.9;
+}
