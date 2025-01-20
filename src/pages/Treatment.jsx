@@ -40,12 +40,12 @@ const Treatment = () => {
                 borderTopLeftRadius: "50px",
                 borderBottomLeftRadius: "10px",
               }}
-              className=" w-full md:w-full h-full object-cover"
+              className="w-full md:w-full md:h-full h-3/4 object-cover"
               src={treatment1}
               alt="Winding mountain road"
             />
           </div>
-          <div className="max-w-lg bg-white md:max-w-2xl md:z-10 md:shadow-lg md:absolute md:top-0 md:mt-48 lg:w-3/5 lg:left-0 lg:mt-20 lg:ml-20 xl:mt-24 xl:ml-12">
+          <div className="-mt-48 max-w-lg bg-white md:max-w-2xl md:z-10 md:shadow-lg md:absolute md:top-0 md:mt-48 lg:w-3/5 lg:left-0 lg:mt-20 lg:ml-20 xl:mt-24 xl:ml-12">
             <div className="flex items-start flex-col p-12 md:px-16">
               <h2 className="text-2xl font-playfair font-medium lg:text-4xl">
                 Discover the Perfect Treatment for You with us.
@@ -69,11 +69,11 @@ const Treatment = () => {
       </div>
 
       <div className="pt-16 md:pt-24 container mx-auto max-w-[1380px]  px-4 sm:px-6 lg:px-10 z-0 relative md:px-10">
-        <div id="all-treatment" className="treatment-wrapper py-20">
+        <div id="all-treatment" className="treatment-wrapper md:pt-28 pt-28">
           <div className="treatment-section">
-            <div className="title flex items-end">
-              <h2 className="text-[50px] font-medium font-playfair">
-                <span className="font-playfair text-[32px] font-medium">
+            <div className="title flex items-end justify-center sm:justify-start">
+              <h2 className="text-3xl sm:text-4xl md:text-[50px] font-medium font-playfair text-center sm:text-left">
+                <span className="font-playfair text-xl sm:text-2xl md:text-[32px] font-medium">
                   Onze
                 </span>{" "}
                 Behandelingen
