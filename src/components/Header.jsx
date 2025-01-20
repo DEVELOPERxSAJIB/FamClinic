@@ -1,11 +1,12 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import mainLogo from "../assets/images/logo.png";
+import mainLogo from "../assets/images/logo/wall_logo.svg";
 import { AiOutlineMenu } from "react-icons/ai";
 import { RxCross1 } from "react-icons/rx";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isSticky, setIsSticky] = useState(false);
 
   const handleToggle = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -13,22 +14,47 @@ const Header = () => {
 
   const location = useLocation();
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsSticky(true);
+      } else {
+        setIsSticky(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <header className="bg-[#faf5eff6] flex flex-wrap sm:justify-start sm:flex-nowrap w-full text-sm py-6 md:py-0 lg:py-0 sticky top-0 z-50 md:shadow lg:shadow shadow-sm">
+    <header
+      className={`bg-[#faf5eff6] px-4 md:px-6 flex flex-wrap sm:justify-start sm:flex-nowrap w-full text-sm py-6 md:py-0 lg:py-0 sticky top-0 z-50 ${
+        isSticky ? "shadow-md sticky-animate" : "sticky-animate-reverse"
+      }`}
+    >
+      {" "}
       <nav className="max-w-[85rem] w-full mx-auto px-4 sm:overflow-hidden sm:flex sm:items-center sm:justify-between">
         <div className="flex items-center justify-between">
           <Link
-            className="flex-none text-xl font-semibold focus:outline-none focus:opacity-80"
+            className="flex-none text-xl font-semibold"
             to="/"
           >
             <div
               style={{
-                height: "100%",
-                width: "210px",
+                height: "80%",
+                width: "70px",
               }}
               className="logo-area"
             >
-              <img src={mainLogo} className="md:w-full md:h-full w-3/4" alt="main-logo" />
+              <img
+                src={mainLogo}
+                className="md:w-full md:h-full w-2/4"
+                alt="main-logo"
+              />
             </div>
           </Link>
           <div className="sm:hidden">

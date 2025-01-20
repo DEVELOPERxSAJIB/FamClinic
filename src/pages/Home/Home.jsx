@@ -57,10 +57,9 @@ const weNoticeArray = [
 const Home = () => {
   return (
     <>
-      <div className="container mx-auto max-w-[1380px] px-4 sm:px-6 lg:px-10 z-0 relative md:px-10">
-        <div className="hero-wrapper pt-12">
+      <div className="container mx-auto max-w-[1380px] md:px-4 px-8 lg:px-10 z-0 relative">
+        <div className="hero-wrapper md:pt-20 pt-16">
           <div className="hero-section grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 flex-col md:flex-row items-center">
-            
             <div className="content-area flex flex-col mb-8 md:mb-0 md:items-start sm:items-start">
               <p className="font-playfair text-[40px] font-normal mb-0 pb-0">
                 Welkom bij
@@ -123,11 +122,10 @@ const Home = () => {
                 />
               </div>
             </div>
-
           </div>
         </div>
 
-        <div className="treatment-wrapper pt-6 md:pt-12">
+        <div className="treatment-wrapper pt-8 md:pt-20">
           <div className="treatment-section">
             <div className="title flex flex-col gap-5 items-center justify-center">
               <h2 className="text-[50px] font-medium font-playfair text-center">
@@ -416,180 +414,168 @@ const Home = () => {
           </div>
         </div>
 
-        {/* <div className="why-us-wrapper py-12">
-          <div className="why-us flex items-center justify-between gap-5">
-            <div className="image-section flex-1">
-              <div
-                style={{
-                  height: "620px",
-                  maxWidth: "510px",
-                  objectFit: "cover",
-                }}
-                className="img-area"
-              >
+        <div className="why-us-wrapper grid grid-cols-1 md:grid-cols-2 pt-28 md:pt-40 lg:pt-40 gap-8">
+          <div className="why-us flex flex-col items-center gap-5 md:items-start">
+            <div className="image-section">
+              <div className="img-area h-[620px] max-w-[510px] w-full">
                 <img
-                  style={{ borderRadius: "30px" }}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full rounded-[30px] object-cover"
                   src={whyus}
                   alt="why-us-image"
+                  style={{
+                    borderTopRightRadius: "50px",
+                    borderBottomRightRadius: "50px",
+                    borderTopLeftRadius: "50px",
+                    borderBottomLeftRadius: "10px",
+                  }}
                 />
               </div>
             </div>
+          </div>
 
-            <div className="content-section flex-1 flex justify-end">
-              <div className="flex flex-col gap-5">
-                <div className="title">
-                  <span className="m-0 p-0 font-playfair text-[32px] font-medium">
-                    Waarom
-                  </span>{" "}
-                  <h2 className="-mt-3 text-[50px] font-medium font-playfair">
-                    Aphrodite Clinic?
-                  </h2>
-                </div>
+          <div className="content-section flex flex-col gap-5">
+            <div className="title">
+              <span className="font-playfair text-xl md:text-2xl font-medium">
+                Waarom
+              </span>
+              <h2 className="text-2xl md:text-4xl font-medium font-playfair">
+                Aphrodite Clinic?
+              </h2>
+            </div>
 
-                <div className="desc">
-                  <p className="max-w-[600px] text-[16px] font-normal">
-                    Persoonlijke aandacht, realistische
-                    huidverbeteringsperspectieven, vakkundig uitgevoerde
-                    behandelingen van de beste kwaliteit, uitgevoerd door
-                    specialisten met hoogwaardige medische apparatuur… Dat - en
-                    nog veel meer - vinden wij belangrijk als u met uw
-                    behandelingsvraag bij ons komt. Zo bieden wij u de zorg die
-                    uw huid verdient. Het team van Aphrodite Clinic staat graag
-                    voor u klaar om uw huid met de grootst mogelijke zorg te
-                    behandelen.
-                  </p>
-                  <ul className="py-6">
-                    <li className="flex items-center gap-1 py-1">
-                      <IoCheckmarkCircleOutline size={25} />
-                      <span className="text-[16px] text-[#5f5041] font-semibold">
-                        Uw huid is onze zorg
-                      </span>
-                    </li>
-                    <li className="flex items-center gap-1 py-1">
-                      <IoCheckmarkCircleOutline size={25} />
-                      <span className="text-[16px] text-[#5f5041] font-semibold">
-                        Persoonlijke, gastvrije benadering
-                      </span>
-                    </li>
-                    <li className="flex items-center gap-1 py-1">
-                      <IoCheckmarkCircleOutline size={25} />
-                      <span className="text-[16px] text-[#5f5041] font-semibold">
-                        Resultaat vanaf de eerste behandeling.
-                      </span>
-                    </li>
-                    <li className="flex items-center gap-1 py-1">
-                      <IoCheckmarkCircleOutline size={25} />
-                      <span className="text-[16px] text-[#5f5041] font-semibold">
-                        Realistisch advies
-                      </span>
-                    </li>
-                    <li className="flex items-center gap-1 py-1">
-                      <IoCheckmarkCircleOutline size={25} />
-                      <span className="text-[16px] text-[#5f5041] font-semibold">
-                        Gediplomeerde, gespecialiseerde huidtherapeuten
-                      </span>
-                    </li>
-                    <li className="flex items-center gap-1 py-1">
-                      <IoCheckmarkCircleOutline size={25} />
-                      <span className="text-[16px] text-[#5f5041] font-semibold">
-                        Grote diversiteit aan hoogwaardige behandelingen
-                      </span>
-                    </li>
-                    <li className="flex items-center gap-1 py-1">
-                      <IoCheckmarkCircleOutline size={25} />
-                      <span className="text-[16px] text-[#5f5041] font-semibold">
-                        Vrijblijvende intake, inclusief behandelplan op maat
-                      </span>
-                    </li>
-                    <li className="flex items-center gap-1 py-1">
-                      <IoCheckmarkCircleOutline size={25} />
-                      <span className="text-[16px] text-[#5f5041] font-semibold">
-                        Gecontracteerde zorg via alle zorgverzekeraars
-                      </span>
-                    </li>
-                  </ul>
-                </div>
+            <div className="desc">
+              <p className="text-base md:text-lg font-normal max-w-2xl">
+                Persoonlijke aandacht, realistische
+                huidverbeteringsperspectieven, vakkundig uitgevoerde
+                behandelingen van de beste kwaliteit, uitgevoerd door
+                specialisten met hoogwaardige medische apparatuur… Dat - en nog
+                veel meer - vinden wij belangrijk als u met uw behandelingsvraag
+                bij ons komt. Zo bieden wij u de zorg die uw huid verdient. Het
+                team van Aphrodite Clinic staat graag voor u klaar om uw huid
+                met de grootst mogelijke zorg te behandelen.
+              </p>
+              <ul className="py-6 space-y-2">
+                <li className="flex items-center gap-2">
+                  <IoCheckmarkCircleOutline size={20} />
+                  <span className="text-base text-[#5f5041] font-semibold">
+                    Uw huid is onze zorg
+                  </span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <IoCheckmarkCircleOutline size={20} />
+                  <span className="text-base text-[#5f5041] font-semibold">
+                    Persoonlijke, gastvrije benadering
+                  </span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <IoCheckmarkCircleOutline size={20} />
+                  <span className="text-base text-[#5f5041] font-semibold">
+                    Resultaat vanaf de eerste behandeling.
+                  </span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <IoCheckmarkCircleOutline size={20} />
+                  <span className="text-base text-[#5f5041] font-semibold">
+                    Realistisch advies
+                  </span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <IoCheckmarkCircleOutline size={20} />
+                  <span className="text-base text-[#5f5041] font-semibold">
+                    Gediplomeerde, gespecialiseerde huidtherapeuten
+                  </span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <IoCheckmarkCircleOutline size={20} />
+                  <span className="text-base text-[#5f5041] font-semibold">
+                    Grote diversiteit aan hoogwaardige behandelingen
+                  </span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <IoCheckmarkCircleOutline size={20} />
+                  <span className="text-base text-[#5f5041] font-semibold">
+                    Vrijblijvende intake, inclusief behandelplan op maat
+                  </span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <IoCheckmarkCircleOutline size={20} />
+                  <span className="text-base text-[#5f5041] font-semibold">
+                    Gecontracteerde zorg via alle zorgverzekeraars
+                  </span>
+                </li>
+              </ul>
+            </div>
 
-                <div className="affiliate-partner mt-8 lg:col-span-2 md:mt-6">
-                  <div
-                    style={{
-                      borderTopRightRadius: "20px",
-                      borderTopLeftRadius: "20px",
-                      borderBottomRightRadius: "20px",
-                    }}
-                    className="bg-[#F0DECA] px-4 py-2 inline-block ml-12 relative z-10 xs:ml-5"
-                  >
-                    <h4 className="font-semibold text-[16px] xs:text-sm">
-                      Wij zijn aangesloten bij
-                    </h4>
-                  </div>
-                  <div className="bg-white px-12 pt-8 pb-2 inline-flex items-center shadow rounded-lg -mt-5 lg:w-full lg:justify-between xs:px-6 xs:pt-8 xs:pb-3 xxs:px-5">
-                    <a
-                      href="https://www.huidtherapie.nl/"
-                      target="_blank"
-                      className="mr-10 xs:mr-4 xxs:mr-3"
-                    >
-                      <picture>
-                        <source srcSet={affiliate1} media="(min-width: 0px)" />
-                        <img
-                          src={affiliate1}
-                          alt
-                          className="hover-gray nvh-logo"
-                        />
-                      </picture>
-                    </a>
-                    <a
-                      href="https://www.kwaliteitsregisterparamedici.nl/default.aspx"
-                      target="_blank"
-                      className="mr-10 xs:mr-4 xxs:mr-3"
-                    >
-                      <picture>
-                        <source srcSet={affiliate2} media="(min-width: 0px)" />
-                        <img
-                          src={affiliate2}
-                          alt
-                          className="hover-gray kp-logo-2"
-                        />
-                      </picture>
-                    </a>
-                    <a
-                      href="https://www.s-bb.nl/"
-                      target="_blank"
-                      className="mr-10 xs:mr-4 xxs:mr-3"
-                    >
-                      <picture>
-                        <source srcSet={affiliate3} media="(min-width: 0px)" />
-                        <img
-                          src={affiliate3}
-                          alt
-                          className="hover-gray bb-logo-3"
-                        />
-                      </picture>
-                    </a>
-                    <a
-                      href="https://www.veiligtatoeerenenpiercen.nl/vind-hier-je-studio"
-                      target="_blank"
-                    >
-                      <picture>
-                        <source srcSet={affiliate4} media="(min-width: 0px)" />
-                        <img
-                          src={affiliate4}
-                          alt
-                          className="hover-gray bb-logo-3"
-                        />
-                      </picture>
-                    </a>
-                  </div>
-                </div>
+            <div className="affiliate-partner mt-8 lg:col-span-2 md:mt-6">
+              <div
+                style={{
+                  borderTopRightRadius: "25px",
+                  borderTopLeftRadius: "25px",
+                  borderBottomRightRadius: "25px",
+                  borderBottomLeftRadius: "0",
+                }}
+                className="bg-[#F0DECA] px-4 py-2 inline-block rounded-t-lg ml-0 md:ml-12"
+              >
+                <h4 className="font-semibold text-base">
+                  Wij zijn aangesloten bij
+                </h4>
+              </div>
+              <div className="bg-white -mt-4 px-12 py-4 rounded-lg grid grid-cols-2 md:grid-cols-4 flex-wrap items-center shadow lg:w-full lg:justify-between">
+                <a
+                  href="https://www.huidtherapie.nl/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mr-6 col-span-1 flex justify-center"
+                >
+                  <img
+                    src={affiliate1}
+                    alt="Affiliate 1"
+                    className="hover:opacity-80"
+                  />
+                </a>
+                <a
+                  href="https://www.kwaliteitsregisterparamedici.nl/default.aspx"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mr-6 col-span-1 flex justify-center"
+                >
+                  <img
+                    src={affiliate2}
+                    alt="Affiliate 2"
+                    className="hover:opacity-80"
+                  />
+                </a>
+                <a
+                  href="https://www.s-bb.nl/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mr-6 col-span-1 flex justify-center"
+                >
+                  <img
+                    src={affiliate3}
+                    alt="Affiliate 3"
+                    className="hover:opacity-80"
+                  />
+                </a>
+                <a
+                  href="https://www.veiligtatoeerenenpiercen.nl/vind-hier-je-studio"
+                  target="_blank"
+                  rel="noopener noreferrer col-span-1 flex justify-center"
+                >
+                  <img
+                    src={affiliate4}
+                    alt="Affiliate 4"
+                    className="hover:opacity-80"
+                  />
+                </a>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="we-notice-wrapper py-12">
+        <div className="we-notice-wrapper pt-28">
           <div className="we-notice">
-            <div className="grid grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               <div className="col-span-1">
                 <div className="flex flex-col gap-10">
                   <div className="title">
@@ -621,9 +607,9 @@ const Home = () => {
                             boxShadow:
                               "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
                           }}
-                          className="bg-white w-full h-[90%] rounded-lg cursor-pointer flex justify-center items-center"
+                          className="bg-white w-full h-full md:h-[90%] rounded-lg cursor-pointer flex justify-center items-center"
                         >
-                          <div className="img-area w-[80%] flex justify-center">
+                          <div className="img-area py-8 md:py-0 w-[80%] flex justify-center">
                             <img src={item?.image} alt="" />
                           </div>
                         </div>
@@ -634,7 +620,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-        </div> */}
+        </div>
       </div>
     </>
   );
