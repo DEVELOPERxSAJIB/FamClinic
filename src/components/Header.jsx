@@ -32,7 +32,7 @@ const Header = () => {
 
   return (
     <header
-      className={`bg-[#faf5eff6] px-4 md:px-6 flex flex-wrap sm:justify-start sm:flex-nowrap w-full text-sm py-6 md:py-0 lg:py-0 sticky top-0 z-50 ${
+      className={`bg-[#faf5eff6] px-4 md:px-6 flex flex-wrap sm:justify-start sm:flex-nowrap w-full text-sm py-6 md:py-0 lg:py-0 sticky top-0 z-10 ${
         isSticky ? "shadow-md sticky-animate" : "sticky-animate-reverse"
       }`}
     >

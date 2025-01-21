@@ -8,6 +8,7 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import { RxCross1 } from "react-icons/rx";
+import ScrollToTop from "../components/ScrollToTop";
 
 const schema = yup
   .object({
@@ -65,6 +66,7 @@ const Contact = () => {
 
   return (
     <>
+      <ScrollToTop />
       <div className="contact-top mx-auto">
         <div className="image max-w-full h-56 relative">
           <img
@@ -87,7 +89,7 @@ const Contact = () => {
         <div className="container max-w-[1380px] px-6 py-12 mx-auto">
           <div className="lg:flex lg:items-center lg:-mx-6">
             <div className="lg:w-1/2 lg:mx-6">
-              <h2 className="text-[64px] max-w-[90%] font-semibold">
+              <h2 className="text-[32px] md:text-[48px] lg:text-[64px] max-w-[90%] font-semibold text-start md:text-start">
                 Kom in contact met ons
               </h2>
               <div className="desc">
@@ -322,7 +324,7 @@ const Contact = () => {
                         className={`block w-full rounded-md px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm ${
                           contactLoading
                             ? "bg-[#8D7B67] cursor-not-allowed"
-                            :"bg-[#F0DECA] duration-300 ease-in text-[#8D7B67] hover:bg-[#F9EEDD] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#8D7B67]"
+                            : "bg-[#F0DECA] duration-300 ease-in text-[#8D7B67] hover:bg-[#F9EEDD] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#8D7B67]"
                         }`}
                       >
                         {contactLoading

@@ -4,16 +4,9 @@ import { Autoplay } from "swiper/modules";
 
 import { Link } from "react-router-dom";
 import { FiArrowRight } from "react-icons/fi";
-import { MdArrowCircleDown } from "react-icons/md";
-import { MdKeyboardArrowRight } from "react-icons/md";
-import { BsArrowRight } from "react-icons/bs";
 import { IoCheckmarkCircleOutline } from "react-icons/io5";
 
 import heroImage from "../../assets/images/hero-image-woman.png";
-
-import treatment1 from "../../assets/images/treatment/treatment-1.jpg";
-import treatment2 from "../../assets/images/treatment/treatment-2.jpg";
-import treatment3 from "../../assets/images/treatment/treatment-3.jpg";
 
 import whyus from "../../assets/images/whyus.jpg";
 
@@ -29,6 +22,8 @@ import notice4 from "../../assets/images/we-notice/notice-4.jpg";
 import notice5 from "../../assets/images/we-notice/notice-5.png";
 import notice6 from "../../assets/images/we-notice/notice-6.png";
 import notice7 from "../../assets/images/we-notice/notice-7.png";
+import TreatmentCards from "../../components/Home/TreatmentCards";
+import ScrollToTop from "../../components/ScrollToTop";
 
 const weNoticeArray = [
   {
@@ -57,6 +52,7 @@ const weNoticeArray = [
 const Home = () => {
   return (
     <>
+      <ScrollToTop />
       <div className="container mx-auto max-w-[1380px] md:px-4 px-8 lg:px-10 z-0 relative">
         <div className="hero-wrapper md:pt-20 pt-16">
           <div className="hero-section grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 flex-col md:flex-row items-center">
@@ -140,276 +136,19 @@ const Home = () => {
                 producten en apparatuur.
               </p>
             </div>
-            <div className="all-treatments pt-12">
-              <div className="cards-container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-y-12 sm:gap-y-6 gap-10">
-                <div className="card">
-                  <button className="mail">
-                    <MdArrowCircleDown size={25} color="#8D7B67" />
-                  </button>
-                  <div className="profile-pic">
-                    <img src={treatment1} alt="" />
-                  </div>
-                  <div className="bottom">
-                    <div className="content">
-                      <span className="name">Lasertherapie</span>
-                      <span className="desc">
-                        Onze behandelingen in de categorie
-                        &quot;Injectables&quot;
-                      </span>
-                      <ul className="pt-2">
-                        <li className="list-none">
-                          <div className="inline-flex gap-1 items-center transition-transform duration-300 hover:translate-x-3 hover:text-[#5f5041]">
-                            <MdKeyboardArrowRight size={20} />
-                            <span>Gezichtshaar laseren</span>
-                          </div>
-                        </li>
-                        <li className="list-none">
-                          <div className="inline-flex gap-1 items-center transition-transform duration-300 hover:translate-x-3 hover:text-[#5f5041]">
-                            <MdKeyboardArrowRight size={20} />
-                            <span>Okselhaar laseren</span>
-                          </div>
-                        </li>
-                        <li className="list-none">
-                          <div className="inline-flex gap-1 items-center transition-transform duration-300 hover:translate-x-3 hover:text-[#5f5041]">
-                            <MdKeyboardArrowRight size={20} />
-                            <span>Bikinilijn laseren</span>
-                          </div>
-                        </li>
-                        <li className="list-none">
-                          <div className="inline-flex gap-1 items-center transition-transform duration-300 hover:translate-x-3 hover:text-[#5f5041]">
-                            <MdKeyboardArrowRight size={20} />
-                            <span>Lichaamshaar laseren</span>
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
-                    <div className="bottom-bottom">
-                      <div className="social-links-container">
-                        Lasertherapie
-                      </div>
-                      <Link
-                        to={"/"}
-                        className="button bg-[#FAF5EF] py-1 px-3 text-[14px] font-medium rounded-md flex gap-2 items-center transition-all duration-300 group"
-                      >
-                        Meer behandelingen
-                        <BsArrowRight className="transition-all duration-300 group-hover:translate-x-1" />
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-                <div className="card">
-                  <button className="mail">
-                    <MdArrowCircleDown size={25} color="#8D7B67" />
-                  </button>
-                  <div className="profile-pic">
-                    <img src={treatment2} alt="" />
-                  </div>
-                  <div className="bottom">
-                    <div className="content">
-                      <span className="name">Mesoestetic</span>
-                      <span className="desc">
-                        Onze behandelingen in de categorie
-                        &quot;Injectables&quot;
-                      </span>
-                      <ul className="pt-2">
-                        <li className="list-none">
-                          <div className="inline-flex gap-1 items-center transition-transform duration-300 hover:translate-x-3 hover:text-[#5f5041]">
-                            <MdKeyboardArrowRight size={20} />
-                            <span>Gezichtshaar laseren</span>
-                          </div>
-                        </li>
-                        <li className="list-none">
-                          <div className="inline-flex gap-1 items-center transition-transform duration-300 hover:translate-x-3 hover:text-[#5f5041]">
-                            <MdKeyboardArrowRight size={20} />
-                            <span>Okselhaar laseren</span>
-                          </div>
-                        </li>
-                        <li className="list-none">
-                          <div className="inline-flex gap-1 items-center transition-transform duration-300 hover:translate-x-3 hover:text-[#5f5041]">
-                            <MdKeyboardArrowRight size={20} />
-                            <span>Bikinilijn laseren</span>
-                          </div>
-                        </li>
-                        <li className="list-none">
-                          <div className="inline-flex gap-1 items-center transition-transform duration-300 hover:translate-x-3 hover:text-[#5f5041]">
-                            <MdKeyboardArrowRight size={20} />
-                            <span>Lichaamshaar laseren</span>
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
-                    <div className="bottom-bottom">
-                      <div className="social-links-container">Mesoestetic</div>
-                      <Link
-                        to={"/"}
-                        className="button bg-[#FAF5EF] py-1 px-3 text-[14px] font-medium rounded-md flex gap-2 items-center transition-all duration-300 group"
-                      >
-                        Meer behandelingen
-                        <BsArrowRight className="transition-all duration-300 group-hover:translate-x-1" />
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-                <div className="card">
-                  <button className="mail">
-                    <MdArrowCircleDown size={25} color="#8D7B67" />
-                  </button>
-                  <div className="profile-pic">
-                    <img src={treatment3} alt="" />
-                  </div>
-                  <div className="bottom">
-                    <div className="content">
-                      <span className="name">Permanente Make-up</span>
-                      <span className="desc">
-                        Onze behandelingen in de categorie
-                        &quot;Injectables&quot;
-                      </span>
-                      <ul className="pt-2">
-                        <li className="list-none">
-                          <div className="inline-flex gap-1 items-center transition-transform duration-300 hover:translate-x-3 hover:text-[#5f5041]">
-                            <MdKeyboardArrowRight size={20} />
-                            <span>Gezichtshaar laseren</span>
-                          </div>
-                        </li>
-                        <li className="list-none">
-                          <div className="inline-flex gap-1 items-center transition-transform duration-300 hover:translate-x-3 hover:text-[#5f5041]">
-                            <MdKeyboardArrowRight size={20} />
-                            <span>Okselhaar laseren</span>
-                          </div>
-                        </li>
-                        <li className="list-none">
-                          <div className="inline-flex gap-1 items-center transition-transform duration-300 hover:translate-x-3 hover:text-[#5f5041]">
-                            <MdKeyboardArrowRight size={20} />
-                            <span>Bikinilijn laseren</span>
-                          </div>
-                        </li>
-                        <li className="list-none">
-                          <div className="inline-flex gap-1 items-center transition-transform duration-300 hover:translate-x-3 hover:text-[#5f5041]">
-                            <MdKeyboardArrowRight size={20} />
-                            <span>Lichaamshaar laseren</span>
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
-                    <div className="bottom-bottom">
-                      <div className="social-links-container">Make-up</div>
-                      <Link
-                        to={"/"}
-                        className="button bg-[#FAF5EF] py-1 px-3 text-[14px] font-medium rounded-md flex gap-2 items-center transition-all duration-300 group"
-                      >
-                        Meer behandelingen
-                        <BsArrowRight className="transition-all duration-300 group-hover:translate-x-1" />
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-                <div className="card">
-                  <button className="mail">
-                    <MdArrowCircleDown size={25} color="#8D7B67" />
-                  </button>
-                  <div className="profile-pic">
-                    <img src={treatment2} alt="" />
-                  </div>
-                  <div className="bottom">
-                    <div className="content">
-                      <span className="name">Mesoestetic</span>
-                      <span className="desc">
-                        Onze behandelingen in de categorie
-                        &quot;Injectables&quot;
-                      </span>
-                      <ul className="pt-2">
-                        <li className="list-none">
-                          <div className="inline-flex gap-1 items-center transition-transform duration-300 hover:translate-x-3 hover:text-[#5f5041]">
-                            <MdKeyboardArrowRight size={20} />
-                            <span>Gezichtshaar laseren</span>
-                          </div>
-                        </li>
-                        <li className="list-none">
-                          <div className="inline-flex gap-1 items-center transition-transform duration-300 hover:translate-x-3 hover:text-[#5f5041]">
-                            <MdKeyboardArrowRight size={20} />
-                            <span>Okselhaar laseren</span>
-                          </div>
-                        </li>
-                        <li className="list-none">
-                          <div className="inline-flex gap-1 items-center transition-transform duration-300 hover:translate-x-3 hover:text-[#5f5041]">
-                            <MdKeyboardArrowRight size={20} />
-                            <span>Bikinilijn laseren</span>
-                          </div>
-                        </li>
-                        <li className="list-none">
-                          <div className="inline-flex gap-1 items-center transition-transform duration-300 hover:translate-x-3 hover:text-[#5f5041]">
-                            <MdKeyboardArrowRight size={20} />
-                            <span>Lichaamshaar laseren</span>
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
-                    <div className="bottom-bottom">
-                      <div className="social-links-container">Mesoestetic</div>
-                      <Link
-                        to={"/"}
-                        className="button bg-[#FAF5EF] py-1 px-3 text-[14px] font-medium rounded-md flex gap-2 items-center transition-all duration-300 group"
-                      >
-                        Meer behandelingen
-                        <BsArrowRight className="transition-all duration-300 group-hover:translate-x-1" />
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-                <div className="card">
-                  <button className="mail">
-                    <MdArrowCircleDown size={25} color="#8D7B67" />
-                  </button>
-                  <div className="profile-pic">
-                    <img src={treatment3} alt="" />
-                  </div>
-                  <div className="bottom">
-                    <div className="content">
-                      <span className="name">Permanente Make-up</span>
-                      <span className="desc">
-                        Onze behandelingen in de categorie
-                        &quot;Injectables&quot;
-                      </span>
-                      <ul className="pt-2">
-                        <li className="list-none">
-                          <div className="inline-flex gap-1 items-center transition-transform duration-300 hover:translate-x-3 hover:text-[#5f5041]">
-                            <MdKeyboardArrowRight size={20} />
-                            <span>Gezichtshaar laseren</span>
-                          </div>
-                        </li>
-                        <li className="list-none">
-                          <div className="inline-flex gap-1 items-center transition-transform duration-300 hover:translate-x-3 hover:text-[#5f5041]">
-                            <MdKeyboardArrowRight size={20} />
-                            <span>Okselhaar laseren</span>
-                          </div>
-                        </li>
-                        <li className="list-none">
-                          <div className="inline-flex gap-1 items-center transition-transform duration-300 hover:translate-x-3 hover:text-[#5f5041]">
-                            <MdKeyboardArrowRight size={20} />
-                            <span>Bikinilijn laseren</span>
-                          </div>
-                        </li>
-                        <li className="list-none">
-                          <div className="inline-flex gap-1 items-center transition-transform duration-300 hover:translate-x-3 hover:text-[#5f5041]">
-                            <MdKeyboardArrowRight size={20} />
-                            <span>Lichaamshaar laseren</span>
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
-                    <div className="bottom-bottom">
-                      <div className="social-links-container">Make-up</div>
-                      <Link
-                        to={"/"}
-                        className="button bg-[#FAF5EF] py-1 px-3 text-[14px] font-medium rounded-md flex gap-2 items-center transition-all duration-300 group"
-                      >
-                        Meer behandelingen
-                        <BsArrowRight className="transition-all duration-300 group-hover:translate-x-1" />
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <TreatmentCards limit={6} />
+            <div className="button-area pt-16 flex flex-col md:flex-row gap-5 items-center justify-center">
+              <Link
+                to="/treatment"
+                style={{
+                  borderTopRightRadius: "25px",
+                  borderBottomLeftRadius: "25px",
+                  borderBottomRightRadius: "25px",
+                }}
+                className="py-4 px-6 bg-[#F0DECA] shadow-md text-[18px] font-semibold duration-300 ease-in-out translate-all hover:bg-[#F9EEDD] hover:transition-all hover:ease-out hover:duration-300"
+              >
+                Bekijk onze Behandelingen
+              </Link>
             </div>
           </div>
         </div>
