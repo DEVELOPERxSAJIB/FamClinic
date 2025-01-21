@@ -26,7 +26,7 @@ const SingleTreatment = () => {
             </p>
           </div>
           {/*Grid*/}
-          <div className="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-8 lg:space-y-0 lg:items-center">
+          <div className="space-y-8 mb-36 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-8 lg:space-y-0 lg:items-center">
             <div className="hover:scale-105 duration-500 group relative flex flex-col mx-auto w-full max-w-sm bg-white rounded-2xl shadow-lg transition-all px-8 xl:px-12  ">
               <div className="border-b border-solid border-gray-200 pb-9 mb-9">
                 {/* <div className="w-16 h-16 rounded-full bg-indigo-50 mx-auto flex justify-center items-center transition-all duration-300 group-hover:bg-indigo-600">
@@ -403,7 +403,6 @@ const SingleTreatment = () => {
               </a> */}
               {/*List End*/}
             </div>
-
           </div>
           {/*Grid End*/}
         </div>
