@@ -26,7 +26,7 @@ const schema = yup
   .required();
 
 export default function GlobalPopup() {
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
   const [agreed, setAgreed] = useState(false);
   console.log(agreed);
 
@@ -50,7 +50,7 @@ export default function GlobalPopup() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setOpen(true);
-    }, 30000);
+    }, 10000);
 
     return () => clearTimeout(timer);
   }, []);
