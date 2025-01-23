@@ -1,7 +1,10 @@
 import { Link } from "react-router-dom";
 import footerLogo from "../assets/images/logo.png";
+import treatments from "../data/treatment";
 
 const Footer = () => {
+  const recentTreatments = treatments.slice(-5);
+
   return (
     <footer className="">
       <div className="mx-auto w-full max-w-screen-xl md:px-0 px-8 p-4 py-6 lg:py-8">
@@ -21,46 +24,16 @@ const Footer = () => {
                 Treatments
               </h2>
               <ul className="text-gray-500 dark:text-gray-400 font-medium">
-                <li className="mb-4">
-                  <Link
-                    to="/treatment/Lasertherapie"
-                    className="hover:underline"
-                  >
-                    Lasertherapie
-                  </Link>
-                </li>
-                <li className="mb-4">
-                  <Link
-                    to="/treatment/Lasertherapie"
-                    className="hover:underline"
-                  >
-                    Mesoestetic
-                  </Link>
-                </li>
-                <li className="mb-4">
-                  <Link
-                    to="/treatment/Lasertherapie"
-                    className="hover:underline"
-                  >
-                    Permanente Make-up
-                  </Link>
-                </li>
-                <li className="mb-4">
-                  <Link
-                    to="/treatment/Lasertherapie"
-                    className="hover:underline"
-                  >
-                    Mesoestetic
-                  </Link>
-                </li>
-                <li className="mb-4">
-                  <Link
-                    to="/treatment/Lasertherapie"
-                    className="hover:underline"
-                  >
-                    Permanente Make-up
-                  </Link>
-                </li>
+                {recentTreatments.map((item) => (
+                  <li className="mb-4" key={item?.id}>
+                    <Link
+                      to={`/treatment/${item?.slug}`}
+                      className="hover:underline"
+                    >
+                      {item?.name}
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </div>
             <div>
@@ -84,6 +57,11 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li className="mb-4">
+                  <Link to="/pricing" className="hover:underline">
+                    Price
+                  </Link>
+                </li>
+                <li className="mb-4">
                   <Link to="/about" className="hover:underline">
                     Contact
                   </Link>
@@ -98,7 +76,11 @@ const Footer = () => {
         <div className="flex justify-between sm:flex sm:items-center sm:justify-between">
           <span className="text-sm text-[16px] w-1/3">
             Design and Developed by{" "}
-            <a href="#" className="hover:underline font-semibold">
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/mdsajibshikder/"
+              className="hover:underline font-semibold"
+            >
               Md Sajib Shikder
             </a>
           </span>

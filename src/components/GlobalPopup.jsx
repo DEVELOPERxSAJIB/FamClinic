@@ -27,7 +27,6 @@ const schema = yup
 export default function GlobalPopup() {
   const [open, setOpen] = useState(false);
   const [agreed, setAgreed] = useState(false);
-  console.log(agreed);
 
   const {
     register,
@@ -46,13 +45,13 @@ export default function GlobalPopup() {
 
   const [contactLoading, setContactLoading] = useState(false);
 
-  // useEffect(() => {
-  //   const timer = setTimeout(() => {
-  //     setOpen(true);
-  //   }, 10000);
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setOpen(true);
+    }, 10000);
 
-  //   return () => clearTimeout(timer);
-  // }, []);
+    return () => clearTimeout(timer);
+  }, []);
 
   return (
     <Dialog open={open} onClose={setOpen} className="relative z-50">
@@ -71,7 +70,6 @@ export default function GlobalPopup() {
               <div className="sm:flex sm:items-center">
                 <div className="mx-auto flex size-12 shrink-0 items-center justify-center rounded-full bg-[#8d7b67] sm:mx-0 sm:size-10">
                 <TbInfoTriangle
-                    aria-hidden="true"
                     className="size-6 text-[#F0DECA]"
                   />
                 </div>

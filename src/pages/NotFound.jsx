@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 
 const NotFound = () => {
@@ -23,7 +22,6 @@ const NotFound = () => {
         </Link>
         <div
           className="grid grid-cols-3 gap-4 max-w-2xl mx-auto"
-          aria-hidden="true"
         ></div>
       </main>
     </div>
