@@ -8,6 +8,8 @@ import Footer from "./components/Footer";
 import Treatment from "./pages/Treatment";
 import SingleTreatment from "./pages/SingleTreatment";
 import GlobalPopup from "./components/GlobalPopup";
+import Price from "./pages/Price";
+import NotFound from "./pages/NotFound";
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
           <Route path="/treatment" element={<Treatment />} />
           <Route path="/treatment/:slug" element={<SingleTreatment />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/pricing" element={<Price />} />
+          <Route path="/*" element={<NotFound />} />
         </Routes>
         <Footer />
       </BrowserRouter>

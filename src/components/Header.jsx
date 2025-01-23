@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import mainLogo from "../assets/images/logo/wall_logo.svg";
+import mainLogo from "../assets/images/logo/demoLogo.jpg";
 import { AiOutlineMenu } from "react-icons/ai";
 import { RxCross1 } from "react-icons/rx";
 
@@ -32,21 +32,18 @@ const Header = () => {
 
   return (
     <header
-      className={`bg-[#faf5eff6] px-4 md:px-6 flex flex-wrap sm:justify-start sm:flex-nowrap w-full text-sm py-6 md:py-0 lg:py-0 sticky top-0 z-10 ${
+      className={`bg-[#faf5eff6] px-4 md:px-6 flex flex-wrap sm:justify-start sm:flex-nowrap w-full text-sm py-6 md:py-0 lg:py-0 sticky top-0 z-30 ${
         isSticky ? "shadow-md sticky-animate" : "sticky-animate-reverse"
       }`}
     >
       {" "}
       <nav className="max-w-[85rem] w-full mx-auto px-4 sm:overflow-hidden sm:flex sm:items-center sm:justify-between">
         <div className="flex items-center justify-between">
-          <Link
-            className="flex-none text-xl font-semibold"
-            to="/"
-          >
+          <Link className="flex-none text-xl font-semibold" to="/">
             <div
               style={{
-                height: "80%",
-                width: "70px",
+                height: "120%",
+                width: "280px",
               }}
               className="logo-area"
             >
@@ -107,7 +104,13 @@ const Header = () => {
                 Treatment
               </Link>
             </li>
-
+            <li
+              className={location.pathname === "/pricing" ? "active-menu" : ""}
+            >
+              <Link className="main-menu" to={"/pricing"}>
+                Price
+              </Link>
+            </li>
             <li
               className={location.pathname === "/contact" ? "active-menu" : ""}
             >
