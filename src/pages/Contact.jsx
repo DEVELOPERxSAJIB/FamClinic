@@ -9,6 +9,8 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import { RxCross1 } from "react-icons/rx";
 import ScrollToTop from "../components/ScrollToTop";
+import emailjs from "@emailjs/browser";
+import Swal from "sweetalert2";
 
 const schema = yup
   .object({
@@ -23,7 +25,6 @@ const schema = yup
 
 const Contact = () => {
   const [agreed, setAgreed] = useState(false);
-  console.log(agreed);
 
   const {
     register,
@@ -36,33 +37,57 @@ const Contact = () => {
 
   const contactForm = useRef();
 
-  const onSubmit = (data) => {
-    console.log(data);
-  };
+  // const sendContactEmail = (data) => {
+  //   console.log(data);
+  // };
 
   const [contactLoading, setContactLoading] = useState(false);
-  const [successMessageContact, setSucessMessageContact] = useState(true);
+  const [successMessageContact, setSucessMessageContact] = useState(false);
 
-  // const sendContactEmail = () => {
-  //   setContactLoading(true);
-  //   emailjs
-  //     .sendForm("service_jmbaz6f", "template_cx2se4d", contactForm.current, {
-  //       publicKey: "XjCo6NzTjIPpv5zQw",
-  //     })
-  //     .then(
-  //       () => {
-  //         console.log("SUCCESS!");
-  //         setSucessMessageContact(true);
-  //         reset();
-  //       },
-  //       (error) => {
-  //         console.log("FAILED...", error.text);
-  //       }
-  //     )
-  //     .finally(() => {
-  //       setContactLoading(false);
-  //     });
-  // };
+  const sendContactEmail = () => {
+    if (!contactForm.current) {
+      console.error("Contact form is not properly referenced.");
+      return;
+    }
+
+    setContactLoading(true);
+
+    emailjs
+      .sendForm(
+        "service_11fps2d",
+        "template_aqzggyd",
+        contactForm.current,
+        "EvXDWKD5IdYSwROnn"
+      )
+      .then(
+        () => {
+          console.log("SUCCESS!");
+          Swal.fire({
+            title: "Thank you",
+            text: "We'll be sending you an email shortly!",
+            icon: "success",
+            showCancelButton: true,
+            cancelButtonColor: "#8d7b67",
+            cancelButtonText: "Close",
+            showConfirmButton: false,
+
+            customClass: {
+              popup: "custom-swal-popup",
+              title: "custom-swal-title",
+              htmlContainer: "custom-swal-text",
+            },
+          });
+          setSucessMessageContact(true);
+          reset();
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      )
+      .finally(() => {
+        setContactLoading(false);
+      });
+  };
 
   return (
     <>
@@ -143,7 +168,10 @@ const Contact = () => {
             </div>
             <div className="mt-8 lg:w-1/2 lg:mx-6">
               <div className="xxs:mt-48">
-                <form onSubmit={handleSubmit(onSubmit)} ref={contactForm}>
+                <form
+                  onSubmit={handleSubmit(sendContactEmail)}
+                  ref={contactForm}
+                >
                   {successMessageContact && (
                     <div className="flex bg-[#F9EEDD] w-full p-3 rounded-md justify-between items-center my-3 shadow">
                       <span
@@ -207,7 +235,6 @@ const Contact = () => {
                           )}
                         </div>
                       </div>
-
                       <div className="sm:col-span-2">
                         <label
                           htmlFor="email"
@@ -229,7 +256,6 @@ const Contact = () => {
                           )}
                         </div>
                       </div>
-
                       <div>
                         <label
                           htmlFor="phone"
@@ -272,7 +298,6 @@ const Contact = () => {
                           )}
                         </div>
                       </div>
-
                       <div className="sm:col-span-2">
                         <label
                           htmlFor="message"
@@ -298,13 +323,20 @@ const Contact = () => {
                         <div className="flex h-6 items-center">
                           <Switch
                             checked={agreed}
-                            onChange={setAgreed}
+                            onChange={(checked) => {
+                              setAgreed(checked);
+                              const hiddenInput =
+                                document.getElementById("agreedHiddenInput");
+                              if (hiddenInput) {
+                                hiddenInput.value = checked
+                                  ? "Client agreed to our privacy and policy"
+                                  : "Client disagreed to our privacy and policy";
+                              }
+                            }}
                             className="group flex w-8 flex-none cursor-pointer rounded-full bg-gray-200 p-px ring-1 ring-inset ring-gray-900/5 transition-colors duration-200 ease-in-out focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 data-[checked]:bg-[#8D7B67]"
                           >
                             <span className="sr-only">Agree to policies</span>
-                            <span
-                              className="size-4 transform rounded-full bg-white shadow-sm ring-1 ring-gray-900/5 transition duration-200 ease-in-out group-data-[checked]:translate-x-3.5"
-                            />
+                            <span className="size-4 transform rounded-full bg-white shadow-sm ring-1 ring-gray-900/5 transition duration-200 ease-in-out group-data-[checked]:translate-x-3.5" />
                           </Switch>
                         </div>
                         <Label className="text-sm/6">
@@ -314,6 +346,16 @@ const Contact = () => {
                           </a>
                           .
                         </Label>
+                        <input
+                          type="hidden"
+                          name="privacy"
+                          id="agreedHiddenInput"
+                          value={
+                            agreed
+                              ? "Client agreed to our privacy and policy"
+                              : "Client disagreed to our privacy and policy"
+                          }
+                        />
                       </Field>
                     </div>
                     <div className="mt-3">
@@ -322,12 +364,12 @@ const Contact = () => {
                         disabled={contactLoading}
                         className={`block w-full rounded-md px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm ${
                           contactLoading
-                            ? "bg-[#8D7B67] cursor-not-allowed"
+                            ? "bg-[#8D7B67] text-[#fff]"
                             : "bg-[#F0DECA] duration-300 ease-in text-[#8D7B67] hover:bg-[#F9EEDD] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#8D7B67]"
                         }`}
                       >
                         {contactLoading
-                          ? "Sending your mail . . ."
+                          ? "Sending mail..."
                           : "Let's talk"}
                       </button>
                     </div>

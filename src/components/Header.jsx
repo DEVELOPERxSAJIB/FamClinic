@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import mainLogo from "../assets/images/logo/demoLogo.jpg";
+import mainLogo from "../assets/images/logo/new_logo.jpg";
 import { AiOutlineMenu } from "react-icons/ai";
 import { RxCross1 } from "react-icons/rx";
 

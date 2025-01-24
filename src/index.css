@@ -66,3 +66,21 @@ header {
   transform: translateY(0px);
   opacity: 0.9;
 }
+
+/* Sweet alert Popup */
+.custom-swal-popup {
+  background-color: #faf5ef;
+}
+
+.custom-swal-title {
+  color: #8d7b67;
+}
+
+.custom-swal-text {
+  color: #8d7b67;
+  font-weight: 500;
+}
+
+div:where(.swal2-icon).swal2-success .swal2-success-ring {
+  border: 0.25em solid #8d7b67;
+}
