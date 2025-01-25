@@ -24,6 +24,7 @@ import notice6 from "../../assets/images/we-notice/notice-6.png";
 import notice7 from "../../assets/images/we-notice/notice-7.png";
 import TreatmentCards from "../../components/Home/TreatmentCards";
 import ScrollToTop from "../../components/ScrollToTop";
+import { useTranslation } from "react-i18next";
 
 const weNoticeArray = [
   {
@@ -50,8 +51,11 @@ const weNoticeArray = [
 ];
 
 const Home = () => {
+  const [t] = useTranslation("global");
+
   return (
     <>
+      <h1 className="text-3xl">{t("header.message")}</h1>
       <ScrollToTop />
       <div className="container mx-auto max-w-[1380px] md:px-4 px-8 lg:px-10 z-0 relative">
         <div className="hero-wrapper md:pt-20 pt-16">

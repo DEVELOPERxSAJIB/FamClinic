@@ -1,0 +1,8 @@
+{
+    "header" : {
+        "message" : "Hoe gaat het vandaag met je?"
+    },
+    "home" : {
+        "body" : "Dit is de tekst van de heldensectie"
+    }
+}

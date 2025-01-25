@@ -3,6 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import mainLogo from "../assets/images/logo/new_logo.jpg";
 import { AiOutlineMenu } from "react-icons/ai";
 import { RxCross1 } from "react-icons/rx";
+import { useTranslation } from "react-i18next";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -13,6 +14,23 @@ const Header = () => {
   };
 
   const location = useLocation();
+
+  // change language
+  const { i18n } = useTranslation("global");
+  const [input, setInput] = useState({
+    language: "en",
+  });
+
+  // Update state when the select input changes
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setInput((prevState) => ({
+      ...prevState,
+      [name]: value,
+    }));
+
+    i18n.changeLanguage(value);
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -54,6 +72,7 @@ const Header = () => {
               />
             </div>
           </Link>
+
           <div className="sm:hidden">
             <button
               type="button"
@@ -83,6 +102,22 @@ const Header = () => {
             onClick={() => setIsMenuOpen(false)}
             className="flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-end mt-8 sm:mt-0 sm:ps-5"
           >
+            <li className="inline-flex">
+              <form className="flex justify-end">
+                <select
+                  id="countries"
+                  value={input.language}
+                  onChange={handleInputChange}
+                  name="language"
+                  className="border border-[#8d7b67] text-sm rounded-lg focus:ring-[#8d7b67] focus:border-[#8d7b67] block text-[16px] font-bold p-2"
+                >
+                  <option key={1} value="en" selected>
+                    En
+                  </option>
+                  <option key={2} value="nl">Nl</option>
+                </select>
+              </form>
+            </li>
             <li className={location.pathname === "/" ? "active-menu" : ""}>
               <Link to={"/"} className="main-menu" aria-current="page">
                 Home

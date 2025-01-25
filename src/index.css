@@ -84,3 +84,8 @@ header {
 div:where(.swal2-icon).swal2-success .swal2-success-ring {
   border: 0.25em solid #8d7b67;
 }
+
+select#countries:focus-visible {
+  outline: none;
+  border: 1px solid #8d7b67;
+}
