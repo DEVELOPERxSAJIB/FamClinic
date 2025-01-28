@@ -1,0 +1,15 @@
+{
+  "footer": {
+    "copyrightText": "© 2025 FamClinic. <br/> All rights reserved.",
+    "designAndDevelopedBy": "Design and Developed by",
+    "devName": "Md Sajib Shikder",
+
+    "menu": {
+      "home": "Home",
+      "about": "About",
+      "treatment": "Treatment",
+      "price": "Price",
+      "contact": "Contact"
+    }
+  }
+}

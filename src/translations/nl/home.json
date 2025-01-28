@@ -1,0 +1,42 @@
+{
+  "heroSection": {
+    "hero_subtitle": "Welkom bij ",
+    "hero_title": "FamClinic",
+    "hero_description": "Aar schoonheid, welzijn en zelfvertrouwen samenkomen. Vanaf het moment dat je onze deuren binnenstapt, zul je de perfecte mix van professionaliteit en warmte ervaren. Ons team is hier om je natuurlijke schoonheid te verbeteren en je te helpen je op je best te voelen. Of je nu op zoek bent naar een subtiele glow-up of een volledige schoonheidsverandering, wij zijn er om het voor je te realiseren.",
+    "hero_cta": "Klaar om je schoonheidsreis te beginnen? Neem vandaag contact met ons op om meer te leren of boek je eerste bezoek! Je verdient het om te stralen!"
+  },
+
+  "treatmentSection": {
+    "subtitle": "Onze",
+    "title": "Behandelingen",
+    "description": "De Fam Clinic staat bekend om haar uitgebreide aanbod van kwalitatieve behandelingen, specialistische vakkennos en het gebruik van hoogwaardige producten en geavanceerde apparatuur."
+  },
+
+  "treatments": {
+    "seeMore": "Bekijk onze Behandelingen",
+
+    "laser-therapie": {
+      "name": "Laser Therapie",
+      "description": "Een zeer effectieve behandeling die geconcentreerde lichtstralen gebruikt om verschillende huidproblemen aan te pakken, waaronder pigmentatie, acne-littekens en fijne lijntjes."
+    },
+
+    "de-services": {
+      "name": "Basis Reiniging",
+      "description": "Een verfrissende gezichtsbehandeling om onzuiverheden, make-upresten en overtollige oliën te verwijderen. Ideaal voor het behouden van de dagelijkse huidgezondheid"
+    },
+
+    "title": "Laser Therapie",
+    "description": "Een zeer effectieve behandeling die geconcentreerde lichtstralen gebruikt om erschillende huidproblemen aan te pakken, waaronder pigmentatie, acne-littekens en fijne lijntjes.",
+    "benefits": {
+      "reducesHyperpigmentation": "Vermindert hyperpigmentatie,",
+      "improvesSkinTexture,": "erbetert de huidtextuur",
+      "stimulatesCollagen": "stimuleert de collageenproductie en",
+      "enhancesRadianceWithMinimalDowntime.": "verbetert de uitstraling met minimale herstelperiode"
+    }
+  },
+
+  "weNotice": {
+    "title": "Merken",
+    "subtitle": "Waarmee we werken"
+  }
+}

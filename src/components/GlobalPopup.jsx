@@ -88,13 +88,13 @@ export default function GlobalPopup() {
       });
   };
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setOpen(true);
-    }, 10000);
+  // useEffect(() => {
+  //   const timer = setTimeout(() => {
+  //     setOpen(true);
+  //   }, 10000);
 
-    return () => clearTimeout(timer);
-  }, []);
+  //   return () => clearTimeout(timer);
+  // }, []);
 
   return (
     <Dialog open={open} onClose={setOpen} className="relative z-50">

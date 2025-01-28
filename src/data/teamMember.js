@@ -1,40 +1,25 @@
 import team1 from "../assets/images/team/team-1.jpg";
 import team2 from "../assets/images/team/team-2.jpg";
 import team3 from "../assets/images/team/team-3.jpg";
-import team4 from "../assets/images/team/team-4.jpg";
-import team5 from "../assets/images/team/team-5.jpg";
-import team6 from "../assets/images/team/team-6.jpg";
 
 const teamMembers = [
     {
-        name: "John Smith",
-        profession: "Web Developer",
+        name: "Dr. Mohamed Alwan",
+        profession: "Skin Care & Laser Treatment Specialist",
+        description: "With years of expertise in the skincare and aesthetic treatment field, Dr. Mohamed ispassionate about enhancing his clients' natural beauty. His meticulous approach ensures that every treatment is tailored to the individual, providing exceptional resultsevery time.",
         image: team1
     },
     {
-        name: "Emily Johnson",
-        profession: "UI/UX Designer",
+        name: "Dr. Shoruok Alwan",
+        profession: "Skin Care & Laser Treatment Specialist",
+        description: "Dr. Shoruok combines deep technical knowledge with a compassionate approach. She believes beauty care is a journey, and she’s here to guide her clients every step of the way, ensuring they receive personalized treatments that align with their goals.",
         image: team2
     },
     {
-        name: "Michael Brown",
+        name: "Asma – Administration",
         profession: "Project Manager",
+        description : "Asma is the friendly, welcoming face of FamClinic’s administration team. She ensures that appointments are scheduled efficiently and that every client feels valued from the first point of contact.",
         image: team3
-    },
-    {
-        name: "Sophia Davis",
-        profession: "Frontend Developer",
-        image: team4
-    },
-    {
-        name: "Daniel Wilson",
-        profession: "Backend Developer",
-        image: team5
-    },
-    {
-        name: "Olivia Martinez",
-        profession: "Quality Assurance Engineer",
-        image: team6
     }
 ];
 

@@ -17,6 +17,7 @@ const Header = () => {
 
   // change language
   const { i18n } = useTranslation("global");
+  const [t] = useTranslation("global");
   const [input, setInput] = useState({
     language: "en",
   });
@@ -109,24 +110,26 @@ const Header = () => {
                   value={input.language}
                   onChange={handleInputChange}
                   name="language"
-                  className="border border-[#8d7b67] text-sm rounded-lg focus:ring-[#8d7b67] focus:border-[#8d7b67] block text-[16px] font-bold p-2"
+                  className="border border-[#8d7b67] text-sm rounded-lg focus:ring-[#8d7b67] focus:border-[#8d7b67] block text-[16px] font-bold px-2 py-1"
                 >
                   <option key={1} value="en" selected>
                     En
                   </option>
-                  <option key={2} value="nl">Nl</option>
+                  <option key={2} value="nl">
+                    Nl
+                  </option>
                 </select>
               </form>
             </li>
             <li className={location.pathname === "/" ? "active-menu" : ""}>
               <Link to={"/"} className="main-menu" aria-current="page">
-                Home
+                {t("header.home")}
               </Link>
             </li>
 
             <li className={location.pathname === "/about" ? "active-menu" : ""}>
               <Link className="main-menu" to={"/about"}>
-                About
+                {t("header.about")}
               </Link>
             </li>
 
@@ -136,21 +139,21 @@ const Header = () => {
               }
             >
               <Link className="main-menu" to={"/treatment"}>
-                Treatment
+                {t("header.treatment")}
               </Link>
             </li>
             <li
               className={location.pathname === "/pricing" ? "active-menu" : ""}
             >
               <Link className="main-menu" to={"/pricing"}>
-                Price
+                {t("header.price")}
               </Link>
             </li>
             <li
               className={location.pathname === "/contact" ? "active-menu" : ""}
             >
               <Link className="main-menu" to={"/contact"}>
-                Contact
+                {t("header.contact")}
               </Link>
             </li>
           </div>

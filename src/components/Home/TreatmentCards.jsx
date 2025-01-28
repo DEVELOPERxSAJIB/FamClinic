@@ -4,10 +4,12 @@ import { BsArrowRight } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import treatments from "../../data/treatment";
 import "../stylesheet.css"
+import { useTranslation } from "react-i18next";
 
 // eslint-disable-next-line react/prop-types
 const TreatmentCards = ({ limit }) => {
   const displayedTreatments = limit ? treatments.slice(0, limit) : treatments;
+  const [t] = useTranslation("global")
 
   return (
     <div className="all-treatments pt-12">
@@ -22,8 +24,10 @@ const TreatmentCards = ({ limit }) => {
             </div>
             <div className="bottom">
               <div className="content">
-                <span className="name">{item?.name}</span>
-                <span className="desc">{item?.description}</span>
+                <span className="name">
+                {t(`treatments.${item.slug}.name`)}
+                  </span>
+                <span className="desc">{t(`treatments.${item.slug}.description`)}</span>
                 {item?.subcategory && (
                   <ul className="pt-2">
                     {item.subcategory?.map((item) => (

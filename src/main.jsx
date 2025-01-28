@@ -7,8 +7,7 @@ import "sweetalert2/src/sweetalert2.scss";
 import i18next from "i18next";
 import { I18nextProvider } from "react-i18next";
 
-import global_en from "./translations/en/global.json";
-import global_nl from "./translations/nl/global.json";
+import resources from "./translations/index.js";
 
 i18next.init({
   interpolation: {
@@ -16,10 +15,7 @@ i18next.init({
   },
   lng: "en",
   fallbackLng: "en",
-  resources: {
-    en: { global: global_en },
-    nl: { global: global_nl },
-  },
+  resources: resources,
 });
 
 createRoot(document.getElementById("root")).render(

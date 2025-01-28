@@ -1,0 +1,28 @@
+{
+  "testimonials": {
+
+    "subtitle" : "Snelle beoordelingen",
+    "title" : "Bekijk wat onze klanten over ons zeggen",
+
+    "review1": {
+      "name": "Jane De",
+      "positionAndCompany": "Chief Operating Officer (TechCorp)",
+      "review": "De gebruikersinterface van Famclinic is zo intuïtief dat ik er zonder enige begeleiding mee aan de slag kon."
+    },
+    "review2": {
+      "name": "Harsh P.",
+      "positionAndCompany": "Product ontwerper (DesignPro)",
+      "review": "Vroeger zag ik er tegenop om mijn afspraken in te plannen, maar Famclinic heeft het proces zoveel eenvoudiger en stressvrij gemaakt."
+    },
+    "review3": {
+      "name": "Sara L",
+      "positionAndCompany": "Marketing directeur (MarketMinds)",
+      "review": "Famclinic hielp bij het stroomlijnen van de inspanningen van ons kliniekbeheer en maakte alles efficiënter. Erg blij met de resultaten."
+    },
+    "review4": {
+      "name": "John W.",
+      "positionAndCompany": "CEO (WebCo)",
+      "review": "De resultaten van het gebruik van Famclinic hebben onze verwachtingen overtroffen. Beveel het ten zeerste aan aan iedereen die gezondheidszorgprocessen wil vereenvoudigen."
+    }
+  }
+}

@@ -1,9 +1,11 @@
 import { Link } from "react-router-dom";
 import footerLogo from "../assets/images/logo.png";
 import treatments from "../data/treatment";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
   const recentTreatments = treatments.slice(-5);
+  const [t] = useTranslation("global");
 
   return (
     <footer className="">
@@ -14,9 +16,10 @@ const Footer = () => {
             <a to={"/"} className="flex items-center">
               <img src={footerLogo} className="h-8 me-3" alt="Logo" />
             </a>
-            <p className="max-w-[240px] text-[14px] text-[#000] font-normal">
-              © Copyright 2024 Aphrodite Clinic Alle rechten voorbehouden.
-            </p>
+            <p
+              dangerouslySetInnerHTML={{ __html: t("footer.copyrightText") }}
+              className="max-w-[260px] text-[18px] text-[#000] font-normal"
+            ></p>
           </div>
           <div className="grid grid-cols-2 gap-10 sm:gap-24 sm:grid-cols-2">
             <div>
@@ -43,27 +46,27 @@ const Footer = () => {
               <ul className="text-gray-500 dark:text-gray-400 font-medium">
                 <li className="mb-4">
                   <Link to="/" className="hover:underline">
-                    Home
+                    {t("footer.menu.home")}
                   </Link>
                 </li>
                 <li className="mb-4">
                   <Link to="/about" className="hover:underline">
-                    About
+                    {t("footer.menu.about")}
                   </Link>
                 </li>
                 <li className="mb-4">
                   <Link to="/treatment" className="hover:underline">
-                    Treatments
+                    {t("footer.menu.treatment")}
                   </Link>
                 </li>
                 <li className="mb-4">
                   <Link to="/pricing" className="hover:underline">
-                    Price
+                    {t("footer.menu.price")}
                   </Link>
                 </li>
                 <li className="mb-4">
                   <Link to="/about" className="hover:underline">
-                    Contact
+                    {t("footer.menu.contact")}
                   </Link>
                 </li>
               </ul>
@@ -75,13 +78,13 @@ const Footer = () => {
 
         <div className="flex justify-between sm:flex sm:items-center sm:justify-between">
           <span className="text-sm text-[16px] w-1/3">
-            Design and Developed by{" "}
+            {t("footer.designAndDevelopedBy")}{" "}
             <a
               target="_blank"
               href="https://www.linkedin.com/in/mdsajibshikder/"
               className="hover:underline font-semibold"
             >
-              Md Sajib Shikder
+              {t("footer.devName")}
             </a>
           </span>
 

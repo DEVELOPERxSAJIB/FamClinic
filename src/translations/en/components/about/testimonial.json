@@ -1,0 +1,27 @@
+{
+  "testimonials": {
+    "subtitle": "Quick reviews",
+    "title": "See What Our Customers Say's about us ",
+    
+    "review1": {
+      "name": "Jane D",
+      "positionAndCompany": "Chief Operating Officer (TechCorp)",
+      "review": "The user interface of Famclinic is so intuitive, I was able to start using it without any guidance."
+    },
+    "review2": {
+      "name": "Harsh P.",
+      "positionAndCompany": "Product Designer (DesignPro)",
+      "review": "I used to dread scheduling my appointments, but Famclinic has made the process so much simpler and stress-free."
+    },
+    "review3": {
+      "name": "Sara L",
+      "positionAndCompany": "Marketing Director (MarketMinds)",
+      "review": "Famclinic helped streamline our clinic management efforts and made everything more efficient. Very happy with the results."
+    },
+    "review4": {
+      "name": "John W.",
+      "positionAndCompany": "CEO (WebCo)",
+      "review": "The results from using Famclinic have exceeded our expectations. Highly recommend it to anyone looking to simplify healthcare processes."
+    }
+  }
+}

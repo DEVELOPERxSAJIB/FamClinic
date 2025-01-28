@@ -1,52 +1,50 @@
 import aboutHero from "../assets/images/about-hero.jpg";
-import { LiaHandHoldingHeartSolid } from "react-icons/lia";
-import { SiAsciidoctor } from "react-icons/si";
-import { FaWirsindhandwerk } from "react-icons/fa6";
+// import { LiaHandHoldingHeartSolid } from "react-icons/lia";
+// import { SiAsciidoctor } from "react-icons/si";
+// import { FaWirsindhandwerk } from "react-icons/fa6";
 import ScrollToTop from "../components/ScrollToTop";
 import teamMembers from "../data/teamMember";
-import TeamMemberCard from "../components/Home/TeamMemberCard";
+import TeamMemberCard from "../components/About/TeamMemberCard";
+import { useTranslation } from "react-i18next";
+import Testimonial from "../components/About/Testimonial";
 
 const About = () => {
+  const [t] = useTranslation("global");
+
   return (
     <>
       <ScrollToTop />
       <div className="container mx-auto max-w-[1380px] md:px-4 px-8 lg:px-10 z-0 relative">
         <section className="py-14 lg:py-24 relative">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
-            <div
-              className="img-box mx-auto lg:mx-0"
-              style={{ maxWidth: "500px", maxHeight: "590px" }}
-            >
-              <img
-                src={aboutHero}
-                alt="About Us tailwind page"
-                style={{
-                  borderTopRightRadius: "50px",
-                  borderBottomRightRadius: "50px",
-                  borderTopLeftRadius: "50px",
-                  borderBottomLeftRadius: "10px",
-                }}
-                className="w-full h-full object-cover"
-              />
+            <div className="">
+              <div
+                style={{ maxWidth: "500px", height: "590px" }}
+                className="image-area img-box mx-auto lg:mx-0"
+              >
+                <img
+                  src={aboutHero}
+                  alt="About Us tailwind page"
+                  style={{
+                    borderTopRightRadius: "50px",
+                    borderBottomRightRadius: "50px",
+                    borderTopLeftRadius: "50px",
+                    borderBottomLeftRadius: "10px",
+                  }}
+                  className="w-full h-full object-cover"
+                />
+              </div>
             </div>
             <div className="flex items-center px-4 sm:px-8 lg:px-0">
               <div className="content-area flex flex-col flex-1 md:w-full mb-8 md:mb-0 items-start md:items-start">
                 <p className="font-playfair text-[32px] sm:text-[40px] font-normal mb-0 pb-0">
-                  The face of beauty
+                  {t("aboutHero.sub_title")}
                 </p>
                 <h2 className="font-playfair text-[40px] sm:text-[50px] md:text-[64px] font-semibold mt-0">
-                  Maak kennis met Aphrodite Clinic
+                  {t("aboutHero.title")}
                 </h2>
                 <p className="font-normal text-[16px] sm:text-[18px] mt-8 max-w-lg">
-                  Aphrodite Clinic biedt innovatieve cosmetische en paramedische
-                  huidzorg op hoog kwaliteitsniveau. Vanuit haar klinieken in
-                  Nijmegen en Wijchen werken professionele gespecialiseerde
-                  huidtherapeuten dagelijks met hightech (para)medische
-                  apparatuur, innovatieve technieken en huidproducten van
-                  topniveau. Ons ambitieuze en gastvrije team volgt voortdurend
-                  trainingen om bij te blijven met de nieuwste ontwikkelingen op
-                  ons vakgebied. Zo bieden wij de beste huidzorg en zien wij
-                  tevreden gezichten.
+                  {t("aboutHero.description")}
                 </p>
                 <div className="button-area py-8 flex flex-col sm:flex-row gap-5 items-center justify-center">
                   <a
@@ -58,7 +56,7 @@ const About = () => {
                     }}
                     className="py-4 px-6 bg-[#F0DECA] text-[16px] sm:text-[18px] font-semibold duration-300 ease-in-out translate-all hover:bg-[#F9EEDD] hover:transition-all hover:ease-out hover:duration-300"
                   >
-                    Bekijk onze kliniek in
+                    {t("aboutHero.btnText")}
                   </a>
                 </div>
               </div>
@@ -66,7 +64,7 @@ const About = () => {
           </div>
         </section>
 
-        <section>
+        {/* <section>
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="flex flex-col gap-5 xl:gap-8 lg:flex-row lg:justify-between">
               <div className="w-full max-lg:max-w-2xl mx-auto lg:mx-0 lg:w-1/3 bg-white rounded-2xl shadow-md shadow-gray-100 p-6 flex justify-between items-center">
@@ -102,6 +100,10 @@ const About = () => {
               </div>
             </div>
           </div>
+        </section> */}
+
+        <section className="pt-14 lg:pt-24 relative">
+          <Testimonial />
         </section>
 
         <section id="about-section" className="py-16 lg:py-24 relative">
@@ -193,6 +195,7 @@ const About = () => {
                   name={item?.name}
                   profession={item.profession}
                   imageSrc={item?.image}
+                  description={item?.description}
                 />
               ))}
             </div>

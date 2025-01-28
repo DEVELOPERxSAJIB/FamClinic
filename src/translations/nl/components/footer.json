@@ -1,0 +1,15 @@
+{
+  "footer": {
+    "copyrightText": "© 2025 FamClinic. <br/> Alle rechten voorbehouden.",
+    "designAndDevelopedBy": "Ontwerp en ontwikkeling door",
+    "devName": "Md Sajib Shikder",
+
+    "menu": {
+      "home": "Home",
+      "about": "Over Ons",
+      "treatment": "Behandelingen",
+      "price": "Prijzen",
+      "contact": "Contact"
+    }
+  }
+}

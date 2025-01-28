@@ -1,0 +1,42 @@
+{
+  "heroSection": {
+    "hero_subtitle": "Welcome to",
+    "hero_title": "FamClinic",
+    "hero_description": "Where beauty, wellness, and self-confidence meet. From the moment you step through our doors, you’ll experience the perfect blend of professionalism and warmth. Our team is here to enhance your natural beauty and help you feel your absolute best. Whether you’re after a subtle glow-up or a complete beauty transformation, we’re here to make it happen.",
+    "hero_cta": "Ready to begin your beauty journey? Contact Us today to learn more or book your first visit! You deserve to shine!"
+  },
+
+  "treatmentSection": {
+    "subtitle": "Our",
+    "title": "Treatments",
+    "description": "The Fam Clinic is known for its extensive range of high-quality treatments, specialist expertise and the use of high-quality products and advanced equipment."
+  },
+
+  "treatments": {
+    "seeMore" : "View our Treatments",
+
+    "laser-therapie" : {
+      "name" : "Laser Therapy",
+      "description" : "A highly effective treatment using concentrated beams of light to target various skin concerns, including pigmentation, acne scars, and fine lines."
+    },
+
+    "de-services" : {
+      "name" : "Basic Cleansing",
+      "description" : "An advanced treatment that deeply cleanses the skin by removing impurities from within the pores. This includes exfoliation, steaming, and extractions."
+    },
+
+    "title": "Laser Therapy",
+    "description": "A highly effective treatment using  oncentrated beams of light to target various skin concerns, including pigmentation, acne scars, and fine lines.",
+    "benefits": {
+      "reducesHyperpigmentation": "Reduces hyperpigmentation",
+      "improvesSkinTexture,": "Improves skin texture",
+      "stimulatesCollagen": "Stimulates collagen",
+      "enhancesRadianceWithMinimalDowntime.": "Enhances radiance with minimal downtime."
+    }
+  },
+
+  "weNotice" : {
+    "title" : "Brands",
+    "subtitle" : "we work with" 
+  }
+}
