@@ -295,7 +295,7 @@ const treatments = [
       { name: "Russian Manicure (Women)", price: "30", duration: "20 min" },
       { name: "Manicure (Men)", price: "35", duration: "20 min" },
       { name: "Pedicure", price: "40", duration: "30 min" },
-      { name: "Nail Repair", price: "5", duration: "10 min" },
+      { name: "Nail Repair", price: "05", duration: "10 min" },
       { name: "Gel Polish - Pedicure", price: "60", duration: "1 hr" },
     ],
   },

@@ -31,6 +31,7 @@ const Header = () => {
     }));
 
     i18n.changeLanguage(value);
+    setIsMenuOpen(false);
   };
 
   useEffect(() => {
@@ -100,7 +101,6 @@ const Header = () => {
           } sm:block sm:scale-y-100 sm:max-h-full sm:transition-none sm:overflow-visible basis-full grow sm:my-0 md:my-8 lg:my-8`}
         >
           <div
-            onClick={() => setIsMenuOpen(false)}
             className="flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-end mt-8 sm:mt-0 sm:ps-5"
           >
             <li className="inline-flex">
