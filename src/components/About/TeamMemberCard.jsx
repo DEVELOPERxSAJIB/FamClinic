@@ -41,7 +41,7 @@ const TeamMemberCard = ({ imageSrc, name, profession, description }) => {
                 </div>
 
                 {/* Updated description section */}
-                <div className="description px-6 text-start ease-in-out transition-all duration-300 max-h-0 opacity-0 hover:mt-8 group-hover:max-h-48 group-hover:opacity-100  overflow-hidden">
+                <div className="description px-6 text-start ease-in-out transition-all duration-300 max-h-0 opacity-0 group-hover:mt-6 group-hover:max-h-48 group-hover:opacity-100  overflow-hidden">
                   {description}
                 </div>
               </div>
