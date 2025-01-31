@@ -93,13 +93,13 @@ const SingleTreatment = () => {
                   {/*List*/}
                   <ul className="mb-12 space-y-2 text-left text-lg text-gray-600 group-hover:text-gray-900">
                     {treatment.benefits.length > 0 &&
-                      treatment.benefits.map((item) => (
+                      treatment.benefits.map((benefit, index) => (
                         <li
-                          className="flex items-center space-x-3.5"
-                          key={item}
+                          key={index}
+                          className="flex items-center justify-start gap-3"
                         >
-                          <span className="w-1.5 h-1.5 rounded-full bg-[#8d7b67]" />
-                          <span>{item}</span>
+                          <span className="w-1.5 h-1.5 rounded-full bg-[#8d7b67] flex-shrink-0" />
+                          <span className="leading-relaxed">{benefit}</span>
                         </li>
                       ))}
                   </ul>

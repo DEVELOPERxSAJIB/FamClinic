@@ -100,9 +100,7 @@ const Header = () => {
             isMenuOpen ? "max-h-screen scale-y-100" : "max-h-0 scale-y-0"
           } sm:block sm:scale-y-100 sm:max-h-full sm:transition-none sm:overflow-visible basis-full grow sm:my-0 md:my-8 lg:my-8`}
         >
-          <div
-            className="flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-end mt-8 sm:mt-0 sm:ps-5"
-          >
+          <div className="flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-end mt-8 sm:mt-0 sm:ps-5">
             <li className="inline-flex">
               <form className="flex justify-end">
                 <select
@@ -121,19 +119,26 @@ const Header = () => {
                 </select>
               </form>
             </li>
-            <li className={location.pathname === "/" ? "active-menu" : ""}>
+            <li
+              onClick={handleToggle}
+              className={location.pathname === "/" ? "active-menu" : ""}
+            >
               <Link to={"/"} className="main-menu" aria-current="page">
                 {t("header.home")}
               </Link>
             </li>
 
-            <li className={location.pathname === "/about" ? "active-menu" : ""}>
+            <li
+              onClick={handleToggle}
+              className={location.pathname === "/about" ? "active-menu" : ""}
+            >
               <Link className="main-menu" to={"/about"}>
                 {t("header.about")}
               </Link>
             </li>
 
             <li
+              onClick={handleToggle}
               className={
                 location.pathname === "/treatment" ? "active-menu" : ""
               }
@@ -143,6 +148,7 @@ const Header = () => {
               </Link>
             </li>
             <li
+              onClick={handleToggle}
               className={location.pathname === "/pricing" ? "active-menu" : ""}
             >
               <Link className="main-menu" to={"/pricing"}>
@@ -150,6 +156,7 @@ const Header = () => {
               </Link>
             </li>
             <li
+              onClick={handleToggle}
               className={location.pathname === "/contact" ? "active-menu" : ""}
             >
               <Link className="main-menu" to={"/contact"}>

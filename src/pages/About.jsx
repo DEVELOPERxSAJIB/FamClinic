@@ -191,7 +191,7 @@ const About = () => {
             <div className="flex flex-wrap justify-center mt-10">
               {teamMembers?.map((item) => (
                 <TeamMemberCard
-                  key={item.id}
+                  key={item.name}
                   name={item?.name}
                   profession={item.profession}
                   imageSrc={item?.image}

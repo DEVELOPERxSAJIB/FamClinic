@@ -118,7 +118,7 @@ const Home = () => {
                 {t("treatmentSection.title")}
               </h2>
               <p className="md:max-w-[690px] text-center sm:text-[16px] md:text-[18px] font-normal">
-              {t("treatmentSection.description")}
+                {t("treatmentSection.description")}
               </p>
             </div>
             <TreatmentCards limit={6} />
@@ -158,76 +158,113 @@ const Home = () => {
           </div>
 
           <div className="content-section flex flex-col gap-5">
-            <div className="title">
-              <span className="font-playfair text-xl md:text-2xl font-medium">
-                Waarom
-              </span>
-              <h2 className="text-2xl md:text-4xl font-medium font-playfair">
-                Aphrodite Clinic?
-              </h2>
-            </div>
-
-            <div className="desc">
-              <p className="text-base md:text-lg font-normal max-w-2xl">
-                Persoonlijke aandacht, realistische
-                huidverbeteringsperspectieven, vakkundig uitgevoerde
-                behandelingen van de beste kwaliteit, uitgevoerd door
-                specialisten met hoogwaardige medische apparatuur… Dat - en nog
-                veel meer - vinden wij belangrijk als u met uw behandelingsvraag
-                bij ons komt. Zo bieden wij u de zorg die uw huid verdient. Het
-                team van Aphrodite Clinic staat graag voor u klaar om uw huid
-                met de grootst mogelijke zorg te behandelen.
-              </p>
-              <ul className="py-6 space-y-2">
-                <li className="flex items-center gap-2">
-                  <IoCheckmarkCircleOutline size={20} />
-                  <span className="text-base text-[#5f5041] font-semibold">
-                    Uw huid is onze zorg
+            <div className="content-area">
+              <div className="upper-content">
+                <div className="title">
+                  <span className="font-playfair text-xl md:text-2xl font-medium">
+                    Why choose
                   </span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <IoCheckmarkCircleOutline size={20} />
-                  <span className="text-base text-[#5f5041] font-semibold">
-                    Persoonlijke, gastvrije benadering
+                  <h2 className="text-2xl md:text-4xl font-medium font-playfair">
+                    FamClinic?
+                  </h2>
+                </div>
+                <div className="desc">
+                  <div className="w-full"></div>
+                  <ul className="py-6 space-y-2">
+                    <li className="flex items-center gap-2">
+                      <IoCheckmarkCircleOutline
+                        size={20}
+                        className="flex-shrink-0"
+                      />
+                      <span className="text-base font-semibold">
+                        Expert Team :{" "}
+                        <span className="font-medium">
+                          Our highly trained professionals are passionate about
+                          helping you achieve your beauty and wellness goals.
+                        </span>
+                      </span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <IoCheckmarkCircleOutline
+                        size={20}
+                        className="flex-shrink-0"
+                      />
+                      <span className="text-base font-semibold">
+                        Innovative Treatments:{" "}
+                        <span className="font-medium">
+                          We stay on the cutting edge of beauty technology to
+                          deliver results that last.
+                        </span>
+                      </span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <IoCheckmarkCircleOutline
+                        size={20}
+                        className="flex-shrink-0"
+                      />
+                      <span className="text-base font-semibold">
+                        Client-Centered Approach:{" "}
+                        <span className="font-medium">
+                          Your goals are at the forefront of everything we do.
+                        </span>
+                      </span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <IoCheckmarkCircleOutline
+                        size={20}
+                        className="flex-shrink-0"
+                      />
+                      <span className="text-base font-semibold">
+                        Welcoming Atmosphere:{" "}
+                        <span className="font-medium">
+                          Our clinic is designed to make you feel comfortable
+                          and at ease, from the moment you walk in.
+                        </span>
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div className="bottom-content">
+                <div className="title">
+                  <span className="font-playfair text-xl md:text-2xl font-medium">
+                    What Awaits You at FamClinic?
                   </span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <IoCheckmarkCircleOutline size={20} />
-                  <span className="text-base text-[#5f5041] font-semibold">
-                    Resultaat vanaf de eerste behandeling.
-                  </span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <IoCheckmarkCircleOutline size={20} />
-                  <span className="text-base text-[#5f5041] font-semibold">
-                    Realistisch advies
-                  </span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <IoCheckmarkCircleOutline size={20} />
-                  <span className="text-base text-[#5f5041] font-semibold">
-                    Gediplomeerde, gespecialiseerde huidtherapeuten
-                  </span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <IoCheckmarkCircleOutline size={20} />
-                  <span className="text-base text-[#5f5041] font-semibold">
-                    Grote diversiteit aan hoogwaardige behandelingen
-                  </span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <IoCheckmarkCircleOutline size={20} />
-                  <span className="text-base text-[#5f5041] font-semibold">
-                    Vrijblijvende intake, inclusief behandelplan op maat
-                  </span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <IoCheckmarkCircleOutline size={20} />
-                  <span className="text-base text-[#5f5041] font-semibold">
-                    Gecontracteerde zorg via alle zorgverzekeraars
-                  </span>
-                </li>
-              </ul>
+                </div>
+                <div className="desc">
+                  <ul className="py-6 space-y-2">
+                    <li className="flex items-center gap-2">
+                      <IoCheckmarkCircleOutline
+                        size={20}
+                        className="flex-shrink-0"
+                      />
+                      <span className="text-base font-semibold">
+                        A cozy, family-friendly atmosphere.
+                      </span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <IoCheckmarkCircleOutline
+                        size={20}
+                        className="flex-shrink-0"
+                      />
+                      <span className="text-base font-semibold">
+                        Cutting-edge beauty treatments powered by science and
+                        artistry.
+                      </span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <IoCheckmarkCircleOutline
+                        size={20}
+                        className="flex-shrink-0"
+                      />
+                      <span className="text-base font-semibold">
+                        A dedicated team committed to helping you achieve your
+                        personal beauty goals.
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
 
             <div className="affiliate-partner mt-8 lg:col-span-2 md:mt-6">
@@ -274,7 +311,7 @@ const Home = () => {
                       {t("weNotice.title")}
                     </h2>
                     <span className="m-0 p-0 font-playfair text-[32px] font-medium">
-                    {t("weNotice.subtitle")}
+                      {t("weNotice.subtitle")}
                     </span>{" "}
                   </div>
                 </div>

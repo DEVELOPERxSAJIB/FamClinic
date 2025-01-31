@@ -11,6 +11,7 @@ import { RxCross1 } from "react-icons/rx";
 import ScrollToTop from "../components/ScrollToTop";
 import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";
+import { FaLocationDot } from "react-icons/fa6";
 
 const schema = yup
   .object({
@@ -368,9 +369,7 @@ const Contact = () => {
                             : "bg-[#F0DECA] duration-300 ease-in text-[#8D7B67] hover:bg-[#F9EEDD] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#8D7B67]"
                         }`}
                       >
-                        {contactLoading
-                          ? "Sending mail..."
-                          : "Let's talk"}
+                        {contactLoading ? "Sending mail..." : "Let's talk"}
                       </button>
                     </div>
                   </div>
@@ -387,27 +386,60 @@ const Contact = () => {
           height="100%"
           className="absolute inset-0"
           title="map"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4373.177017327033!2d89.54938849436931!3d22.825097845831163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ff90084a63a7cf%3A0x7c40a60486a738c9!2sKDA%20New%20Market!5e0!3m2!1sen!2sbd!4v1737198796849!5m2!1sen!2sbd"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2450.807220580942!2d4.2706967127671716!3d52.101439971837436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5b0bd6e75a3e7%3A0xc6af5d9379bcead2!2sZeesluisweg%2018%2C%202583%20DR%20Den%20Haag%2C%20Netherlands!5e0!3m2!1sen!2sbd!4v1738283117384!5m2!1sen!2sbd"
           style={{ filter: "grayscale(1) contrast(1.2) opacity(0.4)" }}
         />
         <div className="bg-white flex flex-wrap py-6 rounded shadow-md absolute">
-          <div className="lg:w-1/2 px-6">
-            <h2 className="title-font font-semibold tracking-widest text-xs">
-              ADDRESS
-            </h2>
-            <p className="mt-1">
-              Photo booth tattooed prism, portland taiyaki Demo Address Norway
-            </p>
+          <div
+            style={{
+              borderTopRightRadius: "25px",
+              borderTopLeftRadius: "25px",
+              borderBottomRightRadius: "25px",
+              borderBottomLeftRadius: "0",
+            }}
+            className="bg-[#F0DECA] absolute -top-6 px-4 py-2 inline-block rounded-t-lg ml-0 md:ml-12"
+          >
+            <h4 className="font-semibold text-base">Opening hours</h4>
           </div>
-          <div className="lg:w-1/2 px-6 mt-4 lg:mt-0">
-            <h2 className="title-font font-semibold tracking-widest text-xs">
-              EMAIL
+          <div className="w-1/2 px-6 mt-4 lg:mt-0">
+            <div className="grid grid-cols-1 gap-4 my-2">
+              <div className="flex justify-between">
+                <span className="font-semibold">Wednesday:</span>
+                <span className="font-semibold">Closed</span>
+              </div>
+              <div className="flex justify-between">
+                <span>Thursday:</span>
+                <span>10 AM-6 PM</span>
+              </div>
+              <div className="flex justify-between">
+                <span>Friday:</span>
+                <span>10 AM-9 PM</span>
+              </div>
+              <div className="flex justify-between">
+                <span>Saturday:</span>
+                <span>10 AM-9 PM</span>
+              </div>
+            </div>
+          </div>
+          <div className="w-1/2 px-6 mt-4 lg:mt-0">
+            <div className="grid grid-cols-1 gap-4 my-2">
+              <div className="flex justify-between">
+                <span>Sunday:</span>
+                <span>10 AM-9 PM</span>
+              </div>
+              <div className="flex justify-between">
+                <span>Monday:</span>
+                <span>10 AM-6 PM</span>
+              </div>
+              <div className="flex justify-between">
+                <span>Tuesday:</span>
+                <span>10AM - 6PM</span>
+              </div>
+            </div>
+            <h2 className="flex gap-2 opacity-0 md:opacity-100 items-center font-semibold tracking-widest text-xs mt-6">
+              <FaLocationDot size={20} className="flex-shrink-0" />
+              <p className="">Zeesluisweg 18, 2583 DR Den Haag, Netherlands</p>
             </h2>
-            <a className="leading-relaxed">example@email.com</a>
-            <h2 className="title-font font-semibold tracking-widest text-xs mt-4">
-              PHONE
-            </h2>
-            <p className="leading-relaxed">(024) 207 02 06</p>
           </div>
         </div>
       </div>

@@ -36,10 +36,10 @@ const Price = () => {
       <div className="container max-w-[1380px] px-6 mx-auto py-20">
         <div className="lg:flex items-start justify-between">
           <div className="content-area md:sticky top-20 pt-12 flex flex-col mb-8 md:mb-0">
-            <p className="font-playfair text-[40px] font-normal">
+            <p className="font-playfair text-[20px] sm:text-[30px] md:text-[40px] font-normal">
               Plans for You
             </p>
-            <h2 className="font-playfair text-[64px] font-semibold">
+            <h2 className="font-playfair text-[30px] sm:text-[40px] md:text-[64px] font-semibold">
               Choose your plan
             </h2>
             <p className="max-w-[550px] text-[18px] mt-8">
@@ -78,7 +78,7 @@ const Price = () => {
                       {item.subcategory.length === 0 && (
                         <div className="pricing text-center flex flex-row items-center gap-3">
                           <p className="text-[16px] font-medium hidden md:block">
-                            Start with :
+                            Start from :
                           </p>
                           <p className="text-[18px] font-semibold">
                             € {item.price}{" "}
