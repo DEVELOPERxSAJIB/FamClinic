@@ -35,6 +35,36 @@
     }
   },
 
+  "whyUs": {
+    "subTitle1": "Waarom Kiezen?",
+    "title": "FamClinic?",
+    "description1": {
+      "point1": {
+        "title": "Expertteam :",
+        "description": "Onze hoog opgeleide professionals zijn gepassioneerd om je te helpen je schoonheids- en welzijnsdoelen te bereiken."
+      },
+      "point2": {
+        "title": "Innovatieve Behandelingen :",
+        "description": "We blijven vooroplopen in schoonheids technologie om resultaten te leveren die lang aanhouden."
+      },
+      "point3": {
+        "title": "Cliëntgerichte Aanpak :",
+        "description": "Jouw doelen staan voorop in alles wat we doen."
+      },
+      "point4": {
+        "title": "Gastvrije Sfeer :",
+        "description": "Onze kliniek is ontworpen om je op je gemak te laten voelen, vanaf het moment dat je binnenkomt."
+      }
+    },
+    "subTitle2": "Wat wacht je bij FamClinic?",
+    "description2": {
+      "point1": "Een gezellige, gezinsvriendelijke sfeer.",
+      "point2": "Geavanceerde schoonheidsbehandelingen die wetenschap en kunst combineren.",
+      "point3": "Een toegewijd team dat zich inzet om je persoonlijke schoonheidsdoelen te bereiken."
+    },
+    "affiliatedWith" : "Wij zijn aangesloten bij"
+  },
+
   "weNotice": {
     "title": "Merken",
     "subtitle": "Waarmee we werken"

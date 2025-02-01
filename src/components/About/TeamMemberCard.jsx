@@ -1,5 +1,6 @@
 // eslint-disable-next-line react/prop-types
 const TeamMemberCard = ({ imageSrc, name, profession, description }) => {
+
   return (
     <>
       <div className="w-full px-4 md:w-1/2 xl:w-1/3">
@@ -18,7 +19,9 @@ const TeamMemberCard = ({ imageSrc, name, profession, description }) => {
 
             <div className="absolute bottom-5 w-full text-center ease-in transition-all duration-300">
               <div className="relative mx-5 overflow-hidden rounded-lg bg-[#FAF5EF] px-3 py-5 dark:bg-dark-2">
-                <h3 className="font-bold text-[16px]">{name}</h3>
+                <h3 className="font-bold text-[16px]">
+                  {name}
+                  </h3>
                 <p className="text-[16px] font-normal">{profession}</p>
                 <div>
                   <span className="absolute bottom-0 left-0">

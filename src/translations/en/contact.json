@@ -1,0 +1,53 @@
+{
+  "contact": {
+    "breadcum": "Contact Page",
+    "subtitle": "Get in touch with us",
+    "title": "Contact Us",
+    "description1": "For information and advice or to make an appointment, you can contact FamClinic by telephone during opening hours. You can also use the contact form for this. We aim to respond within 24 hours.",
+    "description2": "FamClinic only works by appointment.",
+
+    "whatsappBtn": "WhatsApp us",
+    "callBtn": "Call us",
+    "address": "Zeesluisweg 18, 2583 DR The Hague, Netherlands, Netherlands",
+    "openingHours": {
+      "title": "Opening hours",
+      "Wednesday": "Wednesday",
+      "Thursday": "Thursday",
+      "Friday": "Friday",
+      "Saturday": "Saturday",
+      "Sunday": "Sunday",
+      "Monday": "Monday",
+      "Tuesday": "Tuesday"
+    },
+    "form": {
+      "successMessage": "Thanks for contacting. You will get an Email from us soon.",
+      "firstName": {
+        "label": "First name",
+        "validation": "First name is required"
+      },
+      "lastName": {
+        "label": "Last name",
+        "validation": "Last name is required"
+      },
+      "email": {
+        "label": "Email",
+        "validation": "Email is required"
+      },
+      "phone": {
+        "label": "Phone",
+        "validation": "Phone is required"
+      },
+      "subject": {
+        "label": "Subject",
+        "validation": "Subject is required"
+      },
+      "message": {
+        "label": "Message",
+        "validation": "Message cannot exceed 500 characters"
+      },
+      "priveryAndPolicy": "By selecting this, you agree to our",
+      "priveryAndPolicyLink": "privacy policy.",
+      "submitBtn": "Let's talk"
+    }
+  }
+}

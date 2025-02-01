@@ -13,16 +13,16 @@
   },
 
   "treatments": {
-    "seeMore" : "View our Treatments",
+    "seeMore": "View our Treatments",
 
-    "laser-therapie" : {
-      "name" : "Laser Therapy",
-      "description" : "A highly effective treatment using concentrated beams of light to target various skin concerns, including pigmentation, acne scars, and fine lines."
+    "laser-therapie": {
+      "name": "Laser Therapy",
+      "description": "A highly effective treatment using concentrated beams of light to target various skin concerns, including pigmentation, acne scars, and fine lines."
     },
 
-    "de-services" : {
-      "name" : "Basic Cleansing",
-      "description" : "An advanced treatment that deeply cleanses the skin by removing impurities from within the pores. This includes exfoliation, steaming, and extractions."
+    "de-services": {
+      "name": "Basic Cleansing",
+      "description": "An advanced treatment that deeply cleanses the skin by removing impurities from within the pores. This includes exfoliation, steaming, and extractions."
     },
 
     "title": "Laser Therapy",
@@ -35,8 +35,38 @@
     }
   },
 
-  "weNotice" : {
-    "title" : "Brands",
-    "subtitle" : "we work with" 
+  "whyUs": {
+    "subTitle1": "Why choose",
+    "title": "FamClinic?",
+    "description1": {
+      "point1": {
+        "title": "Expert Team :",
+        "description": "Our highly trained professionals are passionate about helping you achieve your beauty and wellness goals."
+      },
+      "point2": {
+        "title": "Innovative Treatments :",
+        "description": "We stay on the cutting edge of beauty technology to deliver results that last."
+      },
+      "point3": {
+        "title": "Client-Centered Approach :",
+        "description": "Your goals are at the forefront of everything we do."
+      },
+      "point4": {
+        "title": "Welcoming Atmosphere :",
+        "description": "Our clinic is designed to make you feel comfortable and at ease, from the moment you walk in."
+      }
+    },
+    "subTitle2": "What Awaits You at FamClinic?",
+    "description2": {
+      "point1": "A cozy, family-friendly atmosphere.",
+      "point2": "Cutting-edge beauty treatments powered by science and artistry.",
+      "point3": "A dedicated team committed to helping you achieve your personal beauty goals."
+    },
+    "affiliatedWith" : "We are affiliated with"
+  },
+
+  "weNotice": {
+    "title": "Brands",
+    "subtitle": "we work with"
   }
 }

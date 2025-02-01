@@ -3,8 +3,12 @@ import treatment1 from "../assets/images/treatment/treatment-1.jpg";
 import TreatmentCards from "../components/Home/TreatmentCards";
 import ScrollToTop from "../components/ScrollToTop";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const Treatment = () => {
+
+  const [t] = useTranslation("global")
+
   return (
     <>
       <ScrollToTop />
@@ -18,7 +22,7 @@ const Treatment = () => {
               >
                 Home{" "}
               </Link>{" "}
-              {">"} Treatment page
+              {">"} {t("treatment.breadcum")}
             </h2>
           </div>
         </section>
@@ -46,7 +50,7 @@ const Treatment = () => {
           <div className="-mt-48 max-w-lg bg-white md:max-w-2xl md:z-10 md:shadow-lg md:absolute md:top-0 md:mt-48 lg:w-3/5 lg:left-0 lg:mt-20 lg:ml-20 xl:mt-24 xl:ml-12">
             <div className="flex items-start flex-col p-12 md:px-16">
               <h2 className="text-2xl font-playfair font-medium lg:text-4xl">
-                Discover the Perfect Treatment for You with us.
+              {t("treatment.title1")}
               </h2>
               <div className="mt-8">
                 <a
@@ -54,7 +58,7 @@ const Treatment = () => {
                   className="group border border-[#8d7b67] p-1 px-2 w-60 mx-auto rounded-full flex items-center justify-between mb-4"
                 >
                   <span className="font-inter text-[12px] font-bold">
-                    Explore what is perfect for you.
+                  {t("treatment.ExploreBtn")}
                   </span>
                   <div className="p-2 bg-[#8d7b67] rounded-full transition-all duration-300 group-hover:translate-x-1">
                     <FaArrowRight color="#fff" />
@@ -72,9 +76,9 @@ const Treatment = () => {
             <div className="title flex items-end justify-center sm:justify-start">
               <h2 className="text-3xl sm:text-4xl md:text-[50px] font-medium font-playfair text-center sm:text-left">
                 <span className="font-playfair text-xl sm:text-2xl md:text-[32px] font-medium">
-                  Onze
+                {t("treatment.subtitle")}
                 </span>{" "}
-                Behandelingen
+                {t("treatment.title2")}
               </h2>
             </div>
             <TreatmentCards />

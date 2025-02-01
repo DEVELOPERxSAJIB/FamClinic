@@ -108,54 +108,34 @@ const About = () => {
 
         <section id="about-section" className="py-16 lg:py-24 relative">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 items-center">
+            
             {/* Content Area */}
-            <div className="flex items-center md:col-span-2">
-              <div className="content-area flex flex-col flex-1 items-start md:items-start">
-                <p className="font-playfair text-[24px] sm:text-[32px] font-normal mb-2">
-                  De kracht achter
-                </p>
-                <h2 className="font-playfair text-[36px] sm:text-[40px] md:text-[50px] font-semibold">
-                  Aphrodite Clinic
-                </h2>
-                <p className="font-normal text-[16px] sm:text-[16px] mt-6 max-w-prose">
-                  Ze was nog jong, toen Wusala Alibeyli al meewerkte in de
-                  kapsalon van haar moeder. In die tijd ontstond haar interesse
-                  in de beautyindustrie. Ook het ondernemen zat er al vroeg in
-                  bij de bevlogen huidtherapeute en eigenaresse van Aphrodite
-                  Clinic. Het was herfst 2018 toen Wusala bij de Kamer van
-                  Koophandel binnenliep om zich met haar cosmetische
-                  (para)medische huidkliniek Aphrodite Clinic in te schrijven.
-                  Ze was toen nog bezig met haar HBO-studie Huidtherapie aan De
-                  Haagse Hogeschool in Den Haag. Dat weerhield de jonge,
-                  leergierige en ambitieuze Wusala er niet van om alvast voor
-                  zichzelf te beginnen. Vanuit haar praktijk in Wijchen
-                  behandelde ze haar eerste klanten en breidde ze haar
-                  klantenkring al snel uit. In 2020 studeerde ze af en mocht ze
-                  zich officieel Huidtherapeut, Bachelor of Science noemen.
-                </p>
-                <p className="font-normal text-[14px] sm:text-[16px] mt-6 max-w-prose">
-                  Wusala’s ondernemersgeest kwam al aan het licht tijdens haar
-                  stageperiode. Ze liep een grensverleggende stage van 6 maanden
-                  in Seoul, Zuid-Korea, het paradijs voor huidspecialisten en
-                  schoonheidsspecialisten. Daar deed ze veel waardevolle
-                  ervaring op bij Oracle Dermatology & Plastic Surgery, de beste
-                  kliniekketen op huidgebied. Ze leerde er met een scala aan
-                  zeer geavanceerde laserapparaten van topkwaliteit werken en
-                  zag hoe goede apparatuur de kwaliteit van behandelingen
-                  positief beïnvloedt. Dit stimuleerde haar om in haar eigen
-                  kliniek uitsluitend te werken met professionele, kwalitatief
-                  hoogwaardige apparatuur, de nieuwste technieken en de beste
-                  huidproducten. Sinds die tijd volgt Wusala voortdurend
-                  trainingen in binnen- en buitenland om bij te blijven met de
-                  nieuwste ontwikkelingen en haar cliënten uitstekende huidzorg
-                  te bieden.
-                </p>
+            <div className="flex flex-col gap-12 items-start md:col-span-2">
+              <div className="top-content">
+                <div className="content-area flex flex-col flex-1 items-start md:items-start">
+                  <p className="font-playfair text-[24px] sm:text-[32px] font-normal mb-2">
+                  {t("aboutDetails.title1")}
+                  </p>
+                  <p className="font-normal text-[16px] sm:text-[16px] mt-4 max-w-prose">
+                  {t("aboutDetails.description1")}
+                  </p>
+                </div>
+              </div>
+              <div className="bottom-content">
+                <div className="content-area flex flex-col flex-1 items-start md:items-start">
+                  <p className="font-playfair text-[24px] sm:text-[32px] font-normal mb-2">
+                    {t("aboutDetails.title2")}
+                  </p>
+                  <p className="font-normal text-[16px] sm:text-[16px] mt-4 max-w-prose">
+                  {t("aboutDetails.description2")}
+                  </p>
+                </div>
               </div>
             </div>
 
             {/* Image Area */}
             <div
-              style={{ maxHeight: "590px", maxWidth: "500px" }}
+              style={{ height: "490px", maxWidth: "500px" }}
               className="img-box mx-auto md:mx-0 max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg"
             >
               <img
@@ -170,6 +150,7 @@ const About = () => {
                 className="w-full h-full object-cover"
               />
             </div>
+
           </div>
         </section>
 
@@ -180,7 +161,7 @@ const About = () => {
                 <div className="title flex flex-col gap-3 sm:gap-5 items-center">
                   <h2 className="text-[28px] sm:text-[40px] md:text-[50px] font-medium font-playfair text-center">
                     <span className="font-playfair text-[20px] sm:text-[28px] md:text-[32px] font-medium">
-                      Ons
+                      {t("members.title")}
                     </span>{" "}
                     Team
                   </h2>
@@ -192,10 +173,10 @@ const About = () => {
               {teamMembers?.map((item) => (
                 <TeamMemberCard
                   key={item.name}
-                  name={item?.name}
-                  profession={item.profession}
+                  name={t(`members.${item.key}.name`)}
+                  profession={t(`members.${item.key}.role`)}
                   imageSrc={item?.image}
-                  description={item?.description}
+                  description={t(`members.${item.key}.description`)}
                 />
               ))}
             </div>

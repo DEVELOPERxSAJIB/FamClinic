@@ -1,9 +1,14 @@
 {
-    "aboutHero": {
-      "sub_title": "Uw schoonheid is onze prioriteit",
-      "title": "Weet meer over ons",
-      "description": "FamClinic is niet zomaar een kliniek; het is je toevluchtsoord voor schoonheid, zelfvertrouwen en zelfliefde. Wij begrijpen dat ware schoonheid van binnenuit komt, en onze missie is om je natuurlijke uitstraling te versterken door middel van gepersonaliseerde, geavanceerde huidverzorgingsbehandelingen. Ons bekwame team gebruikt de nieuwste technieken en technologie om ervoor te zorgen dat je de beste zorg ontvangt in een warme en gastvrije omgeving.",
-      "btnText" : "Bekijk meer details"
-    }
+  "aboutHero": {
+    "sub_title": "Uw schoonheid is onze prioriteit",
+    "title": "Weet meer over ons",
+    "description": "FamClinic is niet zomaar een kliniek; het is je toevluchtsoord voor schoonheid, zelfvertrouwen en zelfliefde. Wij begrijpen dat ware schoonheid van binnenuit komt, en onze missie is om je natuurlijke uitstraling te versterken door middel van gepersonaliseerde, geavanceerde huidverzorgingsbehandelingen. Ons bekwame team gebruikt de nieuwste technieken en technologie om ervoor te zorgen dat je de beste zorg ontvangt in een warme en gastvrije omgeving.",
+    "btnText": "Bekijk meer details"
+  },
+  "aboutDetails": {
+    "title1": "Missieverklaring",
+    "description1": "Bij FamClinic is onze missie eenvoudig: we willen dat je je mooi voelt, van binnen en van buiten! We streven ernaar gepersonaliseerde behandelingen aan te bieden die je natuurlijke schoonheid versterken, zodat je een uitstraling hebt die je innerlijke zelfvertrouwen weerspiegelt. Onze kliniek is een veilige ruimte waar je wordt behandeld als familie en waar jouw geluk ons ultieme doel is.",
+    "title2": "Visieverklaring",
+    "description2": "Onze visie is om de go-to bestemming te zijn voor alles wat met schoonheid te maken heeft. We willen een wereld creëren waarin iedereen zich fantastisch, gevierd en zelfverzekerd voelt. Met een vleugje sparkle en veel liefde, is FamClinic er om je schoonheidsdromen werkelijkheid te maken!"
   }
-  
+}

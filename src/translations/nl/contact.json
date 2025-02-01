@@ -1,0 +1,53 @@
+{
+    "contact": {
+      "breadcum": "Contactpagina",
+      "subtitle": "Neem contact met ons op",
+      "title": "Contacteer Ons",
+      "description1": "Voor informatie en advies of om een afspraak te maken, kunt u tijdens openingstijden telefonisch contact opnemen met FamClinic. U kunt hiervoor ook het contactformulier gebruiken. Wij streven ernaar om binnen 24 uur te reageren.",
+      "description2": "FamClinic werkt uitsluitend op afspraak.",
+  
+      "whatsappBtn": "WhatsApp ons",
+      "callBtn": "Bel ons",
+      "address": "Zeesluisweg 18, 2583 DR Den Haag, Nederland",
+      "openingHours": {
+        "title": "Openingstijden",
+        "Wednesday": "Woensdag",
+        "Thursday": "Donderdag",
+        "Friday": "Vrijdag",
+        "Saturday": "Zaterdag",
+        "Sunday": "Zondag",
+        "Monday": "Maandag",
+        "Tuesday": "Dinsdag"
+      },
+      "form": {
+        "successMessage" : "Bedankt dat u contact opneemt. U ontvangt binnenkort een e-mail van ons.",
+        "firstName": {
+          "label": "Voornaam",
+          "validation": "Voornaam is verplicht"
+        },
+        "lastName": {
+          "label": "Achternaam",
+          "validation": "Achternaam is verplicht"
+        },
+        "email": {
+          "label": "E-mail",
+          "validation": "E-mail is verplicht"
+        },
+        "phone": {
+          "label": "Telefoon",
+          "validation": "Telefoonnummer is verplicht"
+        },
+        "subject": {
+          "label": "Onderwerp",
+          "validation": "Onderwerp is verplicht"
+        },
+        "message": {
+          "label": "Bericht",
+          "validation": "Bericht mag niet meer dan 500 tekens bevatten"
+        },
+        "priveryAndPolicy": "Door dit te selecteren, gaat u akkoord met ons privacybeleid.",
+        "submitBtn": "Laten we praten"
+      }
+    }
+  }
+  

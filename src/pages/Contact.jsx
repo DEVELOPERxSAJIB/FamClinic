@@ -12,19 +12,22 @@ import ScrollToTop from "../components/ScrollToTop";
 import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";
 import { FaLocationDot } from "react-icons/fa6";
-
-const schema = yup
-  .object({
-    firstName: yup.string().required("First name is required"),
-    lastName: yup.string().required("Last name is required"),
-    phone: yup.string().required("Phone is required"),
-    subject: yup.string().required("Subject is required"),
-    email: yup.string().email().required("Email is required"),
-    message: yup.string().max(500, "Message cannot exceed 500 characters"),
-  })
-  .required();
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
+  const [t] = useTranslation("global");
+
+  const schema = yup
+    .object({
+      firstName: yup.string().required(t("contact.form.firstName.validation")),
+      lastName: yup.string().required(t("contact.form.lastName.validation")),
+      phone: yup.string().required(t("contact.form.phone.validation")),
+      subject: yup.string().required(t("contact.form.subject.validation")),
+      email: yup.string().email().required(t("contact.form.email.validation")),
+      message: yup.string().max(500, t("contact.form.message.validation")),
+    })
+    .required();
+
   const [agreed, setAgreed] = useState(false);
 
   const {
@@ -107,7 +110,7 @@ const Contact = () => {
             >
               Home{" "}
             </Link>{" "}
-            {">"} Contact Page
+            {">"} {t("contact.breadcum")}
           </h2>
         </div>
       </div>
@@ -115,20 +118,18 @@ const Contact = () => {
         <div className="container max-w-[1380px] px-6 py-12 mx-auto">
           <div className="lg:flex lg:items-center lg:-mx-6">
             <div className="lg:w-1/2 lg:mx-6">
-              <h2 className="text-[32px] md:text-[48px] lg:text-[64px] max-w-[90%] font-semibold text-start md:text-start">
-                Kom in contact met ons
+              <p className="font-playfair text-[40px] font-normal mb-0 pb-0">
+                {t("contact.subtitle")}
+              </p>
+              <h2 className="font-playfair text-[64px] font-semibold mt-0">
+                {t("contact.title")}
               </h2>
               <div className="desc">
                 <p className="text-[16px] font-light py-3">
-                  {" "}
-                  Voor informatie en advies of het maken van een afspraak, kunt
-                  u Aphrodite Clinic telefonisch bereiken tijdens
-                  openingstijden. U kunt daarvoor ook het contactformulier
-                  gebruiken. Wij streven ernaar om binnen 24 uur te reageren.
+                  {t("contact.description1")}
                 </p>
                 <p className="text-[16px] font-light py-3">
-                  {" "}
-                  Aphrodite Clinic werkt alleen op afspraak.
+                  {t("contact.description2")}
                 </p>
               </div>
               <div className="mt-6 space-y-8 md:mt-8">
@@ -139,10 +140,10 @@ const Contact = () => {
                     borderTopLeftRadius: "10px",
                     borderBottomLeftRadius: "10px",
                   }}
-                  href="https://wa.me/+8801789557538"
+                  href="https://wa.me/+31643802210"
                   className="inline-flex bg-white items-center shadow font-semibold py-2 px-4"
                 >
-                  WhatsApp ons
+                  {t("contact.whatsappBtn")}
                   <div className="ml-12 p-3 translate-all duration-300 shadow-md bg-[#F0DECA] rounded-full hover:bg-[#F9EEDD] hover:translate-all hover:duration-300">
                     <LiaWhatsapp className="" size={30} color="#8D7B67" />
                   </div>
@@ -157,10 +158,10 @@ const Contact = () => {
                     borderTopLeftRadius: "10px",
                     borderBottomLeftRadius: "10px",
                   }}
-                  href="tel:+8801789557538"
+                  href="tel:+31643802210"
                   className="inline-flex bg-white items-center shadow font-semibold py-2 px-4"
                 >
-                  Bel ons (024) 207 02 06
+                  {t("contact.callBtn")} +31643802210
                   <div className="ml-12 p-3 shadow-md bg-[#F0DECA] rounded-full translate-all duration-300 hover:bg-[#F9EEDD] hover:translate-all hover:duration-300">
                     <MdCall className="" size={30} color="#8D7B67" />
                   </div>
@@ -179,8 +180,7 @@ const Contact = () => {
                         className="text-success text-[14px]"
                         style={{ fontWeight: "700px" }}
                       >
-                        Thanks for contacting. You will get an Email from us
-                        soon.
+                        {t("contact.form.successMessage")}
                       </span>
 
                       <span
@@ -199,7 +199,7 @@ const Contact = () => {
                           htmlFor="first-name"
                           className="block text-sm/6 font-semibold"
                         >
-                          First name
+                          {t("contact.form.firstName.label")}
                         </label>
                         <div className="mt-2.5">
                           <input
@@ -220,7 +220,7 @@ const Contact = () => {
                           htmlFor="last-name"
                           className="block text-sm/6 font-semibold"
                         >
-                          Last name
+                          {t("contact.form.lastName.label")}
                         </label>
                         <div className="mt-2.5">
                           <input
@@ -241,7 +241,7 @@ const Contact = () => {
                           htmlFor="email"
                           className="block text-sm/6 font-semibold"
                         >
-                          Email
+                          {t("contact.form.email.label")}
                         </label>
                         <div className="mt-2.5">
                           <input
@@ -262,7 +262,7 @@ const Contact = () => {
                           htmlFor="phone"
                           className="block text-sm/6 font-semibold"
                         >
-                          Phone
+                          {t("contact.form.phone.label")}
                         </label>
                         <div className="mt-2.5">
                           <input
@@ -283,7 +283,7 @@ const Contact = () => {
                           htmlFor="subject"
                           className="block text-sm/6 font-semibold"
                         >
-                          Subject
+                          {t("contact.form.subject.label")}
                         </label>
                         <div className="mt-2.5">
                           <input
@@ -304,7 +304,7 @@ const Contact = () => {
                           htmlFor="message"
                           className="block text-sm/6 font-semibold "
                         >
-                          Message
+                          {t("contact.form.message.label")}
                         </label>
                         <div className="mt-2.5">
                           <textarea
@@ -341,11 +341,10 @@ const Contact = () => {
                           </Switch>
                         </div>
                         <Label className="text-sm/6">
-                          By selecting this, you agree to our{" "}
+                          {t("contact.form.priveryAndPolicy")}{" "}
                           <a href="#" className="font-semibold">
-                            privacy&nbsp;policy
+                            {t("contact.form.priveryAndPolicyLink")}
                           </a>
-                          .
                         </Label>
                         <input
                           type="hidden"
@@ -399,24 +398,28 @@ const Contact = () => {
             }}
             className="bg-[#F0DECA] absolute -top-6 px-4 py-2 inline-block rounded-t-lg ml-0 md:ml-12"
           >
-            <h4 className="font-semibold text-base">Opening hours</h4>
+            <h4 className="font-semibold text-base">
+              {t("contact.openingHours.title")}
+            </h4>
           </div>
           <div className="w-1/2 px-6 mt-4 lg:mt-0">
             <div className="grid grid-cols-1 gap-4 my-2">
               <div className="flex justify-between">
-                <span className="font-semibold">Wednesday:</span>
+                <span className="font-semibold">
+                  {t("contact.openingHours.Wednesday")}:
+                </span>
                 <span className="font-semibold">Closed</span>
               </div>
               <div className="flex justify-between">
-                <span>Thursday:</span>
+                <span>{t("contact.openingHours.Thursday")}:</span>
                 <span>10 AM-6 PM</span>
               </div>
               <div className="flex justify-between">
-                <span>Friday:</span>
+                <span>{t("contact.openingHours.Friday")}:</span>
                 <span>10 AM-9 PM</span>
               </div>
               <div className="flex justify-between">
-                <span>Saturday:</span>
+                <span>{t("contact.openingHours.Saturday")}:</span>
                 <span>10 AM-9 PM</span>
               </div>
             </div>
@@ -424,21 +427,21 @@ const Contact = () => {
           <div className="w-1/2 px-6 mt-4 lg:mt-0">
             <div className="grid grid-cols-1 gap-4 my-2">
               <div className="flex justify-between">
-                <span>Sunday:</span>
+                <span>{t("contact.openingHours.Sunday")}:</span>
                 <span>10 AM-9 PM</span>
               </div>
               <div className="flex justify-between">
-                <span>Monday:</span>
+                <span>{t("contact.openingHours.Monday")}:</span>
                 <span>10 AM-6 PM</span>
               </div>
               <div className="flex justify-between">
-                <span>Tuesday:</span>
+                <span>{t("contact.openingHours.Tuesday")}:</span>
                 <span>10AM - 6PM</span>
               </div>
             </div>
             <h2 className="flex gap-2 opacity-0 md:opacity-100 items-center font-semibold tracking-widest text-xs mt-6">
               <FaLocationDot size={20} className="flex-shrink-0" />
-              <p className="">Zeesluisweg 18, 2583 DR Den Haag, Netherlands</p>
+              <p className="">{t("contact.address")}</p>
             </h2>
           </div>
         </div>

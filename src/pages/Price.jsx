@@ -6,9 +6,11 @@ import { FiArrowRight } from "react-icons/fi";
 import { MdKeyboardArrowDown, MdKeyboardArrowUp } from "react-icons/md";
 import treatments from "../data/treatment";
 import { GoCheckCircleFill } from "react-icons/go";
+import { useTranslation } from "react-i18next";
 
 const Price = () => {
   const [openIndex, setOpenIndex] = useState(null);
+  const [t] = useTranslation("global")
 
   const toggleAccordion = (index) => {
     setOpenIndex(openIndex === index ? null : index);
@@ -28,7 +30,7 @@ const Price = () => {
             <Link to="/" className="hover:text-[#8d7b67]">
               Home
             </Link>{" "}
-            {">"} Contact Page
+            {">"} {t("price.breadcum")}
           </h2>
         </div>
       </div>
@@ -37,18 +39,17 @@ const Price = () => {
         <div className="lg:flex items-start justify-between">
           <div className="content-area md:sticky top-20 pt-12 flex flex-col mb-8 md:mb-0">
             <p className="font-playfair text-[20px] sm:text-[30px] md:text-[40px] font-normal">
-              Plans for You
+              {t("price.subtitle")}
             </p>
             <h2 className="font-playfair text-[30px] sm:text-[40px] md:text-[64px] font-semibold">
-              Choose your plan
+            {t("price.title")}
             </h2>
             <p className="max-w-[550px] text-[18px] mt-8">
-              We offer a range of flexible pricing plans designed to provide you
-              with top-notch treatments at transparent and competitive rates.
+            {t("price.description")}
             </p>
             <div className="button-area pt-16 flex flex-col md:flex-row gap-5 items-center">
               <Link to="/about" className="flex items-center gap-2 text-[18px]">
-                Maak kennis met ons
+              {t("price.button")}
                 <div className="rounded-full bg-[#F9EEDD] p-3 border border-[#F9EEDD] shadow-lg group-hover:translate-x-2">
                   <FiArrowRight />
                 </div>

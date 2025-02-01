@@ -162,10 +162,10 @@ const Home = () => {
               <div className="upper-content">
                 <div className="title">
                   <span className="font-playfair text-xl md:text-2xl font-medium">
-                    Why choose
+                    {t("whyUs.subTitle1")}
                   </span>
                   <h2 className="text-2xl md:text-4xl font-medium font-playfair">
-                    FamClinic?
+                    {t("whyUs.title")}
                   </h2>
                 </div>
                 <div className="desc">
@@ -177,10 +177,9 @@ const Home = () => {
                         className="flex-shrink-0"
                       />
                       <span className="text-base font-semibold">
-                        Expert Team :{" "}
+                        {t("whyUs.description1.point1.title")}{" "}
                         <span className="font-medium">
-                          Our highly trained professionals are passionate about
-                          helping you achieve your beauty and wellness goals.
+                          {t("whyUs.description1.point1.description")}
                         </span>
                       </span>
                     </li>
@@ -190,10 +189,9 @@ const Home = () => {
                         className="flex-shrink-0"
                       />
                       <span className="text-base font-semibold">
-                        Innovative Treatments:{" "}
+                        {t("whyUs.description1.point2.title")}{" "}
                         <span className="font-medium">
-                          We stay on the cutting edge of beauty technology to
-                          deliver results that last.
+                          {t("whyUs.description1.point2.description")}
                         </span>
                       </span>
                     </li>
@@ -203,9 +201,9 @@ const Home = () => {
                         className="flex-shrink-0"
                       />
                       <span className="text-base font-semibold">
-                        Client-Centered Approach:{" "}
+                        {t("whyUs.description1.point3.title")}{" "}
                         <span className="font-medium">
-                          Your goals are at the forefront of everything we do.
+                          {t("whyUs.description1.point3.description")}
                         </span>
                       </span>
                     </li>
@@ -215,10 +213,9 @@ const Home = () => {
                         className="flex-shrink-0"
                       />
                       <span className="text-base font-semibold">
-                        Welcoming Atmosphere:{" "}
+                        {t("whyUs.description1.point4.title")}{" "}
                         <span className="font-medium">
-                          Our clinic is designed to make you feel comfortable
-                          and at ease, from the moment you walk in.
+                          {t("whyUs.description1.point4.description")}
                         </span>
                       </span>
                     </li>
@@ -228,7 +225,7 @@ const Home = () => {
               <div className="bottom-content">
                 <div className="title">
                   <span className="font-playfair text-xl md:text-2xl font-medium">
-                    What Awaits You at FamClinic?
+                    {t("whyUs.subTitle2")}
                   </span>
                 </div>
                 <div className="desc">
@@ -239,7 +236,7 @@ const Home = () => {
                         className="flex-shrink-0"
                       />
                       <span className="text-base font-semibold">
-                        A cozy, family-friendly atmosphere.
+                        {t("whyUs.description2.point1")}
                       </span>
                     </li>
                     <li className="flex items-center gap-2">
@@ -248,8 +245,7 @@ const Home = () => {
                         className="flex-shrink-0"
                       />
                       <span className="text-base font-semibold">
-                        Cutting-edge beauty treatments powered by science and
-                        artistry.
+                        {t("whyUs.description2.point2")}
                       </span>
                     </li>
                     <li className="flex items-center gap-2">
@@ -258,8 +254,7 @@ const Home = () => {
                         className="flex-shrink-0"
                       />
                       <span className="text-base font-semibold">
-                        A dedicated team committed to helping you achieve your
-                        personal beauty goals.
+                        {t("whyUs.description2.point3")}
                       </span>
                     </li>
                   </ul>
@@ -278,7 +273,7 @@ const Home = () => {
                 className="bg-[#F0DECA] px-4 py-2 inline-block rounded-t-lg ml-0 md:ml-12"
               >
                 <h4 className="font-semibold text-base">
-                  Wij zijn aangesloten bij
+                  {t("whyUs.affiliatedWith")}
                 </h4>
               </div>
               <div className="bg-white -mt-4 px-12 py-4 rounded-lg grid grid-cols-2 md:grid-cols-4 flex-wrap items-center shadow lg:w-full lg:justify-between">

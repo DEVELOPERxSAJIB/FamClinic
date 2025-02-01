@@ -1,0 +1,20 @@
+{
+  "members": {
+    "title": "Ons",
+    "member1": {
+      "name": "Dr. Mohamed Alwan",
+      "role": "Huidverzorging & Laserbehandeling Specialist",
+      "description": "Met jarenlange ervaring in de huidverzorging en esthetische behandelingen, is Dr. Mohamed gepassioneerd om de natuurlijke schoonheid van zijn cliënten te verbeteren. Zijn zorgvuldige benadering zorgt ervoor dat elke behandeling op maat wordt gemaakt, met uitzonderlijke resultaten bij elke sessie."
+    },
+    "member2": {
+      "name": "Dr. Shoruok Alwan",
+      "role": "Huidverzorging & Laserbehandeling Specialist",
+      "description": "Dr. Shoruok combineert diepe technische kennis met een zorgzame benadering. Ze gelooft dat schoonheidszorg een reis is, en zij is er om haar cliënten stap voor stap te begeleiden, zodat ze gepersonaliseerde behandelingen ontvangen die aansluiten bij hun doelen."
+    },
+    "member3": {
+      "name": "Asma",
+      "role": "Administratie",
+      "description": "Asma is het vriendelijke, gastvrije gezicht van FamClinic’s administratieteam. Ze zorgt ervoor dat afspraken efficiënt worden gepland en dat elke cliënt zich gewaardeerd voelt vanaf het eerste contact."
+    }
+  }
+}
