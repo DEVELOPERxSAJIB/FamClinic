@@ -1,5 +1,5 @@
 import { FaArrowRight } from "react-icons/fa6";
-import treatment1 from "../assets/images/treatment/treatment-1.jpg";
+import treatment from "../assets/images/hero-image.jpg";
 import TreatmentCards from "../components/Home/TreatmentCards";
 import ScrollToTop from "../components/ScrollToTop";
 import { Link } from "react-router-dom";
@@ -33,6 +33,7 @@ const Treatment = () => {
               maxWidth: "575px",
               height: "575px",
               objectFit: "cover",
+              objectPosition: "top right"
             }}
           >
             <img
@@ -43,11 +44,11 @@ const Treatment = () => {
                 borderBottomLeftRadius: "10px",
               }}
               className="w-full md:w-full md:h-full h-3/4 object-cover"
-              src={treatment1}
-              alt="Winding mountain road"
+              src={treatment}
+              alt="treatm-hero-image"
             />
           </div>
-          <div className="-mt-48 max-w-lg bg-white md:max-w-2xl md:z-10 md:shadow-lg md:absolute md:top-0 md:mt-48 lg:w-3/5 lg:left-0 lg:mt-20 lg:ml-20 xl:mt-24 xl:ml-12">
+          <div className="-mt-48 max-w-lg bg-white md:max-w-2xl md:z-10 md:shadow-lg md:absolute md:top-0 md:mt-48 lg:w-3/5 lg:-left-8 lg:mt-20 lg:ml-20 xl:mt-24 xl:ml-12">
             <div className="flex items-start flex-col p-12 md:px-16">
               <h2 className="text-2xl font-playfair font-medium lg:text-4xl">
               {t("treatment.title1")}

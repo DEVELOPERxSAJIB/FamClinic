@@ -50,20 +50,26 @@ const SingleTreatment = () => {
                   >
                     <div className="pb-8">
                       <div className="w-12 h-12 rounded-full bg-[#F0DECA] mx-auto flex justify-center items-center transition-all duration-300 group-hover:bg-[#8d7b67]">
-                        <span className="w-6 h-6 text-[#8d7b67] transition-all duration-300 group-hover:text-[#F0DECA]">
-                          0{index + 1}
+                        <span className="w-6 h-6 text-[#8d7b67] text-center transition-all duration-300 group-hover:text-[#F0DECA]">
+                          {index < 9 ? "0" + (index + 1) : index + 1}
                         </span>
                       </div>
                       <h3 className="text-2xl font-bold my-6 text-center">
                         {item.name}
                       </h3>
-                      <div className="flex items-center justify-center">
-                        <span className="text-3xl font-medium text-gray-900">
-                          € {item.price}
+                      <div className="flex items-center gap-2 justify-center">
+                        <p className="text-[18px] font-medium hidden md:block">
+                          Start from : 
+                        </p>
+                        <span className="text-3xl flex items-center justify-center font-medium text-gray-900">
+                          <div className="icon">€</div>
+                          <div className="text -mt-2">{item.price}</div>
                         </span>
-                        <span className="text-xl ml-3">
-                          |&nbsp; {item.duration}
-                        </span>
+                        {item.duration && (
+                          <span className="text-xl">
+                            |&nbsp; {item.duration}
+                          </span>
+                        )}
                       </div>
                     </div>
 

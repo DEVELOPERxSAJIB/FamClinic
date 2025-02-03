@@ -1,20 +1,17 @@
 import treatment1 from "../assets/images/treatment/treatment-1.jpg";
 import treatment2 from "../assets/images/treatment/treatment-2.jpg";
-import treatment3 from "../assets/images/treatment/treatment-3.jpg";
-import treatment4 from "../assets/images/treatment/treatment-4.jpg";
-import treatment5 from "../assets/images/treatment/treatment-5.jpg";
-import treatment6 from "../assets/images/treatment/treatment-6.jpg";
-import treatment7 from "../assets/images/treatment/treatment-7.jpg";
 import treatment8 from "../assets/images/treatment/treatment-8.jpg";
 import treatment9 from "../assets/images/treatment/treatment-9.jpg";
 import treatment10 from "../assets/images/treatment/treatment-10.jpg";
 import treatment11 from "../assets/images/treatment/treatment-11.jpg";
 import treatment12 from "../assets/images/treatment/treatment-12.jpg";
 import treatment13 from "../assets/images/treatment/treatment-13.jpg";
-import treatment14 from "../assets/images/treatment/treatment-14.jpg";
+import botox from "../assets/images/treatment/botox.jpg";
+import fillers from "../assets/images/treatment/fillers.jpg";
 import treatment15 from "../assets/images/treatment/treatment-15.jpg";
 import treatment16 from "../assets/images/treatment/treatment-16.jpg";
 import treatment17 from "../assets/images/treatment/treatment-17.jpg";
+import treatmentLemon from "../assets/images/treatment/treatment-lemon.jpg";
 
 const treatments = [
   {
@@ -32,12 +29,178 @@ const treatments = [
       "Stimulates collagen",
       "Enhances radiance with minimal downtime.",
     ],
-    subcategory: [],
+    subcategory: [
+      {
+        name: "Full face and neck",
+        price: "100",
+        duration: "",
+      },
+      {
+        name: "Sideburns",
+        price: "35",
+        duration: "",
+      },
+      {
+        name: "Upper lip",
+        price: "35",
+        duration: "",
+      },
+      {
+        name: "Onderlip",
+        price: "35",
+        duration: "",
+      },
+      {
+        name: "Jawline",
+        price: "35",
+        duration: "",
+      },
+      {
+        name: "Chin",
+        price: "35",
+        duration: "",
+      },
+      {
+        name: "Cheeks",
+        price: "35",
+        duration: "",
+      },
+      {
+        name: "Eyebrows",
+        price: "35",
+        duration: "",
+      },
+      {
+        name: "Hals",
+        price: "35",
+        duration: "",
+      },
+      {
+        name: "Vrouwen",
+        price: "230",
+        duration: "",
+      },
+      {
+        name: "Manen",
+        price: "300",
+        duration: "",
+      },
+      {
+        name: "Armpits",
+        price: "40",
+        duration: "",
+      },
+      {
+        name: "Hands",
+        price: "20",
+        duration: "",
+      },
+      {
+        name: "Upper arms",
+        price: "45",
+        duration: "",
+      },
+      {
+        name: "Lower arms",
+        price: "45",
+        duration: "",
+      },
+      {
+        name: "Full arms",
+        price: "80",
+        duration: "",
+      },
+      {
+        name: "Shoulders",
+        price: "40",
+        duration: "",
+      },
+      {
+        name: "Upper back",
+        price: "40",
+        duration: "",
+      },
+      {
+        name: "Lower back",
+        price: "40",
+        duration: "",
+      },
+      {
+        name: "Full back",
+        price: "70",
+        duration: "",
+      },
+      {
+        name: "Chest",
+        price: "45",
+        duration: "",
+      },
+      {
+        name: "Abdomen",
+        price: "45",
+        duration: "",
+      },
+      {
+        name: "Chest and Abdomen",
+        price: "80",
+        duration: "",
+      },
+      {
+        name: "Navel line",
+        price: "20",
+        duration: "",
+      },
+      {
+        name: "Upper legs",
+        price: "60",
+        duration: "",
+      },
+      {
+        name: "Lower legs",
+        price: "60",
+        duration: "",
+      },
+      {
+        name: "Foots",
+        price: "20",
+        duration: "",
+      },
+      {
+        name: "Full legs",
+        price: "100",
+        duration: "",
+      },
+      {
+        name: "Brazilian",
+        price: "50",
+        duration: "",
+      },
+      {
+        name: "Bikini line",
+        price: "30",
+        duration: "",
+      },
+      {
+        name: "Buttocks",
+        price: "50",
+        duration: "",
+      },
+      {
+        name: "Buttocks line",
+        price: "30",
+        duration: "",
+      },
+      {
+        name: "Gehele BIkini",
+        price: "80",
+        duration: "",
+      },
+    ],
   },
   {
     id: "2",
-    name: "Basic Cleansing",
-    slug: "basic-cleansing",
+    name: "Cleansing",
+    slug: "cleansing",
     image: treatment2,
     price: "50",
     duration: "30 min",
@@ -48,102 +211,56 @@ const treatments = [
       "Prevents clogged pores",
       "Maintains a smooth, glowing complexion.",
     ],
-    subcategory: [],
+    subcategory: [
+      {
+        name : "Basic Cleansing",
+        price: "60",
+        duration: "",
+      },
+      {
+        name : "Deep Cleansing",
+        price: "57",
+        duration: "",
+      },
+      {
+        name : "Acne treatment",
+        price: "150",
+        duration: "",
+      },
+      {
+        name : "Dermapen",
+        price: "130",
+        duration: "",
+      },
+      {
+        name : "Bio Peeling",
+        price: "125",
+        duration: "",
+      },
+      {
+        name : "Algen Peeling",
+        price: "130",
+        duration: "",
+      },
+      {
+        name : "Chemische Peeling",
+        price: "150",
+        duration: "",
+      },
+      {
+        name : "Carbonic Peeling",
+        price: "130",
+        duration: "",
+      },
+      {
+        name : "Fruitzuur Peeling",
+        price: "130",
+        duration: "",
+      },
+    ],
   },
   {
     id: "3",
-    name: "Deep Cleansing",
-    slug: "deep-cleansing",
-    image: treatment3,
-    price: "80",
-    duration: "1 hr",
-    description:
-      "An advanced treatment that deeply cleanses the skin by removing impurities from within the pores. This includes exfoliation, steaming, and extractions.",
-    benefits: [
-      "Reduces breakouts",
-      "Improves circulation",
-      "Gives your skin a healthy glow.",
-    ],
-    subcategory: [],
-  },
-  {
-    id: "4",
-    name: "Dermapen",
-    slug: "dermapen",
-    image: treatment4,
-    price: "120",
-    duration: "45 min",
-    description:
-      "A microneedling treatment that stimulates collagen and elastin production to reduce the appearance of scars, wrinkles, and uneven skin tone.",
-    benefits: [
-      "Diminishes scars",
-      "Improves skin texture",
-      "Boosts absorption of skincare products.",
-    ],
-    subcategory: [],
-  },
-  {
-    id: "5",
-    name: "BioPeeling",
-    slug: "biopeeling",
-    image: treatment5,
-    price: "90",
-    duration: "1 hr",
-    description:
-      "A natural exfoliation treatment using botanical ingredients to remove dead skin cells and promote regeneration.",
-    benefits: [
-      "Brightens dull skin",
-      "Reduces pigmentation",
-      "Smooths out texture for a refreshed appearance.",
-    ],
-    subcategory: [],
-  },
-  {
-    id: "6",
-    name: "Carbon Peeling",
-    slug: "carbon-peeling",
-    image: treatment6,
-    price: "110",
-    duration: "1 hr",
-    description:
-      'Known as the "Hollywood Peel," this treatment uses a carbon mask and laser to exfoliate the skin and improve its appearance.',
-    benefits: ["Reduces oiliness", "Enhances skin clarity", "Minimizes pores."],
-    subcategory: [],
-  },
-  {
-    id: "7",
-    name: "HydraFacial",
-    slug: "hydrafacial",
-    image: treatment7,
-    price: "130",
-    duration: "1 hr",
-    description:
-      "A multi-step facial that combines cleansing, exfoliation, hydration, and protection, leaving skin nourished and radiant.",
-    benefits: [
-      "Provides intense hydration",
-      "Reduces fine lines",
-      "Leaves skin glowing.",
-    ],
-    subcategory: [],
-  },
-  {
-    id: "8",
-    name: "Cryolipolysis",
-    slug: "cryolipolysis",
-    image: treatment8,
-    price: "200",
-    duration: "2 hr",
-    description:
-      "A fat-freezing body contouring treatment that eliminates stubborn fat.",
-    benefits: [
-      "Non-invasive",
-      "Targets localized fat areas",
-      "Sculpts body contours without surgery.",
-    ],
-    subcategory: [],
-  },
-  {
-    id: "9",
     name: "Mesotherapy",
     slug: "mesotherapy",
     image: treatment9,
@@ -156,12 +273,28 @@ const treatments = [
       "Rejuvenates",
       "Stimulates collagen production for long-term skin health.",
     ],
-    subcategory: [],
+    subcategory: [
+      {
+        name: "For hair loss",
+        price: "130",
+        duration: "",
+      },
+      {
+        name: "Under-eye",
+        price: "125",
+        duration: "",
+      },
+      {
+        name: "Face",
+        price: "130",
+        duration: "",
+      }
+    ],
   },
   {
-    id: "10",
-    name: "Plasma Therapy",
-    slug: "plasma-therapy",
+    id: "4",
+    name: "Plasma Treatments",
+    slug: "plasma-treatments",
     image: treatment10,
     price: "180",
     duration: "1 hr",
@@ -173,10 +306,26 @@ const treatments = [
       "Stimulates hair growth",
       "Provides a non-surgical solution.",
     ],
-    subcategory: [],
+    subcategory: [
+      {
+        "name" : "Face",
+        "price": "150",
+        "duration": ""
+      },
+      {
+        "name" : "Hair loss",
+        "price": "150",
+        "duration": ""
+      },
+      {
+        "name" : "Gold PRP",
+        "price": "175",
+        "duration": ""
+      }
+    ],
   },
   {
-    id: "11",
+    id: "5",
     name: "Tattoo Removal",
     slug: "tattoo-removal",
     image: treatment11,
@@ -185,30 +334,63 @@ const treatments = [
     description:
       "Advanced laser technology to safely remove tattoos of various sizes and colors.",
     benefits: ["Gradual fading", "Minimal risk of scarring."],
-    subcategory: [],
+    subcategory: [
+      {
+        name: "1 tot 10 centimeter",
+        price: "40",
+        duration: "",
+      },
+      {
+        name: "10 tot 30 centimeter",
+        price: "80",
+        duration: "",
+      },
+      {
+        name: "5 tot 50 centimeter",
+        price: "100",
+        duration: "",
+      }
+    ],
   },
   {
-    id: "12",
-    name: "Mole & Cyst Removal",
-    slug: "mole-cyst-removal",
-    image: treatment12,
-    price: "220",
-    duration: "1 hr",
+    id: "6",
+    name: "Cryolipolysis",
+    slug: "cryolipolysis",
+    image: treatment8,
+    price: "100",
+    duration: "2 hr",
     description:
-      "Safe and efficient removal of moles and cysts for aesthetic or medical reasons.",
+      "A fat-freezing body contouring treatment that eliminates stubborn fat.",
     benefits: [
-      "Improves appearance",
-      "Minimizes irritation",
-      "Requires minimal recovery time.",
+      "Non-invasive",
+      "Targets localized fat areas",
+      "Sculpts body contours without surgery.",
     ],
     subcategory: [],
   },
   {
-    id: "13",
+    id: "14",
+    name: "Lemon Bottle Behandeling",
+    slug: "lemon-bottle-behandeling",
+    image: treatmentLemon,
+    price: "125",
+    duration: "",
+    description:
+      "A non-invasive fat-dissolving treatment designed to contour and refine body shape by targeting stubborn fat deposits.",
+    benefits: [
+      "Effectively reduces localized fat",
+      "Non-surgical and minimally invasive",
+      "Enhances body contours with natural-looking results",
+      "Promotes a smoother, more toned appearance",
+    ],
+    subcategory: [],
+  },  
+  {
+    id: "7",
     name: "Teeth Whitening",
     slug: "teeth-whitening",
     image: treatment13,
-    price: "150",
+    price: "80",
     duration: "1 hr",
     description:
       "Professional whitening treatments to remove stains and brighten your smile.",
@@ -220,23 +402,63 @@ const treatments = [
     subcategory: [],
   },
   {
-    id: "14",
-    name: "Botox & Fillers",
-    slug: "botox-fillers",
-    image: treatment14,
-    price: "300",
+    id: "8",
+    name: "Mole & Cyst Removal",
+    slug: "mole-cyst-removal",
+    image: treatment12,
+    price: "25",
     duration: "1 hr",
     description:
-      "Non-invasive injectables that smooth wrinkles and restore volume to the face.",
+      "Safe and efficient removal of moles and cysts for aesthetic or medical reasons.",
     benefits: [
-      "Smooths fine lines",
-      "Restores youthful volume",
-      "Provides natural-looking enhancements.",
+      "Improves appearance",
+      "Minimizes irritation",
+      "Requires minimal recovery time.",
     ],
     subcategory: [],
   },
   {
-    id: "15",
+    id: "9",
+    name: "Botox",
+    slug: "botox",
+    image: botox,
+    price: "40",
+    description:
+      "Non-invasive injectables that smooth wrinkles and restore volume to the face.",
+    benefits: [
+      "Smooths fine lines",
+      "restores youthful volume",
+      "provides natural-looking enhancements",
+    ],
+    subcategory: [
+      { name: "1 zone", price: "90", duration: "" },
+      { name: "2 zones ", price: "170", duration: "" },
+      { name: "3 zones", price: "250", duration: "" },
+    ],
+  },
+  {
+    id: "10",
+    name: "Fillers",
+    slug: "fillers",
+    image: fillers,
+    price: "40",
+    description:
+      "Non-invasive injectables that smooth wrinkles and restore volume to the face.",
+    benefits: [
+      "Smooths fine lines",
+      "restores youthful volume",
+      "provides natural-looking enhancements",
+    ],
+    subcategory: [
+      { name: "Desolving", price: "130", duration: "" },
+      { name: "1 ML", price: "200", duration: "" },
+      { name: "2 ML", price: "380", duration: "" },
+      { name: "3 ML", price: "460", duration: "" },
+      { name: "4 ML", price: "740", duration: "" },
+    ],
+  },
+  {
+    id: "11",
     name: "Massages",
     slug: "massages",
     image: treatment15,
@@ -258,7 +480,7 @@ const treatments = [
     ],
   },
   {
-    id: "16",
+    id: "12",
     name: "Eyebrows & Eyelashes",
     slug: "eyebrows-&-eyelashes",
     image: treatment16,
@@ -278,7 +500,7 @@ const treatments = [
     ],
   },
   {
-    id: "17",
+    id: "13",
     name: "Manicure & Pedicure",
     slug: "manicure-&-pedicure",
     image: treatment17,
@@ -299,6 +521,7 @@ const treatments = [
       { name: "Gel Polish - Pedicure", price: "60", duration: "1 hr" },
     ],
   },
+
 ];
 
 export default treatments;

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import footerLogo from "../assets/images/logo.png";
+import footerLogo from "../assets/images/logo/new_logo.jpg";
 import treatments from "../data/treatment";
 import { useTranslation } from "react-i18next";
 
@@ -89,7 +89,7 @@ const Footer = () => {
           </span>
 
           <div className="flex items-center justify-center gap-4 flex-wrap">
-            <button className="w-10 h-10 flex items-center justify-center relative overflow-hidden rounded-full bg-white shadow-md shadow-gray-200 group transition-all duration-300">
+            <Link to={"https://www.facebook.com/share/1AfN6HRaR6/?mibextid=wwXIfr"} target="_blank" className="w-10 h-10 flex items-center justify-center relative overflow-hidden rounded-full bg-white shadow-md shadow-gray-200 group transition-all duration-300">
               <svg
                 className="relative z-10 fill-gray-900 transition-all duration-300 group-hover:fill-white"
                 xmlns="http://www.w3.org/2000/svg"
@@ -107,8 +107,8 @@ const Footer = () => {
                 className="absolute top-full left-0 w-full h-full rounded-full
                 bg-blue-500 z-0 transition-all duration-500 group-hover:top-0"
               ></div>
-            </button>
-            <button className="w-10 h-10 flex items-center justify-center relative overflow-hidden rounded-full bg-white shadow-md shadow-gray-200 group transition-all duration-300">
+            </Link>
+            <Link to={"https://www.tiktok.com/@famclinic"} target="_blank" className="w-10 h-10 flex items-center justify-center relative overflow-hidden rounded-full bg-white shadow-md shadow-gray-200 group transition-all duration-300">
               <svg
                 className="fill-gray-900 relative z-10 transition-all duration-300 group-hover:fill-white"
                 xmlns="http://www.w3.org/2000/svg"
@@ -137,8 +137,8 @@ const Footer = () => {
                 />
               </svg>
               <div className="absolute top-full left-0 w-full h-full rounded-full bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-black via-black to-red-600 z-0 transition-all duration-500 group-hover:top-0" />
-            </button>
-            <button className="w-10 h-10 flex items-center justify-center rounded-full relative overflow-hidden bg-white shadow-md shadow-gray-200 group transition-all duration-500">
+            </Link>
+            <Link to={"https://www.instagram.com/famclinic25"} target="_blank" className="w-10 h-10 flex items-center justify-center rounded-full relative overflow-hidden bg-white shadow-md shadow-gray-200 group transition-all duration-500">
               <svg
                 className="fill-gray-900 relative z-10 transition-all duration-500 group-hover:fill-white"
                 xmlns="http://www.w3.org/2000/svg"
@@ -181,7 +181,7 @@ const Footer = () => {
                 </defs>
               </svg>
               <div className="absolute top-full left-0 w-full h-full rounded-full bg-gradient-to-bl from-purple-500 via-pink-500 to-yellow-500 z-0 transition-all duration-500 group-hover:top-0" />
-            </button>
+            </Link>
             <button className="w-10 h-10 flex items-center relative overflow-hidden justify-center rounded-full bg-white shadow-md shadow-gray-200 group transition-all duration-300">
               <svg
                 className="fill-gray-900 relative z-10 transition-all duration-300 group-hover:fill-white"

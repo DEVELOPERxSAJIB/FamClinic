@@ -10,7 +10,7 @@ import { useTranslation } from "react-i18next";
 
 const Price = () => {
   const [openIndex, setOpenIndex] = useState(null);
-  const [t] = useTranslation("global")
+  const [t] = useTranslation("global");
 
   const toggleAccordion = (index) => {
     setOpenIndex(openIndex === index ? null : index);
@@ -42,14 +42,14 @@ const Price = () => {
               {t("price.subtitle")}
             </p>
             <h2 className="font-playfair text-[30px] sm:text-[40px] md:text-[64px] font-semibold">
-            {t("price.title")}
+              {t("price.title")}
             </h2>
             <p className="max-w-[550px] text-[18px] mt-8">
-            {t("price.description")}
+              {t("price.description")}
             </p>
             <div className="button-area pt-16 flex flex-col md:flex-row gap-5 items-center">
               <Link to="/about" className="flex items-center gap-2 text-[18px]">
-              {t("price.button")}
+                {t("price.button")}
                 <div className="rounded-full bg-[#F9EEDD] p-3 border border-[#F9EEDD] shadow-lg group-hover:translate-x-2">
                   <FiArrowRight />
                 </div>
@@ -76,19 +76,6 @@ const Price = () => {
                       </p>
                     </div>
                     <div className="flex items-center gap-2">
-                      {item.subcategory.length === 0 && (
-                        <div className="pricing text-center flex flex-row items-center gap-3">
-                          <p className="text-[16px] font-medium hidden md:block">
-                            Start from :
-                          </p>
-                          <p className="text-[18px] font-semibold">
-                            € {item.price}{" "}
-                            {/* <span className="font-normal text-base">
-                              | {item.duration}
-                            </span> */}
-                          </p>
-                        </div>
-                      )}
                       {openIndex === index ? (
                         <MdKeyboardArrowUp size={22} />
                       ) : (
@@ -120,6 +107,34 @@ const Price = () => {
                         </div>
                       )}
 
+                      {item.subcategory.length === 0 && (
+                        <>
+                          <table className="min-w-full divide-y my-3 shadow divide-gray-200">
+                            <thead>
+                              <tr>
+                                <th className="px-6 py-3 text-start text-xs font-semibold uppercase">
+                                  Name
+                                </th>
+                                <th className="px-6 py-3 text-end text-xs font-semibold uppercase">
+                                  Start from
+                                </th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr className="odd:bg-white even:bg-gray-100">
+                                <td className="px-6 py-4 text-sm font-medium">
+                                  {item.name}
+                                </td>
+
+                                <td className="px-6 py-4 text-end text-sm">
+                                  € {item.price}
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </>
+                      )}
+
                       {item.subcategory.length > 0 && (
                         <div className="flex flex-col mt-5">
                           <table className="min-w-full divide-y divide-gray-200">
@@ -128,9 +143,14 @@ const Price = () => {
                                 <th className="px-6 py-3 text-start text-xs font-semibold uppercase">
                                   Name
                                 </th>
-                                <th className="px-6 py-3 text-start text-xs font-semibold uppercase">
-                                  Min. Time
-                                </th>
+
+                                {item.subcategory.some(
+                                  (sub) => sub.duration
+                                ) && (
+                                  <th className="px-6 py-3 text-start text-xs font-semibold uppercase">
+                                    Min. Time
+                                  </th>
+                                )}
                                 <th className="px-6 py-3 text-end text-xs font-semibold uppercase">
                                   Starting Price
                                 </th>
@@ -145,9 +165,11 @@ const Price = () => {
                                   <td className="px-6 py-4 text-sm font-medium">
                                     {sub.name}
                                   </td>
-                                  <td className="px-6 py-4 text-sm">
-                                    {sub.duration}
-                                  </td>
+                                  {sub.duration && (
+                                    <td className="px-6 py-4 text-sm">
+                                      {sub.duration}
+                                    </td>
+                                  )}
                                   <td className="px-6 py-4 text-end text-sm">
                                     € {sub.price}
                                   </td>

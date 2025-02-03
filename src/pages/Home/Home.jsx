@@ -6,9 +6,9 @@ import { Link } from "react-router-dom";
 // import { FiArrowRight } from "react-icons/fi";
 import { IoCheckmarkCircleOutline } from "react-icons/io5";
 
-import heroImage from "../../assets/images/hero-image-woman.png";
+import heroImage from "../../assets/images/hero-image2.jpg";
 
-import whyus from "../../assets/images/whyus.jpg";
+import aboutHero from "../../assets/images/about-hero.jpg";
 
 import affiliate1 from "../../assets/images/affiliate/affiliate-1.png";
 import affiliate2 from "../../assets/images/affiliate/affiliate-2.png";
@@ -89,7 +89,7 @@ const Home = () => {
               </div> */}
             </div>
 
-            <div className="image-area flex justify-end md:justify-end sm:justify-center">
+            <div className="flex justify-end md:justify-end sm:justify-center">
               <div
                 className="image-area"
                 style={{
@@ -101,7 +101,13 @@ const Home = () => {
                 <img
                   src={heroImage}
                   alt="here-woman-image"
-                  className="object-contain lg:w-full md:w-full md:h-full sm:w-[75%]"
+                  className="object-cover lg:w-full md:w-full md:h-full sm:w-[75%]"
+                  style={{
+                    borderTopRightRadius: "50px",
+                    borderBottomRightRadius: "10px",
+                    borderTopLeftRadius: "50px",
+                    borderBottomLeftRadius: "50px",
+                  }}
                 />
               </div>
             </div>
@@ -144,7 +150,7 @@ const Home = () => {
               <div className="img-area h-[620px] max-w-[510px] w-full">
                 <img
                   className="w-full h-full rounded-[30px] object-cover"
-                  src={whyus}
+                  src={aboutHero}
                   alt="why-us-image"
                   style={{
                     borderTopRightRadius: "50px",

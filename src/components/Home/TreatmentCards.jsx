@@ -3,7 +3,7 @@ import { MdKeyboardArrowRight } from "react-icons/md";
 import { BsArrowRight } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import treatments from "../../data/treatment";
-import "../stylesheet.css"
+import "../stylesheet.css";
 
 // eslint-disable-next-line react/prop-types
 const TreatmentCards = ({ limit }) => {
@@ -22,20 +22,20 @@ const TreatmentCards = ({ limit }) => {
             </div>
             <div className="bottom">
               <div className="content">
-                <span className="name">
-                {item.name}
-                  </span>
+                <span className="name">{item.name}</span>
                 <span className="desc">{item.description}</span>
                 {item?.subcategory && (
                   <ul className="pt-2">
-                    {item.subcategory?.map((item) => (
-                      <li className="list-none" key={item}>
-                        <div className="inline-flex gap-1 items-center transition-transform duration-300 hover:translate-x-3 hover:text-[#5f5041]">
-                          <MdKeyboardArrowRight size={20} />
-                          <span>{item.name}</span>
-                        </div>
-                      </li>
-                    ))}
+                    {item.subcategory?.slice(0, 4).map((subc) => {
+                      return (
+                        <li className="list-none" key={subc.name}>
+                          <Link to={item.slug} className="inline-flex gap-1 items-center transition-transform duration-300 hover:translate-x-3 hover:text-[#5f5041]">
+                            <MdKeyboardArrowRight size={20} />
+                            <span>{subc.name}</span>
+                          </Link>
+                        </li>
+                      );
+                    })}
                   </ul>
                 )}
               </div>
