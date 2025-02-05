@@ -293,7 +293,7 @@ const treatments = [
     id: "4",
     name: "Plasma Treatments",
     slug: "plasma-treatments",
-    key: "plasma-treatments",
+    key: "plasmaTreatments",
     image: treatment10,
     price: "180",
     duration: "1 hr",
@@ -327,12 +327,13 @@ const treatments = [
     id: "5",
     name: "Tattoo Removal",
     slug: "tattoo-removal",
+    key : "tattooRemoval",
     image: treatment11,
     price: "250",
     duration: "2 hr",
     description:
       "Advanced laser technology to safely remove tattoos of various sizes and colors.",
-    benefits: ["Gradual fading", "Minimal risk of scarring."],
+    benefits: ["Gradual fading", "Minimal risk of scarring"],
     subcategory: [
       {
         name: "1 tot 10 centimeter",
@@ -355,6 +356,7 @@ const treatments = [
     id: "6",
     name: "Cryolipolysis",
     slug: "cryolipolysis",
+    key: "cryolipolysis",
     image: treatment8,
     price: "100",
     duration: "2 hr",
@@ -363,7 +365,7 @@ const treatments = [
     benefits: [
       "Non-invasive",
       "Targets localized fat areas",
-      "Sculpts body contours without surgery.",
+      "Sculpts body contours without surgery",
     ],
     subcategory: [],
   },
@@ -371,6 +373,7 @@ const treatments = [
     id: "14",
     name: "Lemon Bottle Behandeling",
     slug: "lemon-bottle-behandeling",
+    key : "lemonBottleBehandeling",
     image: treatmentLemon,
     price: "125",
     duration: "",
@@ -388,6 +391,7 @@ const treatments = [
     id: "7",
     name: "Teeth Whitening",
     slug: "teeth-whitening",
+    key : "teethWhitening",
     image: treatment13,
     price: "80",
     duration: "1 hr",
@@ -404,6 +408,7 @@ const treatments = [
     id: "8",
     name: "Mole & Cyst Removal",
     slug: "mole-cyst-removal",
+    key : "mole&CystRemoval",
     image: treatment12,
     price: "25",
     duration: "1 hr",
@@ -420,6 +425,7 @@ const treatments = [
     id: "9",
     name: "Botox",
     slug: "botox",
+    key : "botox",
     image: botox,
     price: "40",
     description:
@@ -431,7 +437,7 @@ const treatments = [
     ],
     subcategory: [
       { name: "1 zone", price: "90", duration: "" },
-      { name: "2 zones ", price: "170", duration: "" },
+      { name: "2 zones", price: "170", duration: "" },
       { name: "3 zones", price: "250", duration: "" },
     ],
   },
@@ -439,6 +445,7 @@ const treatments = [
     id: "10",
     name: "Fillers",
     slug: "fillers",
+    key : "fillers",
     image: fillers,
     price: "40",
     description:
@@ -460,6 +467,7 @@ const treatments = [
     id: "11",
     name: "Massages",
     slug: "massages",
+    key : "massages",
     image: treatment15,
     price: "40",
     description:
@@ -482,6 +490,7 @@ const treatments = [
     id: "12",
     name: "Eyebrows & Eyelashes",
     slug: "eyebrows-&-eyelashes",
+    key : "eyebrowsAndEyelashes",
     image: treatment16,
     price: "30",
     description:
@@ -502,6 +511,7 @@ const treatments = [
     id: "13",
     name: "Manicure & Pedicure",
     slug: "manicure-&-pedicure",
+    key : "manicureAndPedicure",
     image: treatment17,
     price: "30",
     description:

@@ -110,21 +110,176 @@
       }
     },
 
-    "plasma-treatments": {
-      "name": "Plasma Treatments",
+    "plasmaTreatments": {
+      "name": "PRP Behandeling",
       "price": "180",
       "duration": "1 hr",
-      "description": "Uses plasma energy to tighten and rejuvenate skin, and can also promote hair growth in thinning areas.",
+      "description": "Gebruikt plasma-energie om de huid strakker en verjongen, en kan ook de haargroei bevorderen in dunner wordende gebieden.",
       "benefits": [
-        "Tightens skin",
-        "Reduces wrinkles",
-        "Stimulates hair growth",
-        "Provides a non-surgical solution."
+        "Verstevigt de huid",
+        "Vermindert rimpels",
+        "Stimuleert de haargroei",
+        "Biedt een niet-chirurgische oplossing."
       ],
+      "subcategories": {
+        "Face": "Gezicht",
+        "Hair loss": "Haaruitval",
+        "Gold PRP": "Gouden PRP"
+      }
+    },
+
+    "tattooRemoval": {
+      "name": "Tattoo Verwijdering",
+      "price": "250",
+      "duration": "2 uur",
+      "description": "Geavanceerde lasertechnologie om tatoeages van verschillende maten en kleuren veilig te verwijderen.",
+      "benefits": ["Geleidelijke vervaging", "Minimaal risico op littekens."],
       "subcategory": {
-        "Face": "Face",
-        "Hair loss": "Hair loss",
-        "Gold PRP": "Gold PRP"
+        "1 tot 10 centimeter": "1 tot 10 centimeter",
+        "10 tot 30 centimeter": "10 tot 30 centimeter",
+        "5 tot 50 centimeter": "5 tot 50 centimeter"
+      }
+    },
+
+    "cryolipolysis": {
+      "name": "Cryolipolyse",
+      "price": "100",
+      "duration": "1 hr",
+      "description": "Een vetbevriezingsbehandeling voor lichaamscontouren die hardnekkig vet verwijdert.",
+      "benefits": [
+        "Niet-invasief",
+        "Richt zich op plaatselijke vetophopingen",
+        "Modelleert lichaamscontouren zonder chirurgie."
+      ],
+      "subcategories": {}
+    },
+
+    "lemonBottleBehandeling": {
+      "name": "Lemon Bottle Behandeling",
+      "price": "125",
+      "duration": "",
+      "description": "Een niet-invasieve vetoplossende behandeling ontworpen om het lichaam te contouren en vorm te geven door hardnekkige vetophopingen aan te pakken.",
+      "benefits": [
+        "Vermindert effectief plaatselijk vet",
+        "Niet-chirurgisch en minimaal invasief",
+        "Verbetert lichaamscontouren met een natuurlijke uitstraling",
+        "Bevordert een gladdere en strakkere huid"
+      ],
+      "subcategories": []
+    },
+
+    "teethWhitening": {
+      "name": "Tanden Bleken",
+      "price": "80",
+      "duration": "1 uur",
+      "description": "Professionele whitening-behandelingen om vlekken te verwijderen en je glimlach te verhelderen.",
+      "benefits": [
+        "Verwijdert hardnekkige vlekken",
+        "Verheldert de tanden",
+        "Verhoogt het zelfvertrouwen"
+      ],
+      "subcategories": []
+    },
+
+    "mole&CystRemoval": {
+      "name": "Verwijdering van Mol & Cyste",
+      "price": "25",
+      "duration": "1 uur",
+      "description": "Veilige en efficiënte verwijdering van moedervlekken en cysten om esthetische of medische redenen.",
+      "benefits": [
+        "Verbeterd uiterlijk",
+        "Minimaliseert irritatie",
+        "Vereist minimale hersteltijd."
+      ],
+      "subcategories": []
+    },
+
+    "botox": {
+      "name": "Botox",
+      "price": "40",
+      "description": "Niet-invasieve injectables die rimpels gladstrijken en volume in het gezicht herstellen.",
+      "benefits": [
+        "Maakt fijne lijntjes glad",
+        "Herstelt jeugdige volume",
+        "Biedt natuurlijk ogende verbeteringen"
+      ],
+      "subcategories": {
+        "1 zone": "1 zone",
+        "2 zones": "2 zones",
+        "3 zones": "3 zones"
+      }
+    },
+
+    "fillers": {
+      "name": "Vullers",
+      "price": "40",
+      "description": "Niet-invasieve injectables die rimpels verzachten en volume herstellen in het gezicht.",
+      "benefits": [
+        "Verzacht fijne lijntjes",
+        "Herstelt jeugdige volume",
+        "Biedt natuurlijke verbeteringen"
+      ],
+      "subcategories": {
+        "Desolving": "Desolving",
+        "1 ML": "1 ML",
+        "2 ML": "2 ML",
+        "3 ML": "3 ML",
+        "4 ML": "4 ML"
+      }
+    },
+
+    "massages": {
+      "name": "Massages",
+      "price": "40",
+      "description": "Ontspan en vernieuw met een verscheidenheid aan therapeutische massages die zijn ontworpen om spanning te verlichten, de bloedcirculatie te verbeteren en het algehele welzijn te bevorderen.",
+      "benefits": [
+        "Vermindert stress en angst",
+        "Verlicht spierpijn en spanning",
+        "Verbeterd de bloedcirculatie",
+        "Verhoogt de algehele ontspanning"
+      ],
+      "subcategories": {
+        "Chinese massage": "Chinese massage",
+        "Deep Tissue Massage": "Deep Tissue Massage",
+        "Lomi Lomi Massage": "Lomi Lomi Massage",
+        "Lymphatic Drainage": "Lymfedrainage",
+        "Trigger Point Massage": "Triggerpointmassage"
+      }
+    },
+
+    "eyebrowsAndEyelashes": {
+      "name": "Wenkbrauwen & Wimpers",
+      "price": "30",
+      "description": "Verhoog je natuurlijke schoonheid met professionele wenkbrauw- en wimperbehandelingen voor een meer gedefinieerde, vollere en gepolijste uitstraling.",
+      "benefits": [
+        "Definieert en vormt de wenkbrauwen",
+        "Verhoogt het natuurlijke wimpervolume",
+        "Creëert een langdurige gepolijste uitstraling",
+        "Verhoogt het zelfvertrouwen met minimale dagelijkse verzorging"
+      ],
+      "subcategories": {
+        "Eyebrow Thread & Tint": "Wenkbrauw Thread & Tint",
+        "Eyebrow Tint": "Wenkbrauw Tint",
+        "Eyebrow Threading": "Wenkbrauw Threading"
+      }
+    },
+
+    "manicureAndPedicure": {
+      "name": "Manicure & Pedicure",
+      "price": "30",
+      "description": "Houd je handen en voeten er flawless uitzien met deskundige manicure- en pedicurediensten, ontworpen voor zowel schoonheid als nagelgezondheid.",
+      "benefits": [
+        "Versterkt en voedt de nagels",
+        "Verzacht de huid en nagelriemen",
+        "Verbetert het algehele uiterlijk van de nagels",
+        "Biedt ontspanning en zelfzorg"
+      ],
+      "subcategories": {
+        "Russian Manicure (Women)": "Russian Manicure (Vrouwen)",
+        "Manicure (Men)": "Manicure (Mannen)",
+        "Pedicure": "Pedicure",
+        "Nail Repair": "Nagelherstel",
+        "Gel Polish - Pedicure": "Gel Polish - Pedicure"
       }
     }
   }

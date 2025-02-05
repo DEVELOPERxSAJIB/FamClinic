@@ -109,7 +109,7 @@
       }
     },
 
-    "plasma-treatments": {
+    "plasmaTreatments": {
       "name": "Plasma Treatments",
       "price": "180",
       "duration": "1 hr",
@@ -120,10 +120,168 @@
         "Stimulates hair growth",
         "Provides a non-surgical solution."
       ],
-      "subcategory": {
+      "subcategories": {
         "Face": "Face",
         "Hair loss": "Hair loss",
         "Gold PRP": "Gold PRP"
+      }
+    },
+
+    "tattooRemoval": {
+      "id": "5",
+      "name": "Tattoo Removal",
+      "slug": "tattoo-removal",
+      "image": "treatment11",
+      "price": "250",
+      "duration": "2 hr",
+      "description": "Advanced laser technology to safely remove tattoos of various sizes and colors.",
+      "benefits": ["Gradual fading", "Minimal risk of scarring."],
+      "subcategories": {
+        "1 tot 10 centimeter": "1 tot 10 centimeter",
+        "10 tot 30 centimeter": "10 tot 30 centimeter",
+        "5 tot 50 centimeter": "5 tot 50 centimeter"
+      }
+    },
+
+    "cryolipolysis": {
+      "name": "Cryolipolysis",
+      "price": "100",
+      "duration": "1 hr",
+      "description": "A fat-freezing body contouring treatment that eliminates stubborn fat.",
+      "benefits": [
+        "Non-invasive",
+        "Targets localized fat areas",
+        "Sculpts body contours without surgery."
+      ],
+      "subcategories": {}
+    },
+
+    "lemonBottleBehandeling": {
+      "name": "Lemon Bottle Behandeling",
+      "price": "125",
+      "duration": "",
+      "description": "A non-invasive fat-dissolving treatment designed to contour and refine body shape by targeting stubborn fat deposits.",
+      "benefits": [
+        "Effectively reduces localized fat",
+        "Non-surgical and minimally invasive",
+        "Enhances body contours with natural-looking results",
+        "Promotes a smoother, more toned appearance"
+      ],
+      "subcategories": []
+    },
+
+    "teethWhitening": {
+      "name": "Teeth Whitening",
+      "price": "80",
+      "duration": "1 hr",
+      "description": "Professional whitening treatments to remove stains and brighten your smile.",
+      "benefits": [
+        "Removes stubborn stains",
+        "Brightens teeth",
+        "Boosts confidence."
+      ],
+      "subcategories": []
+    },
+
+    "mole&CystRemoval": {
+      "name": "Mole & Cyst Removal",
+      "price": "25",
+      "duration": "1 hr",
+      "description": "Safe and efficient removal of moles and cysts for aesthetic or medical reasons.",
+      "benefits": [
+        "Improves appearance",
+        "Minimizes irritation",
+        "Requires minimal recovery time."
+      ],
+      "subcategories": []
+    },
+
+    "botox": {
+      "name": "Botox",
+      "price": "40",
+      "description": "Non-invasive injectables that smooth wrinkles and restore volume to the face.",
+      "benefits": [
+        "Smooths fine lines",
+        "Restores youthful volume",
+        "Provides natural-looking enhancements"
+      ],
+      "subcategories": {
+        "1 zone": "1 zone",
+        "2 zones": "2 zones",
+        "3 zones": "3 zones"
+      }
+    },
+
+    "fillers": {
+      "name": "Fillers",
+      "price": "40",
+      "description": "Non-invasive injectables that smooth wrinkles and restore volume to the face.",
+      "benefits": [
+        "Smooths fine lines",
+        "Restores youthful volume",
+        "Provides natural-looking enhancements"
+      ],
+      "subcategories": {
+        "Desolving": "Desolving",
+        "1 ML": "1 ML",
+        "2 ML": "2 ML",
+        "3 ML": "3 ML",
+        "4 ML": "4 ML"
+      }
+    },
+
+    "massages": {
+      "name": "Massages",
+      "price": "40",
+      "description": "Relax and rejuvenate with a variety of therapeutic massages designed to relieve tension, improve circulation, and promote overall well-being.",
+      "benefits": [
+        "Reduces stress and anxiety",
+        "Eases muscle pain and tension",
+        "Improves blood circulation",
+        "Enhances overall relaxation"
+      ],
+      "subcategories": {
+        "Chinese massage": "Chinese massage",
+        "Deep Tissue Massage": "Deep Tissue Massage",
+        "Lomi Lomi Massage": "Lomi Lomi Massage",
+        "Lymphatic Drainage": "Lymphatic Drainage",
+        "Trigger Point Massage": "Trigger Point Massage"
+      }
+    },
+
+    "eyebrowsAndEyelashes": {
+      "name": "Eyebrows & Eyelashes",
+      "price": "30",
+      "description": "Enhance your natural beauty with professional eyebrow and eyelash treatments for a more defined, fuller, and polished look.",
+      "benefits": [
+        "Defines and shapes eyebrows",
+        "Enhances natural lash volume",
+        "Creates a long-lasting polished look",
+        "Boosts confidence with minimal daily maintenance"
+      ],
+      "subcategories": {
+        "Eyebrow Thread & Tint": "Eyebrow Thread & Tint",
+        "Eyebrow Tint": "Eyebrow Tint",
+        "Eyebrow Threading": "Eyebrow Threading"
+      }
+    },
+
+    "manicureAndPedicure": {
+      "name": "Manicure & Pedicure",
+      "price": "30",
+      "description": "Keep your hands and feet looking flawless with expert manicure and pedicure services, designed for both beauty and nail health.",
+      "benefits": [
+        "Strengthens and nourishes nails",
+        "Softens skin and cuticles",
+        "Enhances overall nail appearance",
+        "Provides relaxation and self-care"
+      ],
+      "subcategories": {
+        "Russian Manicure (Women)": "Russian Manicure (Women)",
+        "Manicure (Men)": "Manicure (Men)",
+        "Pedicure": "Pedicure",
+        "Nail Repair": "Nail Repair",
+        "Gel Polish - Pedicure": "Gel Polish - Pedicure"
       }
     }
     

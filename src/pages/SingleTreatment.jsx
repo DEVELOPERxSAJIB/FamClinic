@@ -90,7 +90,7 @@ const SingleTreatment = () => {
                 <div className="hover:scale-105 duration-500 group relative flex flex-col mx-auto w-full max-w-sm bg-white rounded-2xl shadow-lg transition-all px-8 xl:px-12  ">
                   <div className="border-b border-solid border-gray-200 pb-9 mb-9">
                     <h3 className="font-manrope text-2xl font-bold my-7 text-center">
-                      {treatment.name}
+                      {t(`allTreatments.${treatment.key}.name`)}
                     </h3>
                     <div className="flex items-center justify-center">
                       <span className="font-manrope text-4xl font-medium text-gray-900">
@@ -103,8 +103,14 @@ const SingleTreatment = () => {
                   </div>
                   {/*List*/}
                   <ul className="mb-12 space-y-2 text-left text-lg text-gray-600 group-hover:text-gray-900">
-                    {treatment.benefits.length > 0 &&
-                      treatment.benefits.map((benefit, index) => (
+                    {Array.isArray(
+                      t(`allTreatments.${treatment.key}.benefits`, {
+                        returnObjects: true,
+                      })
+                    ) &&
+                      t(`allTreatments.${treatment.key}.benefits`, {
+                        returnObjects: true,
+                      }).map((benefit, index) => (
                         <li
                           key={index}
                           className="flex items-center justify-start gap-3"
