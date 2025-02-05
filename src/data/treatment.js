@@ -17,6 +17,7 @@ const treatments = [
   {
     id: "1",
     name: "Laser Therapy",
+    key : "laserTherapy",
     slug: "laser-therapy",
     image: treatment1,
     price: "100",
@@ -46,7 +47,7 @@ const treatments = [
         duration: "",
       },
       {
-        name: "Onderlip",
+        name: "Lower lip",
         price: "35",
         duration: "",
       },
@@ -71,18 +72,8 @@ const treatments = [
         duration: "",
       },
       {
-        name: "Hals",
+        name: "Neck",
         price: "35",
-        duration: "",
-      },
-      {
-        name: "Vrouwen",
-        price: "230",
-        duration: "",
-      },
-      {
-        name: "Manen",
-        price: "300",
         duration: "",
       },
       {
@@ -191,7 +182,7 @@ const treatments = [
         duration: "",
       },
       {
-        name: "Gehele BIkini",
+        name: "Full Bikini",
         price: "80",
         duration: "",
       },
@@ -199,8 +190,9 @@ const treatments = [
   },
   {
     id: "2",
-    name: "Cleansing",
-    slug: "cleansing",
+    name: "Facial Treatments",
+    slug: "facial-treatments",
+    key : "facialTreatments",
     image: treatment2,
     price: "50",
     duration: "30 min",
@@ -257,12 +249,18 @@ const treatments = [
         price: "130",
         duration: "",
       },
+      {
+        name : "HydraFacial",
+        price: "130",
+        duration: "",
+      },
     ],
   },
   {
     id: "3",
     name: "Mesotherapy",
     slug: "mesotherapy",
+    key : "mesotherapy",
     image: treatment9,
     price: "150",
     duration: "45 min",
@@ -295,6 +293,7 @@ const treatments = [
     id: "4",
     name: "Plasma Treatments",
     slug: "plasma-treatments",
+    key: "plasma-treatments",
     image: treatment10,
     price: "180",
     duration: "1 hr",

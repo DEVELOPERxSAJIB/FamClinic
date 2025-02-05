@@ -70,9 +70,15 @@ const Price = () => {
                     onClick={() => toggleAccordion(index)}
                   >
                     <div className="title text-start flex flex-col gap-3">
-                      <h2 className="text-[18px] font-semibold">{item.name}</h2>
+                      <h2 className="text-[18px] font-semibold">
+                        {t(`allTreatments.${item.key}.name`)}
+                      </h2>
                       <p className={openIndex === index ? "hidden" : "block"}>
-                        {item.description.split(" ").slice(0, 3).join(" ")}...
+                        {t(`allTreatments.${item.key}.description`)
+                          .split(" ")
+                          .slice(0, 3)
+                          .join(" ")}
+                        ...
                       </p>
                     </div>
                     <div className="flex items-center gap-2">
@@ -86,15 +92,19 @@ const Price = () => {
 
                   {openIndex === index && (
                     <div className="p-6">
-                      <p className="text-base leading-6">{item.description}</p>
+                      <p className="text-base leading-6">
+                        {t(`allTreatments.${item.key}.description`)}
+                      </p>
 
                       {item.benefits.length > 0 && (
                         <div>
                           <h2 className="my-3 text-[14px] font-semibold">
-                            Key Benefits :
+                            {t(`allTreatments.keyBenefits`)} {" : "}
                           </h2>
                           <ul className="max-w-md space-y-1 list-inside">
-                            {item.benefits.map((benefit) => (
+                            {t(`allTreatments.${item.key}.benefits`, {
+                              returnObjects: true,
+                            }).map((benefit) => (
                               <li
                                 key={benefit}
                                 className="flex items-center gap-2"
@@ -141,18 +151,18 @@ const Price = () => {
                             <thead>
                               <tr>
                                 <th className="px-6 py-3 text-start text-xs font-semibold uppercase">
-                                  Name
+                                  {t(`allTreatments.tableHead.name`)}
                                 </th>
 
                                 {item.subcategory.some(
                                   (sub) => sub.duration
                                 ) && (
                                   <th className="px-6 py-3 text-start text-xs font-semibold uppercase">
-                                    Min. Time
+                                    {t(`allTreatments.tableHead.duration`)}
                                   </th>
                                 )}
                                 <th className="px-6 py-3 text-end text-xs font-semibold uppercase">
-                                  Starting Price
+                                {t(`allTreatments.tableHead.startPrice`)}
                                 </th>
                               </tr>
                             </thead>
@@ -163,7 +173,7 @@ const Price = () => {
                                   className="odd:bg-white even:bg-gray-100"
                                 >
                                   <td className="px-6 py-4 text-sm font-medium">
-                                    {sub.name}
+                                  {t(`allTreatments.${item.key}.subcategories.${sub.name}`)}
                                   </td>
                                   {sub.duration && (
                                     <td className="px-6 py-4 text-sm">

@@ -3,9 +3,11 @@ import singleTreatmentHero from "../assets/images/treatment/single-treatment-pag
 import ScrollToTop from "../components/ScrollToTop";
 import treatments from "../data/treatment";
 import NotFound from "./NotFound";
+import { useTranslation } from "react-i18next";
 
 const SingleTreatment = () => {
   const { slug } = useParams();
+  const [t] = useTranslation("global");
 
   // find single treatment with slug
   const treatment = treatments.find(
@@ -34,10 +36,10 @@ const SingleTreatment = () => {
           <div className="relative top-32 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="mb-12">
               <h2 className="font-playfair text-[#8d7b67] text-[40px] md:text-[64px] text-center font-bold mb-4">
-                {treatment?.name}
+                {t(`allTreatments.${treatment.key}.name`)}
               </h2>
               <p className="text-xl text-center leading-6 max-w-[70%] mx-auto">
-                {treatment?.description}
+                {t(`allTreatments.${treatment.key}.description`)}
               </p>
             </div>
             {/*Grid*/}
@@ -55,11 +57,14 @@ const SingleTreatment = () => {
                         </span>
                       </div>
                       <h3 className="text-2xl font-bold my-6 text-center">
-                        {item.name}
+                        {t(
+                          `allTreatments.${treatment.key}.subcategories.${item.name}`
+                        )}
                       </h3>
                       <div className="flex items-center gap-2 justify-center">
                         <p className="text-[18px] font-medium hidden md:block">
-                          Start from : 
+                          {t("singleTreatment.startFrom")}
+                          {" :"}
                         </p>
                         <span className="text-3xl flex items-center justify-center font-medium text-gray-900">
                           <div className="icon">€</div>
@@ -77,7 +82,7 @@ const SingleTreatment = () => {
                       to={"/pricing"}
                       className="py-2 px-4 bg-[#F0DECA] text-[#8d7b67] shadow-sm rounded-full transition-all text-[14px] duration-500 font-semibold text-center w-fit mx-auto group-hover:bg-[#8d7b67] group-hover:text-[#F0DECA]"
                     >
-                      Pricing Details
+                      {t("singleTreatment.pricingDetails")}
                     </Link>
                   </div>
                 ))

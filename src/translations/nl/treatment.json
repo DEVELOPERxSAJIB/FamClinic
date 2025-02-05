@@ -1,9 +1,131 @@
 {
-    "treatment" : {
-        "breadcum" : "Behandeling pagina",
-        "title1" : "Ontdek bij ons de perfecte behandeling voor u.",
-        "ExploreBtn" : "Ontdek wat perfect voor jou is.",
-        "subtitle": "Ons",
-        "title2" : "Behandeling"
+  "treatment": {
+    "breadcum": "Behandeling pagina",
+    "title1": "Ontdek bij ons de perfecte behandeling voor u.",
+    "ExploreBtn": "Ontdek wat perfect voor jou is.",
+    "subtitle": "Ons",
+    "title2": "Behandeling"
+  },
+
+  "singleTreatment": {
+    "startFrom": "Begin vanaf",
+    "pricingDetails": "Prijsdetails"
+  },
+
+  "allTreatments": {
+    "seeDetails": "Zie Details",
+    "keyBenefits": "Belangrijkste voordelen",
+    "tableHead": {
+      "name": "Naam",
+      "startPrice": "Startprijs",
+      "duration": "Min. Tijd"
+    },
+
+    "laserTherapy": {
+      "name": "Laser Therapie",
+      "slug": "laser-therapy",
+      "price": "100",
+      "duration": "1 uur",
+      "description": "Een zeer effectieve behandeling die geconcentreerde lichtstralen gebruikt om verschillende huidproblemen aan te pakken, waaronder pigmentatie, acne-littekens en fijne lijntjes.",
+      "benefits": [
+        "Vermindert hyperpigmentatie",
+        "Verbetert de huidtextuur",
+        "Stimuleert collageen",
+        "Verhoogt de uitstraling met minimale hersteltijd."
+      ],
+
+      "subcategories": {
+        "Full face and neck": "Hele gezicht met Hal",
+        "Sideburns": "Bakkenbaarden",
+        "Upper lip": "Bovenlip",
+        "Lower lip": "Onderlip",
+        "Jawline": "Kaaklijn",
+        "Chin": "Kin",
+        "Cheeks": "Wangen",
+        "Eyebrows": "Wenkbrauwen",
+        "Neck": "Hals",
+        "Armpits": "Oksels",
+        "Hands": "Handen",
+        "Upper arms": "Bovenarmen",
+        "Lower arms": "Onderarmen",
+        "Full arms": "Hele armen",
+        "Shoulders": "Schouders",
+        "Upper back": "Bovenrug",
+        "Lower back": "Onder rug",
+        "Full back": "Hele rug",
+        "Chest": "Borst",
+        "Abdomen": "Buik",
+        "Chest and Abdomen": "Borst en Buik",
+        "Navel line": "Navellijn",
+        "Upper legs": "Bovenbenen",
+        "Lower legs": "Onderbenen",
+        "Foots": "Voeten",
+        "Full legs": "Hele benen",
+        "Brazilian": "Brazilian",
+        "Bikini line": "Bikinilijn",
+        "Buttocks": "Billen",
+        "Buttocks line": "Bilnaad",
+        "Full Bikini": "Gehele BIkini"
+      }
+    },
+
+    "facialTreatments": {
+      "name": "Gezichtsbehandelingen",
+      "price": "50",
+      "duration": "30 min",
+      "description": "Een verfrissende gezichtsbehandeling om onzuiverheden, make-upresten en overtollige oliën te verwijderen. Ideaal voor het behoud van de dagelijkse gezondheid van de huid.",
+      "benefits": [
+        "Laat de huid fris aanvoelen",
+        "Voorkomt verstopte poriën",
+        "Zorgt voor een gladde, stralende teint."
+      ],
+      "subcategories": {
+        "Basic Cleansing": "Basis reinigeng",
+        "Deep Cleansing": "Diepte reinigeng",
+        "Acne treatment": "Acne treatment vf",
+        "Dermapen": "Microneedling",
+        "Bio Peeling": "Bio-Peeling",
+        "Algen Peeling": "Algen Peeling",
+        "Chemische Peeling": "Chemische Peeling",
+        "Carbonic Peeling": "Carbonic Peeling",
+        "Fruitzuur Peeling": "Fruitzuur Peeling",
+        "HydraFacial": "Fruitzuur Peeling"
+      }
+    },
+
+    "mesotherapy": {
+      "name": "Mesotherapie",
+      "price": "150",
+      "duration": "45 min",
+      "description": "Een behandeling waarbij vitamines en hyaluronzuur in de huid worden geïnjecteerd om veroudering, pigmentatie en uitdroging aan te pakken.",
+      "benefits": [
+        "Hydrateert diep",
+        "Verjongt",
+        "Stimuleert de collageenproductie voor langdurige huidgezondheid"
+      ],
+      "subcategories": {
+        "For hair loss": "Mesotherapie voor haaruitva",
+        "Under-eye": "Mesotherapie voor onder ogen",
+        "Face": "Mesotherapie voor gezicht"
+      }
+    },
+
+    "plasma-treatments": {
+      "name": "Plasma Treatments",
+      "price": "180",
+      "duration": "1 hr",
+      "description": "Uses plasma energy to tighten and rejuvenate skin, and can also promote hair growth in thinning areas.",
+      "benefits": [
+        "Tightens skin",
+        "Reduces wrinkles",
+        "Stimulates hair growth",
+        "Provides a non-surgical solution."
+      ],
+      "subcategory": {
+        "Face": "Face",
+        "Hair loss": "Hair loss",
+        "Gold PRP": "Gold PRP"
+      }
     }
+  }
 }

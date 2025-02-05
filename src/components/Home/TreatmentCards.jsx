@@ -4,9 +4,11 @@ import { BsArrowRight } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import treatments from "../../data/treatment";
 import "../stylesheet.css";
+import { useTranslation } from "react-i18next";
 
 // eslint-disable-next-line react/prop-types
 const TreatmentCards = ({ limit }) => {
+  const [t] = useTranslation("global");
   const displayedTreatments = limit ? treatments.slice(0, limit) : treatments;
 
   return (
@@ -22,30 +24,37 @@ const TreatmentCards = ({ limit }) => {
             </div>
             <div className="bottom">
               <div className="content">
-                <span className="name">{item.name}</span>
-                <span className="desc">{item.description}</span>
+                <span className="name">
+                  {t(`allTreatments.${item.key}.name`)}
+                </span>
+                <span className="desc line-clamp-3">
+                  {t(`allTreatments.${item.key}.description`)}
+                </span>
+                <div className="mt-4">
                 {item?.subcategory && (
                   <ul className="pt-2">
                     {item.subcategory?.slice(0, 4).map((subc) => {
                       return (
                         <li className="list-none" key={subc.name}>
-                          <Link to={item.slug} className="inline-flex gap-1 items-center transition-transform duration-300 hover:translate-x-3 hover:text-[#5f5041]">
+                          <Link to={`/treatment/${item.slug}`} className="inline-flex gap-1 items-center transition-transform duration-300 hover:translate-x-3 hover:text-[#5f5041]">
                             <MdKeyboardArrowRight size={20} />
-                            <span>{subc.name}</span>
+                            <span>{t(`allTreatments.${item.key}.subcategories.${subc.name}`)}</span>
                           </Link>
                         </li>
                       );
                     })}
                   </ul>
                 )}
+
+                </div>
               </div>
               <div className="bottom-bottom">
-                <div className="social-links-container">{item?.name}</div>
+                <div className="social-links-container">{t(`allTreatments.${item.key}.name`)}</div>
                 <Link
                   to={`/treatment/${item?.slug}`}
                   className="button bg-[#FAF5EF] py-1 px-3 text-[14px] font-medium rounded-md flex gap-2 items-center transition-all duration-300 group"
                 >
-                  Meer behandelingen
+                  {t("allTreatments.seeDetails")}
                   <BsArrowRight className="transition-all duration-300 group-hover:translate-x-1" />
                 </Link>
               </div>

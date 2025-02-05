@@ -1,9 +1,131 @@
 {
-    "treatment" : {
-        "breadcum" : "Treatment page",
-        "title1" : "Discover the Perfect Treatment for You with us.",
-        "ExploreBtn" : "Explore what is perfect for you.",
-        "subtitle": "Our",
-        "title2" : "Treatment"
+  "treatment": {
+    "breadcum": "Treatment page",
+    "title1": "Discover the Perfect Treatment for You with us.",
+    "ExploreBtn": "Explore what is perfect for you.",
+    "subtitle": "Our",
+    "title2": "Treatment"
+  },
+
+  "singleTreatment": {
+    "startFrom": "Start from",
+    "pricingDetails": "Pricing Details"
+  },
+
+  "allTreatments": {
+    "seeDetails": "See Details",
+    "keyBenefits": "Key Benefits",
+    "tableHead": {
+      "name": "Name",
+      "startPrice": "Starting Price",
+      "duration": "Min. Time"
+    },
+
+    "laserTherapy": {
+      "name": "Laser Therapy",
+      "slug": "laser-therapy",
+      "price": "100",
+      "duration": "1 hr",
+      "description": "A highly effective treatment using concentrated beams of light to target various skin concerns, including pigmentation, acne scars, and fine lines.",
+      "benefits": [
+        "Reduces hyperpigmentation",
+        "Improves skin texture",
+        "Stimulates collagen",
+        "Enhances radiance with minimal downtime."
+      ],
+      "subcategories": {
+        "Full face and neck": "Full face and neck",
+        "Sideburns": "Sideburns",
+        "Upper lip": "Upper lip",
+        "Lower lip": "Lower lip",
+        "Jawline": "Jawline",
+        "Chin": "Chin",
+        "Cheeks": "Cheeks",
+        "Eyebrows": "Eyebrows",
+        "Neck": "Neck",
+        "Armpits": "Armpits",
+        "Hands": "Hands",
+        "Upper arms": "Upper arms",
+        "Lower arms": "Lower arms",
+        "Full arms": "Full arms",
+        "Shoulders": "Shoulders",
+        "Upper back": "Upper back",
+        "Lower back": "Lower back",
+        "Full back": "Full back",
+        "Chest": "Chest",
+        "Abdomen": "Abdomen",
+        "Chest and Abdomen": "Chest and Abdomen",
+        "Navel line": "Navel line",
+        "Upper legs": "Upper legs",
+        "Lower legs": "Lower legs",
+        "Foots": "Foots",
+        "Full legs": "Full legs",
+        "Brazilian": "Brazilian",
+        "Bikini line": "Bikini line",
+        "Buttocks": "Buttocks",
+        "Buttocks line": "Buttocks line",
+        "Full Bikini": "Full Bikini"
+      }
+    },
+
+    "facialTreatments": {
+      "name": "Facial Treatments",
+      "price": "50",
+      "duration": "30 min",
+      "description": "A refreshing facial to remove impurities, makeup residues, and excess oils. Ideal for maintaining everyday skin health.",
+      "benefits": [
+        "Leaves skin feeling fresh",
+        "Prevents clogged pores",
+        "Maintains a smooth, glowing complexion."
+      ],
+      "subcategories": {
+        "Basic Cleansing": "Basic Cleansing",
+        "Deep Cleansing": "Deep Cleansing",
+        "Acne treatment": "Acne treatment",
+        "Dermapen": "Dermapen",
+        "Bio Peeling": "Bio Peeling",
+        "Algen Peeling": "Algen Peeling",
+        "Chemische Peeling": "Chemische Peeling",
+        "Carbonic Peeling": "Carbonic Peeling",
+        "Fruitzuur Peeling": "Fruitzuur Peeling",
+        "HydraFacial": "HydraFacial"
+      }
+    },
+
+    "mesotherapy": {
+      "name": "Mesotherapy",
+      "price": "150",
+      "duration": "45 min",
+      "description": "A treatment involving the injection of vitamins and hyaluronic acid into the skin to address aging, pigmentation, and dehydration.",
+      "benefits": [
+        "Deeply hydrates",
+        "Rejuvenates",
+        "Stimulates collagen production for long-term skin health."
+      ],
+      "subcategories": {
+        "For hair loss": "Mesotherapy for hair loss",
+        "Under-eye": "Mesotherapy Under-eye",
+        "Face": "Mesotherapy Face"
+      }
+    },
+
+    "plasma-treatments": {
+      "name": "Plasma Treatments",
+      "price": "180",
+      "duration": "1 hr",
+      "description": "Uses plasma energy to tighten and rejuvenate skin, and can also promote hair growth in thinning areas.",
+      "benefits": [
+        "Tightens skin",
+        "Reduces wrinkles",
+        "Stimulates hair growth",
+        "Provides a non-surgical solution."
+      ],
+      "subcategory": {
+        "Face": "Face",
+        "Hair loss": "Hair loss",
+        "Gold PRP": "Gold PRP"
+      }
     }
+    
+  }
 }
