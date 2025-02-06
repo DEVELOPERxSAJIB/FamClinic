@@ -368,7 +368,7 @@ const Contact = () => {
                             : "bg-[#F0DECA] duration-300 ease-in text-[#8D7B67] hover:bg-[#F9EEDD] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#8D7B67]"
                         }`}
                       >
-                        {contactLoading ? "Sending mail..." : "Let's talk"}
+                        {contactLoading ? t("contact.form.sendingMail") : t("contact.form.submitBtn")}
                       </button>
                     </div>
                   </div>

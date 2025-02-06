@@ -20,6 +20,7 @@
         "Tuesday": "Dinsdag"
       },
       "form": {
+        "popupTop" : "Vertel ons wat u nodig heeft! Verzend het formulier en wij helpen u meteen verder!",
         "successMessage" : "Bedankt dat u contact opneemt. U ontvangt binnenkort een e-mail van ons.",
         "firstName": {
           "label": "Voornaam",
@@ -46,7 +47,9 @@
           "validation": "Bericht mag niet meer dan 500 tekens bevatten"
         },
         "priveryAndPolicy": "Door dit te selecteren, gaat u akkoord met ons privacybeleid.",
-        "submitBtn": "Laten we praten"
+        "submitBtn": "Laten we praten",
+        "sendingMail" : "Uw e-mail verzenden...",
+        "closeBtn": "Dichtbij"
       }
     }
   }

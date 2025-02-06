@@ -1,3 +1,4 @@
+import topbarEn from "./en/components/topbar.json";
 import headerEn from "./en/components/header.json";
 import footerEn from "./en/components/footer.json";
 import testimonialEn from "./en/components/about/testimonial.json";
@@ -8,6 +9,7 @@ import treatmentEn from "./en/treatment.json"
 import priceEn from "./en/price.json"
 import contactEn from "./en/contact.json"
 
+import topbarNl from "./nl/components/topbar.json"
 import headerNl from "./nl/components/header.json";
 import footerNl from "./nl/components/footer.json";
 import testimonialNl from "./nl/components/about/testimonial.json";
@@ -24,6 +26,7 @@ import contactNl from "./nl/contact.json"
 const resources = {
   en: {
     global: {
+      ...topbarEn,
       ...headerEn,
       ...footerEn,
       ...testimonialEn,
@@ -37,6 +40,7 @@ const resources = {
   },
   nl: {
     global: {
+      ...topbarNl,
       ...headerNl,
       ...footerNl,
       ...testimonialNl,

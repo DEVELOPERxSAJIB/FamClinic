@@ -20,6 +20,7 @@
       "Tuesday": "Tuesday"
     },
     "form": {
+      "popupTop" : "Tell us what you need! Submit the form, and we’ll assist you right away!",
       "successMessage": "Thanks for contacting. You will get an Email from us soon.",
       "firstName": {
         "label": "First name",
@@ -47,7 +48,9 @@
       },
       "priveryAndPolicy": "By selecting this, you agree to our",
       "priveryAndPolicyLink": "privacy policy.",
-      "submitBtn": "Let's talk"
+      "submitBtn": "Let's talk",
+      "sendingMail" : "Sending your mail...",
+      "closeBtn": "Close"
     }
   }
 }

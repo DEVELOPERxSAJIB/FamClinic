@@ -14,21 +14,23 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import Swal from "sweetalert2";
 import emailjs from "@emailjs/browser";
-
-const schema = yup
-  .object({
-    firstName: yup.string().required("First name is required"),
-    lastName: yup.string().required("Last name is required"),
-    phone: yup.string().required("Phone is required"),
-    subject: yup.string().required("Subject is required"),
-    email: yup.string().email().required("Email is required"),
-    message: yup.string().max(500, "Message cannot exceed 500 characters"),
-  })
-  .required();
+import { useTranslation } from "react-i18next";
 
 export default function GlobalPopup() {
   const [open, setOpen] = useState(false);
   const [agreed, setAgreed] = useState(false);
+  const [t] = useTranslation("global");
+
+  const schema = yup
+    .object({
+      firstName: yup.string().required(t("contact.form.firstName.validation")),
+      lastName: yup.string().required(t("contact.form.lastName.validation")),
+      phone: yup.string().required(t("contact.form.phone.validation")),
+      subject: yup.string().required(t("contact.form.subject.validation")),
+      email: yup.string().email().required(t("contact.form.email.validation")),
+      message: yup.string().max(500, t("contact.form.message.validation")),
+    })
+    .required();
 
   const {
     register,
@@ -88,13 +90,13 @@ export default function GlobalPopup() {
       });
   };
 
-  // useEffect(() => {
-  //   const timer = setTimeout(() => {
-  //     setOpen(true);
-  //   }, 10000);
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setOpen(true);
+    }, 10000);
 
-  //   return () => clearTimeout(timer);
-  // }, []);
+    return () => clearTimeout(timer);
+  }, []);
 
   return (
     <Dialog open={open} onClose={setOpen} className="relative z-50">
@@ -116,8 +118,7 @@ export default function GlobalPopup() {
                 </div>
                 <div className="mt-3 text-center sm:ml-4 sm:mt-0 sm:text-left">
                   <DialogTitle as="h3" className="text-base font-semibold">
-                    Tell us what you need! Submit the form, and we’ll assist you
-                    right away!
+                    {t("contact.form.popupTop")}
                   </DialogTitle>
                 </div>
               </div>
@@ -130,7 +131,7 @@ export default function GlobalPopup() {
                       htmlFor="first-name"
                       className="block text-sm/6 font-semibold"
                     >
-                      First name
+                      {t("contact.form.firstName.label")}
                     </label>
                     <div className="mt-2.5">
                       <input
@@ -151,7 +152,7 @@ export default function GlobalPopup() {
                       htmlFor="last-name"
                       className="block text-sm/6 font-semibold"
                     >
-                      Last name
+                      {t("contact.form.lastName.label")}
                     </label>
                     <div className="mt-2.5">
                       <input
@@ -173,7 +174,7 @@ export default function GlobalPopup() {
                       htmlFor="email"
                       className="block text-sm/6 font-semibold"
                     >
-                      Email
+                      {t("contact.form.email.label")}
                     </label>
                     <div className="mt-2.5">
                       <input
@@ -195,7 +196,7 @@ export default function GlobalPopup() {
                       htmlFor="phone"
                       className="block text-sm/6 font-semibold"
                     >
-                      Phone
+                      {t("contact.form.phone.label")}
                     </label>
                     <div className="mt-2.5">
                       <input
@@ -216,7 +217,7 @@ export default function GlobalPopup() {
                       htmlFor="subject"
                       className="block text-sm/6 font-semibold"
                     >
-                      Subject
+                      {t("contact.form.subject.label")}
                     </label>
                     <div className="mt-2.5">
                       <input
@@ -238,7 +239,7 @@ export default function GlobalPopup() {
                       htmlFor="message"
                       className="block text-sm/6 font-semibold "
                     >
-                      Message
+                      {t("contact.form.message.label")}
                     </label>
                     <div className="mt-2.5">
                       <textarea
@@ -275,11 +276,10 @@ export default function GlobalPopup() {
                       </Switch>
                     </div>
                     <Label className="text-sm/6">
-                      By selecting this, you agree to our{" "}
+                      {t("contact.form.priveryAndPolicy")}{" "}
                       <a href="#" className="font-semibold">
-                        privacy&nbsp;policy
+                        {t("contact.form.priveryAndPolicyLink")}
                       </a>
-                      .
                     </Label>
                     <input
                       type="hidden"
@@ -300,7 +300,7 @@ export default function GlobalPopup() {
                     onClick={() => setOpen(false)}
                     className="inline-flex w-full justify-center rounded-md duration-300 transition-all bg-[#F0DECA] hover:bg-[#F9EEDD] px-3 py-2 text-sm font-semibold shadow-sm sm:ml-3 sm:w-auto"
                   >
-                    Close
+                    {t("contact.form.closeBtn")}
                   </button>
                   <button
                     type="submit"
@@ -311,7 +311,9 @@ export default function GlobalPopup() {
                         : "bg-[#F0DECA] duration-300 ease-in text-[#8D7B67] hover:bg-[#F9EEDD] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#8D7B67]"
                     }`}
                   >
-                    {contactLoading ? "Sending your mail..." : "Let's talk"}
+                    {contactLoading
+                      ? t("contact.form.sendingMail")
+                      : t("contact.form.submitBtn")}
                   </button>
                 </div>
               </div>

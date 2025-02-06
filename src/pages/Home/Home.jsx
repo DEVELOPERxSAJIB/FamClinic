@@ -93,7 +93,7 @@ const Home = () => {
               <div
                 className="image-area"
                 style={{
-                  height: "640px",
+                  // height: "640px",
                   width: "540px",
                   objectFit: "cover",
                 }}
@@ -114,7 +114,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="treatment-wrapper pt-8 md:pt-20">
+        <div className="treatment-wrapper pt-16 md:pt-24">
           <div className="treatment-section">
             <div className="title flex flex-col gap-5 items-center justify-center">
               <h2 className="text-[50px] font-medium font-playfair text-center">
