@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import mainLogo from "../assets/images/logo/new_logo.jpg";
+import mainLogo from "../assets/images/logo/logo-Photoroom.png";
 import { AiOutlineMenu } from "react-icons/ai";
 import { RxCross1 } from "react-icons/rx";
 import { useTranslation } from "react-i18next";
@@ -62,14 +62,15 @@ const Header = () => {
           <Link className="flex-none text-xl font-semibold" to="/">
             <div
               style={{
-                height: "120%",
-                width: "280px",
+                height: "50px",
+                width: "auto",
+                objectFit:"cover",
               }}
               className="logo-area"
             >
               <img
                 src={mainLogo}
-                className="md:w-full md:h-full w-2/4"
+                className="md:w-full md:h-full w-3/4"
                 alt="main-logo"
               />
             </div>
