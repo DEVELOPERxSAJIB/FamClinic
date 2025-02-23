@@ -12,10 +12,10 @@ const Testimonial = () => {
 
   return (
     <div className="mx-auto">
-      <div
+      {/* <div
         className="elfsight-app-9a2d98f7-e292-4e70-a654-87a2de121ed5 mb-12"
         data-elfsight-app-lazy
-      />
+      /> */}
       <div className="flex justify-center items-center gap-y-8 lg:gap-y-0 flex-wrap md:flex-wrap lg:flex-nowrap lg:flex-row lg:justify-between lg:gap-x-8 max-w-sm sm:max-w-2xl lg:max-w-full mx-auto">
         <div className="w-full lg:w-3/5">
           {/*Slider wrapper*/}
