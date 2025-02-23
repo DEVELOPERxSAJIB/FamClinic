@@ -60,19 +60,21 @@ const Header = () => {
       <nav className="max-w-[85rem] w-full mx-auto px-4 sm:overflow-hidden sm:flex sm:items-center sm:justify-between">
         <div className="flex items-center justify-between">
           <Link className="flex-none text-xl font-semibold" to="/">
-            <div
-              style={{
-                height: "50px",
-                width: "auto",
-                objectFit:"cover",
-              }}
-              className="logo-area"
-            >
-              <img
-                src={mainLogo}
-                className="md:w-full md:h-full w-3/4"
-                alt="main-logo"
-              />
+            <div className="logo-area">
+              <div
+                style={{
+                  height: "50px",
+                  width: "auto",
+                  objectFit: "cover",
+                }}
+                className="image-area"
+              >
+                <img
+                  src={mainLogo}
+                  className="h-3/4 mt-3 sm:mt-0 md:w-full md:h-full w-3/4 flex items-center"
+                  alt="main-logo"
+                />
+              </div>
             </div>
           </Link>
 
