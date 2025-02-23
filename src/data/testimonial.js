@@ -6,11 +6,11 @@ import review4 from "../assets/images/review/review-4.jpg";
 const testimonials = [
   {
     key: "review1",
-    name: "Jane D",
-    positionAndCompany: "Chief Operating Officer (TechCorp)",
+    name: "Jenan Alsalim",
+    positionAndCompany: "3 reviews",
     rating: 5,
     review:
-      "The user interface of Famclinic is so intuitive, I was able to start using it without any guidance.",
+      "Best clinic I visited , I did facial there was super nice and relaxing",
     avatar: review1,
   },
   {
@@ -26,15 +26,15 @@ const testimonials = [
     key: "review3",
     name: "Sara L",
     positionAndCompany: "Marketing Director (MarketMinds)",
-    rating: 4,
+    rating: 5,
     review:
-      "Famclinic helped streamline our clinic management efforts and made everything more efficient. Very happy with the results.",
+      "One of the most beautiful places I've ever visited 😍 …",
     avatar: review3,
   },
   {
     key: "review4",
-    name: "John W.",
-    positionAndCompany: "CEO (WebCo)",
+    name: "HASSAN ALTRAD",
+    positionAndCompany: "Local Guide · 232 reviews",
     rating: 5,
     review:
       "The results from using Famclinic have exceeded our expectations. Highly recommend it to anyone looking to simplify healthcare processes.",

@@ -89,3 +89,7 @@ select#countries:focus-visible {
   outline: none;
   border: 1px solid #8d7b67;
 }
+
+.eapps-widget-toolbar-panel-wrapper {
+  display: none;
+}

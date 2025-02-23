@@ -5,24 +5,24 @@
     "title" : "Bekijk wat onze klanten over ons zeggen",
 
     "review1": {
-      "name": "Jane De",
-      "positionAndCompany": "Chief Operating Officer (TechCorp)",
-      "review": "De gebruikersinterface van Famclinic is zo intuïtief dat ik er zonder enige begeleiding mee aan de slag kon."
+      "name": "Jenan Alsalim",
+      "positionAndCompany": "3 beoordelingen",
+      "review": "Beste kliniek die ik heb bezocht, ik heb een gezichtsbehandeling gedaan daar was super leuk en ontspannend"
     },
     "review2": {
-      "name": "Harsh P.",
-      "positionAndCompany": "Product ontwerper (DesignPro)",
-      "review": "Vroeger zag ik er tegenop om mijn afspraken in te plannen, maar Famclinic heeft het proces zoveel eenvoudiger en stressvrij gemaakt."
+      "name": "Omar Alwafaie",
+      "positionAndCompany": "Lokale gids · 4 recensies",
+      "review": "Leuk team en mooie kliniek"
     },
     "review3": {
-      "name": "Sara L",
-      "positionAndCompany": "Marketing directeur (MarketMinds)",
-      "review": "Famclinic hielp bij het stroomlijnen van de inspanningen van ons kliniekbeheer en maakte alles efficiënter. Erg blij met de resultaten."
+      "name": "Bushra Alabd",
+      "positionAndCompany": "2 beoordelingen",
+      "review": "Een van de mooiste plekken die ik ooit heb bezocht 😍 …"
     },
     "review4": {
-      "name": "John W.",
+      "name": "Hassan Altrad",
       "positionAndCompany": "CEO (WebCo)",
-      "review": "De resultaten van het gebruik van Famclinic hebben onze verwachtingen overtroffen. Beveel het ten zeerste aan aan iedereen die gezondheidszorgprocessen wil vereenvoudigen."
+      "review": "Veel succes, mijn broer Muhammad, je bent geweldig"
     }
   }
 }
