@@ -6,6 +6,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import testimonials from "../../data/testimonial";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
 const Testimonial = () => {
   const [t] = useTranslation("global");
@@ -67,10 +68,24 @@ const Testimonial = () => {
         </div>
 
         <div className="w-full lg:w-2/5">
+            <div className=" flex justify-between mr-3">
+              <p className="font-playfair text-[32px] sm:text-[32px] font-normal mb-0 pb-0">
+                {t("testimonials.subtitle")}
+              </p>
+              <Link
+                to="https://www.google.com/search?hl=en-NL&gl=nl&q=Fam+Clinic,+Zeesluisweg+18,+2583+DR+Den+Haag&ludocid=6776514962658427340&lsig=AB86z5X_ZxtoiROR4DnabZREv2-W#lrd=0x47c5b196123baf05:0x5e0b04747c6001cc,3"
+                target="_blank"
+                style={{
+                  borderTopRightRadius: "25px",
+                  borderBottomLeftRadius: "25px",
+                  borderBottomRightRadius: "25px",
+                }}
+                className="py-3 px-6 mr-3 bg-[#F0DECA] text-[16px] font-medium duration-300 ease-in-out translate-all hover:bg-[#F9EEDD] hover:transition-all hover:ease-out hover:duration-300"
+              >
+                Review us on Google
+              </Link>
+            </div>
           <div className="content-area flex flex-col flex-1 md:w-full mb-4 md:mb-0 items-start md:items-start">
-            <p className="font-playfair text-[32px] sm:text-[32px] font-normal mb-0 pb-0">
-              {t("testimonials.subtitle")}
-            </p>
             <h2 className="pt-6 font-playfair text-[32px] sm:text-[40px] md:text-[40px] font-semibold mt-0">
               {t("testimonials.title")}
             </h2>
