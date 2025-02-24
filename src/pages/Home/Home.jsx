@@ -320,31 +320,33 @@ const Home = () => {
 
               <div className="col-span-2 flex flex-end">
                 <Swiper
-                  slidesPerView={3}
                   spaceBetween={30}
                   className="mySwiper"
                   slidesPerGroup={1}
                   modules={[Autoplay]}
                   loop={true}
                   autoplay={{ delay: 3000, disableOnInteraction: true }}
+                  breakpoints={{
+                    640: { slidesPerView: 1 }, // Mobile (1 slide)
+                    1024: { slidesPerView: 3 }, // Desktop (3 slides)
+                  }}
                 >
                   {weNoticeArray.map((item) => (
                     <>
                       <SwiperSlide>
                         <div
                           style={{
-                            boxShadow:
-                              "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
+                            
                             borderTopRightRadius: "25px",
                             borderBottomLeftRadius: "25px",
                             borderBottomRightRadius: "25px",
                           }}
-                          className="bg-white overflow-hidden w-full h-full md:h-[90%] px-8 cursor-pointer flex justify-center items-center"
+                          className="bg-white shadow-none sm:shadow-sm overflow-hidden w-full h-full md:h-[90%] px-8 cursor-pointer flex justify-center items-center"
                         >
-                          <div className="img-area py-8 md:py-0 w-[80%] flex justify-center overflow-hidden">
+                          <div className="img-area md:py-0 md:w-[80%] flex justify-center overflow-hidden">
                             <img
                               src={item?.image}
-                              className="w-full object-cover"
+                              className="w-3/4 sm:w-full sm:h-full object-cover"
                               alt=""
                             />
                           </div>

@@ -80,9 +80,9 @@ const Testimonial = () => {
                   borderBottomLeftRadius: "25px",
                   borderBottomRightRadius: "25px",
                 }}
-                className="py-3 px-6 mr-3 bg-[#F0DECA] text-[16px] font-medium duration-300 ease-in-out translate-all hover:bg-[#F9EEDD] hover:transition-all hover:ease-out hover:duration-300"
+                className="py-0 md:py-3 text-center flex items-center gap-3 px-2 md:px-6 mr-3 bg-[#F0DECA] text-[16px] font-medium duration-300 ease-in-out translate-all hover:bg-[#F9EEDD] hover:transition-all hover:ease-out hover:duration-300"
               >
-                Review us on Google
+                {t("testimonials.reviewOnGoogle")}
               </Link>
             </div>
           <div className="content-area flex flex-col flex-1 md:w-full mb-4 md:mb-0 items-start md:items-start">

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import footerLogo from "../assets/images/logo/new_logo.jpg";
+import footerLogo from "../assets/images/logo/logo-Photoroom.png";
 import treatments from "../data/treatment";
 import { useTranslation } from "react-i18next";
 
@@ -13,9 +13,9 @@ const Footer = () => {
         <hr className="my-6 border-[#F0DECA] sm:mx-auto lg:my-8" />
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0 flex flex-col gap-10">
-            <a to={"/"} className="flex items-center">
+            <Link to={"/"} className="flex items-center">
               <img src={footerLogo} className="h-8 me-3" alt="Logo" />
-            </a>
+            </Link>
             <p
               dangerouslySetInnerHTML={{ __html: t("footer.copyrightText") }}
               className="max-w-[260px] text-[18px] text-[#000] font-normal"
