@@ -59,7 +59,7 @@ const Header = () => {
       {" "}
       <nav className="max-w-[85rem] w-full mx-auto px-4 sm:overflow-hidden sm:flex sm:items-center sm:justify-between">
         <div className="flex items-center justify-between">
-          <Link className="flex-none text-xl font-semibold" to="/">
+          {/* <Link className="flex-none text-xl font-semibold" to="/">
             <div className="logo-area flex items-center">
               <div className="image-area h-8 md:h-12 flex items-center">
                 <img
@@ -69,7 +69,14 @@ const Header = () => {
                 />
               </div>
             </div>
+          </Link> */}
+          <Link
+            to="/"
+            className="flex items-center space-x-3 rtl:space-x-reverse"
+          >
+            <img src={mainLogo} className="h-8" alt="Flowbite Logo" />
           </Link>
+
           <div className="sm:hidden">
             <button
               type="button"
