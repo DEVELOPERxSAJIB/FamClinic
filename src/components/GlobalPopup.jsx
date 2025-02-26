@@ -15,7 +15,6 @@ import * as yup from "yup";
 import Swal from "sweetalert2";
 import emailjs from "@emailjs/browser";
 import { useTranslation } from "react-i18next";
-import { RxCross1 } from "react-icons/rx";
 
 export default function GlobalPopup() {
   const [open, setOpen] = useState(false);
@@ -114,13 +113,9 @@ export default function GlobalPopup() {
           >
             <div className="bg-[#F0DECA] pt-3 pb-2 sm:p-6 sm:pb-4">
               <div className="sm:flex sm:items-center">
-                <div className="relative flex w-full items-center justify-center">
-                  <div className="flex h-12 w-12 sm:h-10 sm:w-10 shrink-0 items-center justify-center rounded-full bg-[#8d7b67]">
-                    <TbInfoTriangle className="h-6 w-6 text-[#F0DECA]" />
-                  </div>
-
-                  <div onClick={() => setOpen(false)} className="absolute right-5">
-                    <RxCross1 size={22} />
+                <div className="flex items-center">                 
+                  <div className="mx-auto flex size-12 shrink-0 items-center justify-center rounded-full bg-[#8d7b67] sm:mx-0 sm:size-10">
+                    <TbInfoTriangle className="size-6 text-[#F0DECA]" />
                   </div>
                 </div>
                 <div className="mt-3 text-center sm:ml-4 sm:mt-0 sm:text-left">

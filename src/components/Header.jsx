@@ -60,17 +60,16 @@ const Header = () => {
       <nav className="max-w-[85rem] w-full mx-auto px-4 sm:overflow-hidden sm:flex sm:items-center sm:justify-between">
         <div className="flex items-center justify-between">
           <Link className="flex-none text-xl font-semibold" to="/">
-            <div className="logo-area">
-              <div className="image-area h-12 w-auto flex items-center">
+            <div className="logo-area flex items-center">
+              <div className="image-area h-8 md:h-12 flex items-center">
                 <img
                   src={mainLogo}
-                  className="h-full w-auto max-h-12"
+                  className="h-full w-full object-contain"
                   alt="main-logo"
                 />
               </div>
             </div>
           </Link>
-
           <div className="sm:hidden">
             <button
               type="button"
