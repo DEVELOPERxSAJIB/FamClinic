@@ -61,17 +61,10 @@ const Header = () => {
         <div className="flex items-center justify-between">
           <Link className="flex-none text-xl font-semibold" to="/">
             <div className="logo-area">
-              <div
-                style={{
-                  height: "50px",
-                  width: "auto",
-                  objectFit: "cover",
-                }}
-                className="image-area"
-              >
+              <div className="image-area h-12 w-auto flex items-center">
                 <img
                   src={mainLogo}
-                  className="h-3/4 mt-3 sm:mt-0 md:w-full md:h-full w-3/4 flex items-center"
+                  className="h-full w-auto max-h-12"
                   alt="main-logo"
                 />
               </div>
