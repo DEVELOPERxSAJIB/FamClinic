@@ -76,17 +76,17 @@ const Footer = () => {
 
         <hr className="my-6 border-[#F0DECA] sm:mx-auto lg:my-8" />
 
-        <div className="flex justify-between sm:flex sm:items-center sm:justify-between">
-          <span className="text-sm text-[16px] w-1/3">
+        <div className="flex justify-center sm:flex sm:items-center">
+          {/* <span className="text-sm text-[16px] w-1/3">
             {t("footer.designAndDevelopedBy")}{" "}
             <a
               target="_blank"
-              href="https://www.linkedin.com/in/mdsajibshikder/"
+              href="https://www.fiverr.com/users/coder_sajib"
               className="hover:underline font-semibold"
             >
               {t("footer.devName")}
             </a>
-          </span>
+          </span> */}
 
           <div className="flex items-center justify-center gap-4 flex-wrap">
             <Link to={"https://www.facebook.com/share/1AfN6HRaR6/?mibextid=wwXIfr"} target="_blank" className="w-10 h-10 flex items-center justify-center relative overflow-hidden rounded-full bg-white shadow-md shadow-gray-200 group transition-all duration-300">
@@ -182,7 +182,7 @@ const Footer = () => {
               </svg>
               <div className="absolute top-full left-0 w-full h-full rounded-full bg-gradient-to-bl from-purple-500 via-pink-500 to-yellow-500 z-0 transition-all duration-500 group-hover:top-0" />
             </Link>
-            <button className="w-10 h-10 flex items-center relative overflow-hidden justify-center rounded-full bg-white shadow-md shadow-gray-200 group transition-all duration-300">
+            <Link to={"https://www.youtube.com"} className="w-10 h-10 flex items-center relative overflow-hidden justify-center rounded-full bg-white shadow-md shadow-gray-200 group transition-all duration-300">
               <svg
                 className="fill-gray-900 relative z-10 transition-all duration-300 group-hover:fill-white"
                 xmlns="http://www.w3.org/2000/svg"
@@ -202,7 +202,7 @@ const Footer = () => {
                 />
               </svg>
               <div className="absolute top-full left-0 w-full h-full rounded-full bg-[#FF3000] z-0 transition-all duration-500 group-hover:top-0" />
-            </button>
+            </Link>
           </div>
         </div>
       </div>
